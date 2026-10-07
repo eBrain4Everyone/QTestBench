@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/74",
+  "entry_point": "split_circuit_at_barriers",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 74,
+  "solution_format": "prompt_plus_canonical_body"
+}

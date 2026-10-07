@@ -1,0 +1,7 @@
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import Sampler
+from numpy import pi
+def zeno_elitzur_vaidman_bomb_tester(bomb_live: bool) -> (float, float, float):
+    """ Design a Zeno Elitzur Vaidman Bomb Tester circuit which takes the boolean if the bomb is live and outputs the percentage of successful live bomb predictions, dud bomb predictions and bombs that detonated. Use 25 cycles to increase the efficiency of the circuit.
+    """

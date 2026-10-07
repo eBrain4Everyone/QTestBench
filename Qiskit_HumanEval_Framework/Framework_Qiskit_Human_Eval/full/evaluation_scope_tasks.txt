@@ -1,0 +1,13 @@
+# Default 10-task research scope (3 easy + 3 intermediate + 3 hard + 1 any via stratify).
+# Edit this list to match your experiment. Use with: --scoped
+#
+task_0000
+task_0001
+task_0002
+task_0003
+task_0019
+task_0020
+task_0024
+task_0034
+task_0035
+task_0063

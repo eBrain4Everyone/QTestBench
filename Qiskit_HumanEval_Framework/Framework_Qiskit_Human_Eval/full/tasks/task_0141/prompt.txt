@@ -1,0 +1,6 @@
+from qiskit.quantum_info import anti_commutator, SparsePauliOp
+from qiskit.quantum_info import random_pauli
+import numpy as np
+def anticommutators(pauli: SparsePauliOp):
+    """ Return a list of ten Pauli operators whose anticommutator with the given Pauli is a multiple of the identity.
+    """

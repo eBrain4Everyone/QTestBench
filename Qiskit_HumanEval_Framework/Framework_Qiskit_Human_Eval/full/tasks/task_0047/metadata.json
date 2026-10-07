@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/47",
+  "entry_point": "random_coin_flip",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 47,
+  "solution_format": "prompt_plus_canonical_body"
+}

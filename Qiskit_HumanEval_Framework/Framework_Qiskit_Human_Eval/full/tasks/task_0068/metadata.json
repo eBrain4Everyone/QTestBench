@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/68",
+  "entry_point": "zeno_elitzur_vaidman_bomb_tester",
+  "difficulty_scale": "difficult",
+  "variant": "full",
+  "index": 68,
+  "solution_format": "prompt_plus_canonical_body"
+}

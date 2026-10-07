@@ -1,0 +1,1112 @@
+[
+  {
+    "challenge": "task_0000",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0000.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 2,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0001",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0001.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 1.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 13,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0002",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0002.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 1.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0003",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0003.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.889,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.889,
+      "avg_div": 0.939
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.667,
+        "cq": 0.0,
+        "diversity": 0.817
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n_______________________ test_returns_quantum_circuit_3 ________________________\ntest_syntactic.py:84: in test_returns_quantum_circuit_3\n    result_with_drawing = candidate(drawing=True)\n                          ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_returns_quantum_circuit_3 - qiskit.exceptions....\n========================= 1 failed, 2 passed in 0.83s ========================="
+        },
+        "coverage_inputs": 0.667,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 12,
+        "cq": 0.0,
+        "coverage": 0.667,
+        "diversity": 0.817,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n__________________________ test_ghz_drawing_return_3 __________________________\ntest_semantic.py:77: in test_ghz_drawing_return_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_ghz_drawing_return_3 - qiskit.exceptions.Missin...\n========================= 1 failed, 2 passed in 1.07s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py ..F                                                   [100%]\n\n================================== FAILURES ===================================\n___________________ test_create_ghz_drawing_returns_tuple_3 ___________________\ntest_behavioral.py:84: in test_create_ghz_drawing_returns_tuple_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_ghz_drawing_returns_tuple_3 - qiskit.e...\n========================= 1 failed, 2 passed in 0.82s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 14,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0019",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0019.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0020",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0020.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_transpile_ghz_customlayout_3 ______________________\ntest_semantic.py:123: in test_transpile_ghz_customlayout_3\n    assert np.allclose(dm_reduced.data, dm_ghz.data, atol=1e-4, rtol=1e-5), (\nE   AssertionError: The reduced density matrix on qubits [2,4,6] should match the 3-qubit GHZ state\nE   assert False\nE    +  where False = <function allclose at 0x000002796A7003B0>(array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0.5+0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j]]), array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0. +0.j,\\n        0. +0.j],\\n       [0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j]]), atol=0.0001, rtol=1e-05)\nE    +    where <function allclose at 0x000002796A7003B0> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.allclose\nE    +    and   array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0.5+0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j]]) = DensityMatrix([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0. +0.j],\\n             ...0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0. +0.j]],\\n              dims=(2, 2, 2)).data\nE    +    and   array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0. +0.j,\\n        0. +0.j],\\n       [0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j]]) = DensityMatrix([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0.5+0.j],\\n             ...0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0.5+0.j]],\\n              dims=(2, 2, 2)).data\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_transpile_ghz_customlayout_3 - AssertionError: ...\n========================= 1 failed, 2 passed in 1.29s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py ..F                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_transpile_ghz_customlayout_3 ______________________\ntest_behavioral.py:106: in test_transpile_ghz_customlayout_3\n    assert np.isclose(ghz_prob, 1.0, atol=1e-6), (\nE   AssertionError: GHZ state should have all probability in |000> and |111> states, but total GHZ probability is 0.5000000000000002\nE   assert np.False_\nE    +  where np.False_ = <function isclose at 0x0000026DF81E8570>(np.float64(0.5000000000000002), 1.0, atol=1e-06)\nE    +    where <function isclose at 0x0000026DF81E8570> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.isclose\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_transpile_ghz_customlayout_3 - AssertionError...\n========================= 1 failed, 2 passed in 1.34s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0024",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0024.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0034",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0034.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.75,
+      "avg_cq": 0.833,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.75,
+      "avg_div": 0.833
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.25,
+        "cq": 0.5,
+        "diversity": 0.5
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.25,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 10,
+        "cq": 0.5,
+        "coverage": 0.25,
+        "diversity": 0.5,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0035",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0035.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 4,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n__________________________ test_result_consistency_3 __________________________\ntest_semantic.py:78: in test_result_consistency_3\n    assert np.allclose(evs1, evs2, atol=1e-4, rtol=1e-5), (\nE   AssertionError: Results not consistent across runs: 0.333984375 vs 0.32568359375. Expected deterministic behavior with fixed transpiler seed.\nE   assert False\nE    +  where False = <function allclose at 0x00000299ACF54CF0>(0.333984375, 0.32568359375, atol=0.0001, rtol=1e-05)\nE    +    where <function allclose at 0x00000299ACF54CF0> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.allclose\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_result_consistency_3 - AssertionError: Results ...\n========================= 1 failed, 2 passed in 3.40s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0063",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0063.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_bb84_circuit_generate_key_1 _______________________\ntest_semantic.py:39: in test_bb84_circuit_generate_key_1\n    assert len(result) == n, f\"Expected key length {n}, got {len(result)}\"\nE   AssertionError: Expected key length 4, got 2\nE   assert 2 == 4\nE    +  where 2 = len('10')\n______________________ test_bb84_circuit_generate_key_2 _______________________\ntest_semantic.py:74: in test_bb84_circuit_generate_key_2\n    assert len(results) == 1, f\"Expected deterministic result for Z-basis encoding/measurement, got {results}\"\nE   AssertionError: Expected deterministic result for Z-basis encoding/measurement, got {'1011', '1', '01', '101'}\nE   assert 4 == 1\nE    +  where 4 = len({'01', '1', '101', '1011'})\n______________________ test_bb84_circuit_generate_key_3 _______________________\ntest_semantic.py:114: in test_bb84_circuit_generate_key_3\n    assert len(results) == 1, f\"Expected deterministic result when measuring in matching X-basis, got {results}\"\nE   AssertionError: Expected deterministic result when measuring in matching X-basis, got {'', '1', '010', '01'}\nE   assert 4 == 1\nE    +  where 4 = len({'', '01', '010', '1'})\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_bb84_circuit_generate_key_1 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_2 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_3 - AssertionError: E...\n============================== 3 failed in 1.26s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  }
+]

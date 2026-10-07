@@ -1,0 +1,1106 @@
+[
+  {
+    "challenge": "chalet_random_gate",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/The_chalet_of_the_random_gate.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 18,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 19,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 18,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 19,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "coffee_conundrum",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Critical_coffee_conundrum.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 23,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 23,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n___________________________ test_official_values_1 ____________________________\ntest_semantic.py:35: in test_official_values_1\n    assert np.allclose(out_val, exp_val, atol=1e-4), (\nE   AssertionError: run('5') returned '0.6725000000000004', which does not match expected output '0.6735'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001EEA30F96C0>(tensor(0.6725, requires_grad=True), tensor(0.6735, requires_grad=True), atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001EEA30F96C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n__________________________ test_output_shape_type_2 ___________________________\ntest_semantic.py:73: in test_output_shape_type_2\n    assert np.allclose(out_arr, exp_arr, atol=1e-4), (\nE   AssertionError: Parsed numeric output for input '5' does not match expected value '0.6735'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001EEA30F96C0>(tensor(0.6725, requires_grad=True), tensor(0.6735, requires_grad=True), atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001EEA30F96C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n__________________________ test_output_properties_3 ___________________________\ntest_semantic.py:103: in test_output_properties_3\n    assert np.allclose(val, exp_val, atol=1e-4), (\nE   AssertionError: Output for input '5' does not numerically match expected output '0.6735'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001EEA30F96C0>(tensor(0.6725, requires_grad=True), tensor(0.6735, requires_grad=True), atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001EEA30F96C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_official_values_1 - AssertionError: run('5') re...\nFAILED test_semantic.py::test_output_shape_type_2 - AssertionError: Parsed nu...\nFAILED test_semantic.py::test_output_properties_3 - AssertionError: Output fo...\n============================= 3 failed in 20.81s =============================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_______________________ test_run_check_official_cases_1 _______________________\ntest_behavioral.py:33: in test_run_check_official_cases_1\n    assert np.allclose(float(output), float(exp), atol=1e-4), f\"run() output {output!r} does not numerically match expected {exp!r} for input {inp!r} within tolerance.\"\nE   AssertionError: run() output '0.6725000000000004' does not numerically match expected '0.6735' for input '5' within tolerance.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001A4F25796C0>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001A4F25796C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\nE    +    and   0.6725000000000004 = float('0.6725000000000004')\nE    +    and   0.6735 = float('0.6735')\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n_______________________ test_run_check_official_cases_2 _______________________\ntest_behavioral.py:57: in test_run_check_official_cases_2\n    assert np.allclose(float(output_first), float(exp), atol=1e-4), f\"First run output {output_first!r} does not numerically match expected {exp!r} for input {inp!r}.\"\nE   AssertionError: First run output '0.6725000000000004' does not numerically match expected '0.6735' for input '5'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001A4F25796C0>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001A4F25796C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\nE    +    and   0.6725000000000004 = float('0.6725000000000004')\nE    +    and   0.6735 = float('0.6735')\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n_______________________ test_run_check_official_cases_3 _______________________\ntest_behavioral.py:89: in test_run_check_official_cases_3\n    assert np.allclose(numeric_output, numeric_expected, atol=1e-4), f\"Parsed numeric output {numeric_output} does not match expected {numeric_expected} for input {inp!r} within tolerance.\"\nE   AssertionError: Parsed numeric output 0.6725000000000004 does not match expected 0.6735 for input '5' within tolerance.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001A4F25796C0>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001A4F25796C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_check_official_cases_1 - AssertionError: ...\nFAILED test_behavioral.py::test_run_check_official_cases_2 - AssertionError: ...\nFAILED test_behavioral.py::test_ru"
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "contextuality_dunes",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Dunes_out_of_context.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 21,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 23,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 21,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 23,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "mach_zender_cabin",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/The_Mach_Zender_cabin.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 17,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 17,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "QSP_swamp",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Stay_out_of_this_swamp!.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 15,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 15,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "rainy_days_retreat",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Rainy_days_at_the_forest_retreat.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 13,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py .F.                                                    [100%]\n\n================================== FAILURES ===================================\n___________ test_function_signatures_have_correct_parameter_names_2 ___________\ntest_syntactic.py:66: in test_function_signatures_have_correct_parameter_names_2\n    assert check_params == [\"solution_output\", \"expected_output\"], \"The 'check' function must have exactly two parameters named 'solution_output' and 'expected_output'.\"\nE   AssertionError: The 'check' function must have exactly two parameters named 'solution_output' and 'expected_output'.\nE   assert ['have', 'want'] == ['solution_ou...ected_output']\nE     \nE     At index 0 diff: 'have' != 'solution_output'\nE     Use -v to get more diff\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_function_signatures_have_correct_parameter_names_2\n========================= 1 failed, 2 passed in 1.82s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py .F.                                                     [100%]\n\n================================== FAILURES ===================================\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:66: in test_output_shape_and_type_2\n    assert isinstance(parsed_out, type(parsed_exp)), (\nE   AssertionError: Parsed output type for input [1,0,1,1,0,1,1,1] was <class 'float'>, expected <class 'int'>.\nE   assert False\nE    +  where False = isinstance(1.0, <class 'int'>)\nE    +    where <class 'int'> = type(1)\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_output_shape_and_type_2 - AssertionError: Parse...\n========================= 1 failed, 2 passed in 1.86s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 13,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "travelling_eigentracks",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution3/Tensor Tundra Travelling on the eigentracks.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 14,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 6,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 14,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 6,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "triple_H_hotel",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution3/Tensor Tundra The triple H hotel.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  }
+]

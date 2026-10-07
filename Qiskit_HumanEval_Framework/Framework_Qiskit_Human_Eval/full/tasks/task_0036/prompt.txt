@@ -1,0 +1,4 @@
+from qiskit import QuantumCircuit
+def bv_function(s: str) -> QuantumCircuit:
+    """ Write a function to design a Bernstein-Vazirani oracle from a bitstring and return it.
+    """

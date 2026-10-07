@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/24",
+  "entry_point": "dj_algorithm",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 24,
+  "solution_format": "prompt_plus_canonical_body"
+}

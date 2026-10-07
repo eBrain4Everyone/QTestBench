@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/1",
+  "entry_point": "run_bell_state_simulator",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 1,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,4 @@
+from qiskit.quantum_info import entropy, random_density_matrix, DensityMatrix
+def pure_states(ε):
+    """ Return a list of ten density matrices which are pure up to a tolerance of ε.
+    """

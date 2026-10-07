@@ -1,0 +1,8 @@
+from matplotlib.figure import Figure
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import Sampler
+from qiskit.visualization import plot_histogram
+def visualize_bell_states()->Figure:
+    """ Prepare phi plus and phi minus bell states and visualize their results in a histogram and return the histogram.
+    """

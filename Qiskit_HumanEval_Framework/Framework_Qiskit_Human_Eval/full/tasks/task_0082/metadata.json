@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/82",
+  "entry_point": "create_binary_serialization",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 82,
+  "solution_format": "prompt_plus_canonical_body"
+}

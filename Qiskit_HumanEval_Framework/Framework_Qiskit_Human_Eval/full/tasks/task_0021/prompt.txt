@@ -1,0 +1,6 @@
+from qiskit import QuantumCircuit
+from qiskit_ibm_runtime.fake_provider import FakeOslo
+from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
+def transpile_circuit_dense() -> QuantumCircuit:
+    """ Using a pass manager with optimization level as 1 and dense layout method, transpile and map a bell circuit for the Fake Oslo backend.
+    """

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/71",
+  "entry_point": "create_quantum_circuit_based_h0_csx01_h1",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 71,
+  "solution_format": "prompt_plus_canonical_body"
+}

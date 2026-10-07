@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/84",
+  "entry_point": "controlled_custom_unitary_circuit",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 84,
+  "solution_format": "prompt_plus_canonical_body"
+}

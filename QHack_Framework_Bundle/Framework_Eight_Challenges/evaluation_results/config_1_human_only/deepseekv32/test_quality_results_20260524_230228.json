@@ -1,0 +1,1106 @@
+[
+  {
+    "challenge": "chalet_random_gate",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution1/The_chalet_of_the_random_gate.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 0.667,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.333,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.333,
+      "avg_div": 0.333
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 0.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 0,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": "RUNTIME_ERROR"
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 0,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": false,
+          "passed": 0,
+          "failed": 0,
+          "total": 0,
+          "error": "RUNTIME_ERROR",
+          "pytest_output": "============================= test session starts =============================\ncollected 0 items\n\n============================ no tests ran in 1.52s ============================"
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n____________________________ test_output_values_1 _____________________________\ntest_semantic.py:29: in test_output_values_1\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.25, 0.25, 0.25]'...\nCorrect!\nRunning test case 1 with input '[0.125, 0.25, 0.2]'...\nCorrect!\n____________________________ test_shape_and_type_2 ____________________________\ntest_semantic.py:49: in test_shape_and_type_2\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.25, 0.25, 0.25]'...\nCorrect!\nRunning test case 1 with input '[0.125, 0.25, 0.2]'...\nCorrect!\n________________________ test_probability_properties_3 ________________________\ntest_semantic.py:72: in test_probability_properties_3\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.25, 0.25, 0.25]'...\nCorrect!\nRunning test case 1 with input '[0.125, 0.25, 0.2]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_output_values_1 - AttributeError: module 'built...\nFAILED test_semantic.py::test_shape_and_type_2 - AttributeError: module 'buil...\nFAILED test_semantic.py::test_probability_properties_3 - AttributeError: modu...\n============================== 3 failed in 1.64s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 0,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "coffee_conundrum",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution1/Critical_coffee_conundrum.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.833,
+      "avg_cq": 0.569,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.833,
+      "avg_div": 0.902
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.5,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 12,
+        "cq": 0.707,
+        "diversity": 0.707,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 2,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.5,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 12,
+        "cq": 0.707,
+        "coverage": 0.5,
+        "diversity": 0.707,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n____________________________ test_output_values_1 _____________________________\ntest_semantic.py:28: in test_output_values_1\n    assert np.allclose(out_val, exp_val, atol=1e-4), f\"Input {inp}: got {out_val}, expected {exp_val}\"\nE   AssertionError: Input 5: got 0.6725000000000004, expected 0.6735\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001AFDB56DD00>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001AFDB56DD00> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n__________________________ test_output_shape_type_2 ___________________________\ntest_semantic.py:46: in test_output_shape_type_2\n    assert np.allclose(out_val, exp_val, atol=1e-4), f\"Value mismatch for input {inp}\"\nE   AssertionError: Value mismatch for input 5\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001AFDB56DD00>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001AFDB56DD00> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n______________________________ test_properties_3 ______________________________\ntest_semantic.py:63: in test_properties_3\n    assert np.allclose(out_val, exp_val, atol=1e-4), f\"Value mismatch for input {inp}\"\nE   AssertionError: Value mismatch for input 5\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001AFDB56DD00>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001AFDB56DD00> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_output_values_1 - AssertionError: Input 5: got ...\nFAILED test_semantic.py::test_output_shape_type_2 - AssertionError: Value mis...\nFAILED test_semantic.py::test_properties_3 - AssertionError: Value mismatch f...\n============================== 3 failed in 8.21s =============================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 2,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "contextuality_dunes",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution1/Dunes_out_of_context.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.333,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.333,
+      "avg_div": 0.333
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 1,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_______________________ test_output_matches_expected_1 ________________________\ntest_semantic.py:32: in test_output_matches_expected_1\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.838283, [0.6283189, 1.884956, 3.141593, 4.398230, 5.654867]]'...\nCorrect!\nRunning test case 1 with input '[0.4, [1.047198, 2.094395, 3.141593, 4.18879, 5.235988]]'...\nCorrect!\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:51: in test_output_shape_and_type_2\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.838283, [0.6283189, 1.884956, 3.141593, 4.398230, 5.654867]]'...\nCorrect!\nRunning test case 1 with input '[0.4, [1.047198, 2.094395, 3.141593, 4.18879, 5.235988]]'...\nCorrect!\n_________________________ test_properties_and_range_3 _________________________\ntest_semantic.py:73: in test_properties_and_range_3\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.838283, [0.6283189, 1.884956, 3.141593, 4.398230, 5.654867]]'...\nCorrect!\nRunning test case 1 with input '[0.4, [1.047198, 2.094395, 3.141593, 4.18879, 5.235988]]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_output_matches_expected_1 - AttributeError: mod...\nFAILED test_semantic.py::test_output_shape_and_type_2 - AttributeError: modul...\nFAILED test_semantic.py::test_properties_and_range_3 - AttributeError: module...\n============================== 3 failed in 1.69s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 1,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "mach_zender_cabin",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution1/The_Mach_Zender_cabin.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.333,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.333,
+      "avg_div": 0.333
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 14,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 10,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 1,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 14,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 10,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n__________________________ test_mach_zender_cabin_1 ___________________________\ntest_behavioral.py:27: in test_mach_zender_cabin_1\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '0.5'...\nCorrect!\nRunning test case 1 with input '0.577350269'...\nCorrect!\n__________________________ test_mach_zender_cabin_2 ___________________________\ntest_behavioral.py:43: in test_mach_zender_cabin_2\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '0.5'...\nCorrect!\nRunning test case 1 with input '0.577350269'...\nCorrect!\n__________________________ test_mach_zender_cabin_3 ___________________________\ntest_behavioral.py:62: in test_mach_zender_cabin_3\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '0.5'...\nCorrect!\nRunning test case 1 with input '0.577350269'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_mach_zender_cabin_1 - AttributeError: module ...\nFAILED test_behavioral.py::test_mach_zender_cabin_2 - AttributeError: module ...\nFAILED test_behavioral.py::test_mach_zender_cabin_3 - AttributeError: module ...\n============================== 3 failed in 1.45s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 1,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "QSP_swamp",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution1/Stay_out_of_this_swamp!.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.333,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.333,
+      "avg_div": 0.333
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 15,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 1,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n___________________________ test_harness_callable_3 ___________________________\ntest_syntactic.py:56: in test_harness_callable_3\n    assert str(sig_run) == \"(test_case_input)\", f\"'run' signature must be '(test_case_input)', got {sig_run}.\"\nE   AssertionError: 'run' signature must be '(test_case_input)', got (test_case_input: str) -> str.\nE   assert '(test_case_i...: str) -> str' == '(test_case_input)'\nE     \nE     - (test_case_input)\nE     + (test_case_input: str) -> str\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nCorrect!\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_harness_callable_3 - AssertionError: 'run' sig...\n========================= 1 failed, 2 passed in 1.67s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 15,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_______________________ test_output_matches_expected_1 ________________________\ntest_semantic.py:23: in test_output_matches_expected_1\n    for inp, exp in _b.TEST_CASES:\n                    ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nCorrect!\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nCorrect!\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nCorrect!\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nCorrect!\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:38: in test_output_shape_and_type_2\n    for inp, exp in _b.TEST_CASES:\n                    ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nCorrect!\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nCorrect!\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nCorrect!\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nCorrect!\n_________________________ test_properties_and_range_3 _________________________\ntest_semantic.py:60: in test_properties_and_range_3\n    for inp, exp in _b.TEST_CASES:\n                    ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nCorrect!\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nCorrect!\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nCorrect!\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_output_matches_expected_1 - AttributeError: mod...\nFAILED test_semantic.py::test_output_shape_and_type_2 - AttributeError: modul...\nFAILED test_semantic.py::test_properties_and_range_3 - AttributeError: module...\n============================== 3 failed in 1.67s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 1,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "rainy_days_retreat",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution1/Rainy_days_at_the_forest_retreat.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.333,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.333,
+      "avg_div": 0.333
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 1,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py .F.                                                    [100%]\n\n================================== FAILURES ===================================\n_________________________ test_function_signatures_2 __________________________\ntest_syntactic.py:48: in test_function_signatures_2\n    assert check_params == [\"solution_output\", \"expected_output\"], f\"check signature parameters mismatch: expected ['solution_output', 'expected_output'], got {check_params}\"\nE   AssertionError: check signature parameters mismatch: expected ['solution_output', 'expected_output'], got ['have', 'want']\nE   assert ['have', 'want'] == ['solution_ou...ected_output']\nE     \nE     At index 0 diff: 'have' != 'solution_output'\nE     Use -v to get more diff\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_function_signatures_2 - AssertionError: check ...\n========================= 1 failed, 2 passed in 1.48s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_______________________________ test_semantic_1 _______________________________\ntest_semantic.py:24: in test_semantic_1\n    for inp, exp in _b.TEST_CASES:\n                    ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n_______________________________ test_semantic_2 _______________________________\ntest_semantic.py:38: in test_semantic_2\n    for inp, exp in _b.TEST_CASES:\n                    ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n_______________________________ test_semantic_3 _______________________________\ntest_semantic.py:55: in test_semantic_3\n    for inp, exp in _b.TEST_CASES:\n                    ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_semantic_1 - AttributeError: module 'builtins' ...\nFAILED test_semantic.py::test_semantic_2 - AttributeError: module 'builtins' ...\nFAILED test_semantic.py::test_semantic_3 - AttributeError: module 'builtins' ...\n============================== 3 failed in 1.67s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py .F.                                                   [100%]\n\n================================== FAILURES ===================================\n______________________________ test_behavioral_2 ______________________________\ntest_behavioral.py:38: in test_behavioral_2\n    assert output == exp, f\"Input {inp}: got {output}, expected {exp}\"\nE   AssertionError: Input [1,0,1,1,0,1,1,1]: got 1.0, expected 1\nE   assert '1.0' == '1'\nE     \nE     - 1\nE     + 1.0\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_behavioral_2 - AssertionError: Input [1,0,1,1...\n========================= 1 failed, 2 passed in 1.51s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 1,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "travelling_eigentracks",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution3/Tensor Tundra Travelling on the eigentracks.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.333,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.333,
+      "avg_div": 0.333
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 12,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 4,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 12,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________________ test_correctness_1 ______________________________\ntest_semantic.py:31: in test_correctness_1\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1.35889209, -0.6219561, -1.31577162]'...\nCorrect!\nRunning test case 1 with input '[4.40084815, -0.77288063,  0.6425846]'...\nCorrect!\n____________________________ test_output_format_2 _____________________________\ntest_semantic.py:59: in test_output_format_2\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1.35889209, -0.6219561, -1.31577162]'...\nCorrect!\nRunning test case 1 with input '[4.40084815, -0.77288063,  0.6425846]'...\nCorrect!\n________________________ test_probability_properties_3 ________________________\ntest_semantic.py:95: in test_probability_properties_3\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1.35889209, -0.6219561, -1.31577162]'...\nCorrect!\nRunning test case 1 with input '[4.40084815, -0.77288063,  0.6425846]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_correctness_1 - AttributeError: module 'builtin...\nFAILED test_semantic.py::test_output_format_2 - AttributeError: module 'built...\nFAILED test_semantic.py::test_probability_properties_3 - AttributeError: modu...\n============================== 3 failed in 1.68s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 4,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "triple_H_hotel",
+    "test_gen_model": "deepseekv32",
+    "human_solution_used": "Solution1/The_triple_H_hotel.ipynb",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 13,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 2,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 0,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py .F.                                                    [100%]\n\n================================== FAILURES ===================================\n_________________________ test_function_signatures_2 __________________________\ntest_syntactic.py:43: in test_function_signatures_2\n    exec(sol, ns)\n<string>:101: in <module>\n    ???\n<string>:82: in check\n    ???\nE   AssertionError: Not the correct ground energy\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '1.5'...\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_function_signatures_2 - AssertionError: Not th...\n======================== 1 failed, 2 passed in 37.92s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 13,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_______________________________ test_semantic_1 _______________________________\ntest_semantic.py:32: in test_semantic_1\n    for inp, exp in _b.TEST_CASES:\n                    ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '1.5'...\nCorrect!\nRunning test case 1 with input '0.8'...\nCorrect!\n_______________________________ test_semantic_2 _______________________________\ntest_semantic.py:48: in test_semantic_2\n    exec(sol, namespace)\n<string>:101: in <module>\n    ???\n<string>:82: in check\n    ???\nE   AssertionError: Not the correct ground energy\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '1.5'...\nCorrect!\nRunning test case 1 with input '0.8'...\n_______________________________ test_semantic_3 _______________________________\ntest_semantic.py:69: in test_semantic_3\n    exec(sol, namespace)\n<string>:101: in <module>\n    ???\n<string>:82: in check\n    ???\nE   AssertionError: Not the correct ground energy\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '1.5'...\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_semantic_1 - AttributeError: module 'builtins' ...\nFAILED test_semantic.py::test_semantic_2 - AssertionError: Not the correct gr...\nFAILED test_semantic.py::test_semantic_3 - AssertionError: Not the correct gr...\n============================= 3 failed in 36.55s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________________________ test_behavioural_1 ______________________________\ntest_behavioral.py:23: in test_behavioural_1\n    exec(sol, ns)\n<string>:101: in <module>\n    ???\n<string>:82: in check\n    ???\nE   AssertionError: Not the correct ground energy\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '1.5'...\n_____________________________ test_behavioural_2 ______________________________\ntest_behavioral.py:44: in test_behavioural_2\n    test_cases = _b.TEST_CASES\n                 ^^^^^^^^^^^^^\nE   AttributeError: module 'builtins' has no attribute 'TEST_CASES'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '1.5'...\nCorrect!\nRunning test case 1 with input '0.8'...\nCorrect!\n_____________________________ test_behavioural_3 ______________________________\ntest_behavioral.py:58: in test_behavioural_3\n    exec(sol, ns)\n<string>:101: in <module>\n    ???\n<string>:82: in check\n    ???\nE   AssertionError: Not the correct ground energy\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '1.5'...\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_behavioural_1 - AssertionError: Not the corre...\nFAILED test_behavioral.py::test_behavioural_2 - AttributeError: module 'built...\nFAILED test_behavioral.py::test_behavioural_3 - AssertionError: Not the corre...\n============================= 3 failed in 29.96s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 2,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  }
+]

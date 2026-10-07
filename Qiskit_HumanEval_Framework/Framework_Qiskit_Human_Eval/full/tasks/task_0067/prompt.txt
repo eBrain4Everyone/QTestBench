@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from numpy import pi
+def chsh_circuit(alice: int, bob: int)->QuantumCircuit:
+    """ Design a CHSH circuit that takes bits of Alice and Bob as input and return the Quantum Circuit after measuring.
+    """

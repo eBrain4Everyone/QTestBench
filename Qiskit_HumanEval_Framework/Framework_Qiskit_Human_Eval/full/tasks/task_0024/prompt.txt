@@ -1,0 +1,6 @@
+from qiskit import QuantumCircuit
+from qiskit.primitives import StatevectorSampler
+from numpy import isclose
+def dj_algorithm(oracle: QuantumCircuit) -> bool:
+    """ Given a Deutsch-Jozsa oracle in which the final qubit is the "output" qubit, return True if the oracle is constant or False otherwise.
+    """

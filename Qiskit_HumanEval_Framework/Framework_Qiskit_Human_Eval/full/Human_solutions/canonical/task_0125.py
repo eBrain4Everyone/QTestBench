@@ -1,0 +1,7 @@
+from qiskit.converters import circuit_to_gate
+def circ_to_gate(circ):
+    """ Given a QuantumCircuit, convert it into a gate equivalent to the action of the input circuit and return it.
+    """
+
+    circ_gate = circuit_to_gate(circ)
+    return circ_gate

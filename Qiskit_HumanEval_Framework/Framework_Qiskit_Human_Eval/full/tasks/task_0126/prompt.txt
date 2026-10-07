@@ -1,0 +1,6 @@
+from qiskit.circuit.library import HGate
+from qiskit.quantum_info import Operator, process_fidelity
+import numpy as np
+def calculate_phase_difference_fidelity():
+    """ Create two quantum operators using Hadamard gate that differ only by a global phase. Calculate the process fidelity between these two operators and return the process fidelity value.
+    """

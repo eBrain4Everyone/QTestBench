@@ -1,0 +1,8 @@
+from numpy import float64
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import Estimator
+from qiskit.quantum_info import SparsePauliOp
+def estimator_qiskit() -> float64:
+    """ Run a Bell circuit on Qiskit Estimator and return expectation values for the bases II, XX, YY, ZZ.
+    """

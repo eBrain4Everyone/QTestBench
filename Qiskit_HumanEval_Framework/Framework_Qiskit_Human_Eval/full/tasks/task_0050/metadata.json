@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/50",
+  "entry_point": "remove_gate_in_position",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 50,
+  "solution_format": "prompt_plus_canonical_body"
+}

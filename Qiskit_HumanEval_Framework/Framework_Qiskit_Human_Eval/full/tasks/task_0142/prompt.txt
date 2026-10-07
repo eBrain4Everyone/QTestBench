@@ -1,0 +1,5 @@
+from qiskit.quantum_info import random_density_matrix, purity, DensityMatrix
+import numpy as np
+def purity_dataset():
+    """ Return a list of 10 single qubit density matrices whose purity is greater than 0.5.
+    """

@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from qiskit.converters import circuit_to_instruction
+def convert_circuit_to_instruction():
+    """ Create a circuit that produces a phi plus bell state with name bell_instruction and convert it into a quantum instruction.
+    """

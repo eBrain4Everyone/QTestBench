@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from qiskit.primitives import StatevectorSampler
+def circuit_to_bools(circuit: QuantumCircuit) -> list[bool]:
+    """ Given a QuantumCircuit, sample it once and convert the measurement result to a list of bools, where the 0th bool is the result of the 0th classical bit.
+    """

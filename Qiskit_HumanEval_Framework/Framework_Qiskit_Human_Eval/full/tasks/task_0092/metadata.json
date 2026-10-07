@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/92",
+  "entry_point": "calculate_stabilizer_state_info",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 92,
+  "solution_format": "prompt_plus_canonical_body"
+}

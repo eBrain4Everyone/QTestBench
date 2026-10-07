@@ -1,0 +1,6 @@
+from qiskit_ibm_runtime import QiskitRuntimeService
+def backend_info():
+    """ Using the QiskitRuntimeService, retrieve the backends that meet the following criteria: they are real quantum devices, they are operational, and they have a 
+    minimum of 20 qubits. Then, return a list of dictionaries, each containing the backend's name, number of qubits, and the list of supported instruction names.
+    Ensure that the list of dictionaries is sorted by the backend name.
+    """

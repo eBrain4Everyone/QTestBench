@@ -1,0 +1,6 @@
+from qiskit.quantum_info import schmidt_decomposition
+def schmidt_test(data, qargs_B):
+    """ Return the schmidt decomposition coefficients and the subsystem vectors for the given statevector and partition.
+    """
+
+    return schmidt_decomposition(data, qargs_B)

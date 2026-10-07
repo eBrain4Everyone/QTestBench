@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/141",
+  "entry_point": "anticommutators",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 141,
+  "solution_format": "prompt_plus_canonical_body"
+}

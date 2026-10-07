@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/100",
+  "entry_point": "sol_kit_decomp",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 100,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,6 @@
+import importlib
+import inspect
+from qiskit_ibm_runtime.fake_provider import fake_backend
+def fake_providers_v2_with_ecr() -> list:
+    """ Return the list of names of all the fake providers of type FakeBackendV2 which contains ecr gates in its available operations.
+    """

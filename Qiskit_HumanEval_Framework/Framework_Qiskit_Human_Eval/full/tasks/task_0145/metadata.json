@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/145",
+  "entry_point": "qft_inverse",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 145,
+  "solution_format": "prompt_plus_canonical_body"
+}

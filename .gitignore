@@ -1,0 +1,64 @@
+# Virtual environments (never commit)
+venv/
+.venv/
+env/
+ENV/
+quantum-env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+*.log
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints
+
+# Local paper / writing artifacts (not part of the public code release)
+Conference*.tex
+Conference*.pdf
+Conference*.aux
+Conference*.bbl
+Conference*.blg
+Conference*.out
+Conference*.log
+Conference*.docx
+QAI26*.pdf
+QTESTBENCH_*.tex
+QTESTBENCH_*.md
+QTestBench_Overleaf.tex
+_QTestBench_Methodology.pdf
+diagram.tex
+LR/
+eBrain_papers_examples/
+_review_pages/
+_tmp*
+*.canvas.tsx
+
+# Cursor / local agent artifacts
+.cursor/
+agent-transcripts/
+assets/
+
+# Large local caches
+**/.cache/
+**/tmp/
+**/temp/

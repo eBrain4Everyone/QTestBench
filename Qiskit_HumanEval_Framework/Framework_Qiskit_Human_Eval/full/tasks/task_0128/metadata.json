@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/128",
+  "entry_point": "conditional_quantum_circuit",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 128,
+  "solution_format": "prompt_plus_canonical_body"
+}

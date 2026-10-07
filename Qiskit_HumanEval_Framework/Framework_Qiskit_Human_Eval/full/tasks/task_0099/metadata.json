@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/99",
+  "entry_point": "remove_unassigned_parameterized_gates",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 99,
+  "solution_format": "prompt_plus_canonical_body"
+}

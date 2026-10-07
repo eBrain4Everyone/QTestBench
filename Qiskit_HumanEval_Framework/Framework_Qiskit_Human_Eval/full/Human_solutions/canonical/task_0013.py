@@ -1,0 +1,9 @@
+from qiskit import QuantumCircuit
+import numpy as np
+def custom_rotation_gate() -> QuantumCircuit:
+    """ Create a quantum circuit that carries out a custom single-qubit rotation gate (U gate) with angles theta, phi and lambda all equal to pi/2.
+    """
+
+    circuit = QuantumCircuit(1)
+    circuit.u(np.pi / 2, np.pi / 2, np.pi / 2, 0)
+    return circuit

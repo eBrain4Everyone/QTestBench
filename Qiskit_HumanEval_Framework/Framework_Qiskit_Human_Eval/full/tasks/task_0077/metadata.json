@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/77",
+  "entry_point": "circuit_from_probability_dist",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 77,
+  "solution_format": "prompt_plus_canonical_body"
+}

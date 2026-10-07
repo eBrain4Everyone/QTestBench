@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/38",
+  "entry_point": "create_quantum_circuit_based_h0_crz01_h1_cry10",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 38,
+  "solution_format": "prompt_plus_canonical_body"
+}

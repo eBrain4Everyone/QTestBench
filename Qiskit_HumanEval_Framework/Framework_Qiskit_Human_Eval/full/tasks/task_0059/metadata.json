@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/59",
+  "entry_point": "create_cz_gate",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 59,
+  "solution_format": "prompt_plus_canonical_body"
+}

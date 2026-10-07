@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-04-01T23:02:12.939900",
+  "models": {
+    "deepseekv32": {
+      "model_id": "deepseek/deepseek-v3.2",
+      "challenges": [
+        {
+          "challenge": "chalet_random_gate",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "coffee_conundrum",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "contextuality_dunes",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "mach_zender_cabin",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "QSP_swamp",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "rainy_days_retreat",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "travelling_eigentracks",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "triple_H_hotel",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        }
+      ],
+      "totals": {
+        "attempted": 8,
+        "successful": 8,
+        "files_written": 24,
+        "syntax_warnings": 0
+      }
+    },
+    "qwen3": {
+      "model_id": "qwen/qwen3-coder-next",
+      "challenges": [
+        {
+          "challenge": "chalet_random_gate",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 1
+        },
+        {
+          "challenge": "coffee_conundrum",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "contextuality_dunes",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 1
+        },
+        {
+          "challenge": "mach_zender_cabin",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 1
+        },
+        {
+          "challenge": "QSP_swamp",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 1
+        },
+        {
+          "challenge": "rainy_days_retreat",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "travelling_eigentracks",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "triple_H_hotel",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 1
+        }
+      ],
+      "totals": {
+        "attempted": 8,
+        "successful": 8,
+        "files_written": 24,
+        "syntax_warnings": 5
+      }
+    },
+    "gemini3pro": {
+      "model_id": "google/gemini-3.1-pro",
+      "challenges": [
+        {
+          "challenge": "chalet_random_gate",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "coffee_conundrum",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "contextuality_dunes",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "mach_zender_cabin",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "QSP_swamp",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "rainy_days_retreat",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "travelling_eigentracks",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "triple_H_hotel",
+          "status": "ok",
+          "files_written": 0,
+          "syntax_warnings": 0
+        }
+      ],
+      "totals": {
+        "attempted": 8,
+        "successful": 8,
+        "files_written": 0,
+        "syntax_warnings": 0
+      }
+    },
+    "claudeopus46": {
+      "model_id": "anthropic/claude-opus-4-6",
+      "challenges": [
+        {
+          "challenge": "chalet_random_gate",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "coffee_conundrum",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "contextuality_dunes",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "mach_zender_cabin",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "QSP_swamp",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "rainy_days_retreat",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "travelling_eigentracks",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        },
+        {
+          "challenge": "triple_H_hotel",
+          "status": "ok",
+          "files_written": 3,
+          "syntax_warnings": 0
+        }
+      ],
+      "totals": {
+        "attempted": 8,
+        "successful": 8,
+        "files_written": 24,
+        "syntax_warnings": 0
+      }
+    }
+  }
+}

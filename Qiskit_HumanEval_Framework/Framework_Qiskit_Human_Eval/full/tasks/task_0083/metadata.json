@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/83",
+  "entry_point": "calculate_bell_state_properties",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 83,
+  "solution_format": "prompt_plus_canonical_body"
+}

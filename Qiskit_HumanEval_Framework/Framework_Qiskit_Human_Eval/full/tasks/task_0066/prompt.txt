@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from numpy import arccos, sqrt
+def w_state()->QuantumCircuit:
+    """ Generate a Quantum Circuit for a W state and measure it.
+    """

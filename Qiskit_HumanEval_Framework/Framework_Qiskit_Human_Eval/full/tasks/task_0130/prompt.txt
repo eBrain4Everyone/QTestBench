@@ -1,0 +1,6 @@
+from qiskit.circuit import QuantumCircuit
+def inv_circuit(n):
+    """ Create a quantum circuit with 'n' qubits. Apply Hadamard gates to the second and third qubits.
+    Then apply CNOT gates between the second and fourth qubits, and between the third and fifth qubits.
+    Finally give the inverse of the quantum circuit.
+    """

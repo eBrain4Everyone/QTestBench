@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/32",
+  "entry_point": "estimator_qiskit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 32,
+  "solution_format": "prompt_plus_canonical_body"
+}

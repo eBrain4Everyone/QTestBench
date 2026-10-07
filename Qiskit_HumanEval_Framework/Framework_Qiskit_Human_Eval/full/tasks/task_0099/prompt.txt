@@ -1,0 +1,5 @@
+from qiskit.circuit import Parameter, QuantumCircuit
+
+def remove_unassigned_parameterized_gates(circuit: QuantumCircuit) -> QuantumCircuit:
+    """ Remove all the gates with unassigned parameters from the given circuit.
+    """

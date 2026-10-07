@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/11",
+  "entry_point": "get_statevector",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 11,
+  "solution_format": "prompt_plus_canonical_body"
+}

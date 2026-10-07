@@ -1,0 +1,4 @@
+from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
+def send_bits(bitstring: str)->QuantumCircuit:
+    """ Provide a quantum circuit that enables the transmission of two classical bits from the sender to the receiver through a single qubit of quantum communication, given that the sender and receiver have access to entangled qubits.
+    """

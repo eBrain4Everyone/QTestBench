@@ -1,0 +1,9 @@
+from qiskit.transpiler import Target, InstructionProperties
+from qiskit.circuit.library import UGate, CXGate
+from qiskit.circuit import Parameter
+def create_target() -> Target:
+    """ Create a Target object for a 2-qubit system and add UGate and CXGate instructions with specific properties.
+    - Add UGate for both qubits (0 and 1) with parameters 'theta', 'phi', and 'lambda'.
+    - Add CXGate for qubit pairs (0,1) and (1,0).
+    - All instructions should have nonzero 'duration' and 'error' properties set.
+    """

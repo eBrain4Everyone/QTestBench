@@ -1,0 +1,8 @@
+from typing import Dict
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import Sampler
+from qiskit_ibm_runtime.options import SamplerOptions
+def sampler_qiskit() -> Dict:
+    """ Run a Bell circuit on Qiskit Sampler and run the circuit on the Aer simulator with the seed set as 42. Return the resulting counts dictionary.
+    """

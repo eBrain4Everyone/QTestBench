@@ -1,0 +1,5 @@
+import datetime
+from qiskit_ibm_runtime import QiskitRuntimeService
+def find_recent_jobs():
+    """ Find and return jobs submitted in the last three months using QiskitRuntimeService.
+    """

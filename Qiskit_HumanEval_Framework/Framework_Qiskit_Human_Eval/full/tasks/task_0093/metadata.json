@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/93",
+  "entry_point": "synthesize_clifford_circuit",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 93,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/43",
+  "entry_point": "generate_pass_manager_obj",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 43,
+  "solution_format": "prompt_plus_canonical_body"
+}

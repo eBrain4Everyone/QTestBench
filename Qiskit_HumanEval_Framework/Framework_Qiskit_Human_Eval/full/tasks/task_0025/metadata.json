@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/25",
+  "entry_point": "passmanager_Lookahead",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 25,
+  "solution_format": "prompt_plus_canonical_body"
+}

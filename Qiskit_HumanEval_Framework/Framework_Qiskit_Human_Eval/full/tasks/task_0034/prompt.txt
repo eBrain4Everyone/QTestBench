@@ -1,0 +1,10 @@
+from qiskit_ibm_runtime import Batch, Sampler
+from qiskit.primitives.primitive_job import PrimitiveJob
+from qiskit_ibm_runtime.fake_provider import FakeAlgiers
+from qiskit.transpiler import CouplingMap
+from qiskit import QuantumCircuit
+from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
+def run_jobs_on_batch() -> dict:
+    """ Generate all four Bell states and execute them on the FakeAlgiers backend using SamplerV2 with batch mode. Each Bell state circuit will be transpiled with an optimization level of 3, with the seed 123 for the transpiler.
+    Returns a dictionary where the keys are the Bell state names ['phi_plus', 'phi_minus', 'psi_plus', 'psi_minus'] and the values are the corresponding RuntimeJob objects and the batch id.
+    """

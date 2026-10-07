@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/110",
+  "entry_point": "equivalent_clifford_circuit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 110,
+  "solution_format": "prompt_plus_canonical_body"
+}

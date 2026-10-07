@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/98",
+  "entry_point": "qubit_with_least_readout_error",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 98,
+  "solution_format": "prompt_plus_canonical_body"
+}

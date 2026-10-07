@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/30",
+  "entry_point": "plot_circuit_layout_bell",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 30,
+  "solution_format": "prompt_plus_canonical_body"
+}

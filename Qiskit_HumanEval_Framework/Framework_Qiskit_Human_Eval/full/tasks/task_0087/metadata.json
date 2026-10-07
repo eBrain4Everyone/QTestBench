@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/87",
+  "entry_point": "quantum_circuit_with_delay",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 87,
+  "solution_format": "prompt_plus_canonical_body"
+}

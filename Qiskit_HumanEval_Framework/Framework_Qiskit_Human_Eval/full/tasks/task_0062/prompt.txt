@@ -1,0 +1,4 @@
+from qiskit import QuantumCircuit
+def bb84_senders_circuit(state: [int], basis: [int])->QuantumCircuit:
+    """ Construct a BB84 protocol circuit for the sender, inputting both the states and the measured bases.
+    """

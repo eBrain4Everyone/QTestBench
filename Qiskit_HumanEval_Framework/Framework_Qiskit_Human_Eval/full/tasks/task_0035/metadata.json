@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/35",
+  "entry_point": "run_circuit_with_dd_trex",
+  "difficulty_scale": "difficult",
+  "variant": "full",
+  "index": 35,
+  "solution_format": "prompt_plus_canonical_body"
+}

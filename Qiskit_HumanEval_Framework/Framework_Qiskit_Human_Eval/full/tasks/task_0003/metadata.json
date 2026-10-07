@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/3",
+  "entry_point": "create_ghz",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 3,
+  "solution_format": "prompt_plus_canonical_body"
+}

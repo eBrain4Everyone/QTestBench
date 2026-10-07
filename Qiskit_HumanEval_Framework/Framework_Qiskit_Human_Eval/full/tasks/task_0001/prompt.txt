@@ -1,0 +1,7 @@
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import Sampler
+from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
+def run_bell_state_simulator():
+    """ Define a phi plus bell state using Qiskit, transpile the circuit using pass manager with optimization level as 1, run it using Qiskit Sampler with the Aer simulator as backend and return the counts dictionary.
+    """

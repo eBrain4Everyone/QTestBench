@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/26",
+  "entry_point": "bell_dag",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 26,
+  "solution_format": "prompt_plus_canonical_body"
+}

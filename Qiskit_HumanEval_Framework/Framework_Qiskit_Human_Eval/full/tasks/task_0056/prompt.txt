@@ -1,0 +1,6 @@
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import Sampler
+def not_gate(a: int)->dict:
+    """ Given an 8-bit integer, design a quantum circuit that acts as a classical NOT gate. Simulate the circuit Qiskit Sampler with the Aer simulator as backend and return the counts of the result.
+    """

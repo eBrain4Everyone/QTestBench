@@ -1,0 +1,281 @@
+[
+  {
+    "challenge": "task_0001",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0001.py",
+    "solution_correctness": {
+      "n_total": 5,
+      "n_correct": 2,
+      "n_wrong": 3,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "claudeopus46/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "deepseekv32/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gemini3pro/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gpt54/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "qwen3/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "claudeopus46/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "deepseekv32/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\ntest_semantic.py:20: in test_run_bell_state_returns_dict_1\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:21: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n______________________ test_run_bell_state_counts_sum_2 _______________________\ntest_semantic.py:63: in test_run_bell_state_counts_sum_2\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:21: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_semantic.py:90: in test_run_bell_state_roughly_equal_distribution_3\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:21: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_run_bell_state_returns_dict_1 - TypeError: Samp...\nFAILED test_semantic.py::test_run_bell_state_counts_sum_2 - TypeError: Sample...\nFAILED test_semantic.py::test_run_bell_state_roughly_equal_distribution_3 - T...\n============================== 3 failed in 2.00s =============================="
+          },
+          {
+            "solution_id": "gemini3pro/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gpt54/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\n<string>:27: in run_bell_state_simulator\n    ???\nE   AttributeError: 'PrimitiveResult' object has no attribute 'quasi_dists'\n\nDuring handling of the above exception, another exception occurred:\ntest_semantic.py:20: in test_run_bell_state_returns_dict_1\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   AttributeError: 'DataBin' object has no attribute 'meas'\n______________________ test_run_bell_state_counts_sum_2 _______________________\n<string>:27: in run_bell_state_simulator\n    ???\nE   AttributeError: 'PrimitiveResult' object has no attribute 'quasi_dists'\n\nDuring handling of the above exception, another exception occurred:\ntest_semantic.py:63: in test_run_bell_state_counts_sum_2\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   AttributeError: 'DataBin' object has no attribute 'meas'\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\n<string>:27: in run_bell_state_simulator\n    ???\nE   AttributeError: 'PrimitiveResult' object has no attribute 'quasi_dists'\n\nDuring handling of the above exception, another exception occurred:\ntest_semantic.py:90: in test_run_bell_state_roughly_equal_distribution_3\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   AttributeError: 'DataBin' object has no attribute 'meas'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_run_bell_state_returns_dict_1 - AttributeError:...\nFAILED test_semantic.py::test_run_bell_state_counts_sum_2 - AttributeError: '...\nFAILED test_semantic.py::test_run_bell_state_roughly_equal_distribution_3 - A...\n============================== 3 failed in 2.21s =============================="
+          },
+          {
+            "solution_id": "qwen3/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\ntest_semantic.py:20: in test_run_bell_state_returns_dict_1\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n______________________ test_run_bell_state_counts_sum_2 _______________________\ntest_semantic.py:63: in test_run_bell_state_counts_sum_2\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_semantic.py:90: in test_run_bell_state_roughly_equal_distribution_3\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_run_bell_state_returns_dict_1 - TypeError: Samp...\nFAILED test_semantic.py::test_run_bell_state_counts_sum_2 - TypeError: Sample...\nFAILED test_semantic.py::test_run_bell_state_roughly_equal_distribution_3 - T...\n============================== 3 failed in 2.09s =============================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 13,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "claudeopus46/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "deepseekv32/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\ntest_behavioral.py:18: in test_run_bell_state_returns_dict_1\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:21: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n_________________ test_run_bell_state_correct_total_counts_2 __________________\ntest_behavioral.py:40: in test_run_bell_state_correct_total_counts_2\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:21: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_behavioral.py:62: in test_run_bell_state_roughly_equal_distribution_3\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:21: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_bell_state_returns_dict_1 - TypeError: Sa...\nFAILED test_behavioral.py::test_run_bell_state_correct_total_counts_2 - TypeE...\nFAILED test_behavioral.py::test_run_bell_state_roughly_equal_distribution_3\n============================== 3 failed in 2.06s =============================="
+          },
+          {
+            "solution_id": "gemini3pro/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gpt54/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\n<string>:27: in run_bell_state_simulator\n    ???\nE   AttributeError: 'PrimitiveResult' object has no attribute 'quasi_dists'\n\nDuring handling of the above exception, another exception occurred:\ntest_behavioral.py:18: in test_run_bell_state_returns_dict_1\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   AttributeError: 'DataBin' object has no attribute 'meas'\n_________________ test_run_bell_state_correct_total_counts_2 __________________\n<string>:27: in run_bell_state_simulator\n    ???\nE   AttributeError: 'PrimitiveResult' object has no attribute 'quasi_dists'\n\nDuring handling of the above exception, another exception occurred:\ntest_behavioral.py:40: in test_run_bell_state_correct_total_counts_2\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   AttributeError: 'DataBin' object has no attribute 'meas'\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\n<string>:27: in run_bell_state_simulator\n    ???\nE   AttributeError: 'PrimitiveResult' object has no attribute 'quasi_dists'\n\nDuring handling of the above exception, another exception occurred:\ntest_behavioral.py:62: in test_run_bell_state_roughly_equal_distribution_3\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   AttributeError: 'DataBin' object has no attribute 'meas'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_bell_state_returns_dict_1 - AttributeErro...\nFAILED test_behavioral.py::test_run_bell_state_correct_total_counts_2 - Attri...\nFAILED test_behavioral.py::test_run_bell_state_roughly_equal_distribution_3\n============================== 3 failed in 2.06s =============================="
+          },
+          {
+            "solution_id": "qwen3/generated_non_rag_1",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\ntest_behavioral.py:18: in test_run_bell_state_returns_dict_1\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n_________________ test_run_bell_state_correct_total_counts_2 __________________\ntest_behavioral.py:40: in test_run_bell_state_correct_total_counts_2\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_behavioral.py:62: in test_run_bell_state_roughly_equal_distribution_3\n    result = candidate()\n             ^^^^^^^^^^^\n<string>:29: in run_bell_state_simulator\n    ???\nE   TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_bell_state_returns_dict_1 - TypeError: Sa...\nFAILED test_behavioral.py::test_run_bell_state_correct_total_counts_2 - TypeE...\nFAILED test_behavioral.py::test_run_bell_state_roughly_equal_distribution_3\n============================== 3 failed in 2.14s =============================="
+          }
+        ]
+      }
+    ]
+  }
+]

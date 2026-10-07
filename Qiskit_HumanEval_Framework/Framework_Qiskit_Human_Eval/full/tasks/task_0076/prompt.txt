@@ -1,0 +1,7 @@
+from qiskit import QuantumRegister
+from qiskit.transpiler.basepasses import TransformationPass
+from qiskit.dagcircuit import DAGCircuit
+from qiskit.circuit.library import ZGate, HGate, XGate
+def create_hxh_pass() -> TransformationPass:
+    """ Return a transpiler pass that replaces all non-controlled Z-gates with H-X-H-gate sequences.
+    """

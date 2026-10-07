@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/117",
+  "entry_point": "decompose_unitary",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 117,
+  "solution_format": "prompt_plus_canonical_body"
+}

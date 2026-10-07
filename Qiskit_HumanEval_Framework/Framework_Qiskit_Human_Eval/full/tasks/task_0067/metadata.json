@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/67",
+  "entry_point": "chsh_circuit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 67,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/23",
+  "entry_point": "dj_constant_oracle",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 23,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/22",
+  "entry_point": "transpile_circuit_alap",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 22,
+  "solution_format": "prompt_plus_canonical_body"
+}

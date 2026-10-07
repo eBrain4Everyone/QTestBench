@@ -1,0 +1,4 @@
+from qiskit import QuantumCircuit
+def create_cz_gate()->QuantumCircuit:
+    """ Design a CZ gate using only H and CNOT gates and return the quantum circuit.
+    """

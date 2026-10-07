@@ -1,0 +1,5 @@
+import math
+from qiskit import QuantumCircuit
+def circuit_from_probability_dist(probability_dist: dict[int, float]) -> QuantumCircuit:
+    """ Given a distribution as a dictionary of the form { measurement: probability }, return a quantum circuit that produces that distribution.
+    """

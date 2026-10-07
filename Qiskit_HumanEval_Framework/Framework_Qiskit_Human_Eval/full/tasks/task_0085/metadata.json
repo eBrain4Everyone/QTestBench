@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/85",
+  "entry_point": "convert_quantum_circuit_to_qasm_string",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 85,
+  "solution_format": "prompt_plus_canonical_body"
+}

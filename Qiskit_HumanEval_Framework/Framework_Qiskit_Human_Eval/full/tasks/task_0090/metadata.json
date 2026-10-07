@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/90",
+  "entry_point": "create_custom_controlled",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 90,
+  "solution_format": "prompt_plus_canonical_body"
+}

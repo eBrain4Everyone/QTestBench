@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/113",
+  "entry_point": "calculate_depth_after_barrier_removal",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 113,
+  "solution_format": "prompt_plus_canonical_body"
+}

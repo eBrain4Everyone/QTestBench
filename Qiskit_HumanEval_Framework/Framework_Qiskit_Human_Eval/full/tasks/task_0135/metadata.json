@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/135",
+  "entry_point": "noise_model_with_readouterror",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 135,
+  "solution_format": "prompt_plus_canonical_body"
+}

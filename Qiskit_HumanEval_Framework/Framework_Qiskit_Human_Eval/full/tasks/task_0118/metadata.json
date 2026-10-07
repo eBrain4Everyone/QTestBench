@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/118",
+  "entry_point": "create_c3sx_circuit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 118,
+  "solution_format": "prompt_plus_canonical_body"
+}

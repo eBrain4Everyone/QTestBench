@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/116",
+  "entry_point": "synthesize_evolution_gate",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 116,
+  "solution_format": "prompt_plus_canonical_body"
+}

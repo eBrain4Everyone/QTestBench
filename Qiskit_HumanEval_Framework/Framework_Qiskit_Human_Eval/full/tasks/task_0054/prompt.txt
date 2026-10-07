@@ -1,0 +1,6 @@
+from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import Sampler
+def and_gate(a: int, b: int)->dict:
+    """ Given two 3-bit integers a and b, design a quantum circuit that acts as a classical AND gate. Simulate the circuit on using Qiskit Sampler with the Aer simulator as backend and return the counts of the result.
+    """

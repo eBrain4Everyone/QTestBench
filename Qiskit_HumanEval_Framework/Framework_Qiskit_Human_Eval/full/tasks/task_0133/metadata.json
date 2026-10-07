@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/133",
+  "entry_point": "find_recent_jobs",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 133,
+  "solution_format": "prompt_plus_canonical_body"
+}

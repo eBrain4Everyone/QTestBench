@@ -1,0 +1,314 @@
+[
+  {
+    "challenge": "task_0000",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0000.py",
+    "solution_correctness": {
+      "n_total": 6,
+      "n_correct": 5,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.889,
+      "avg_bds": 1.0,
+      "avg_tqs": 0.889,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.667,
+        "bds": 1.0,
+        "tqs": 0.667,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "claudeopus46/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "deepseekv32/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gemini3pro/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gpt54/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "qwen3/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n____________________ test_basic_return_type_plausibility_3 ____________________\ntest_syntactic.py:67: in test_basic_return_type_plausibility_3\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: 'create_quantum_circuit(3)' should return a QuantumCircuit instance, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_basic_return_type_plausibility_3 - AssertionEr...\n========================= 1 failed, 2 passed in 0.54s ========================="
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "claudeopus46/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "deepseekv32/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n_________________ test_create_quantum_circuit_initial_state_3 _________________\ntest_semantic.py:63: in test_create_quantum_circuit_initial_state_3\n    sv = Statevector.from_instruction(qc)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\quantum_info\\states\\statevector.py:846: in from_instruction\n    return Statevector._evolve_instruction(vec, instruction)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\quantum_info\\states\\statevector.py:1034: in _evolve_instruction\n    raise QiskitError(\nE   qiskit.exceptions.QiskitError: 'Cannot apply instruction with classical bits: measure'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_create_quantum_circuit_initial_state_3 - qiskit...\n========================= 1 failed, 2 passed in 0.57s ========================="
+          },
+          {
+            "solution_id": "gemini3pro/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gpt54/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "qwen3/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n_________________ test_create_quantum_circuit_initial_state_3 _________________\ntest_semantic.py:66: in test_create_quantum_circuit_initial_state_3\n    assert np.allclose(sv.data, expected, atol=1e-4, rtol=1e-5), (\nE   AssertionError: Expected |0000> state for a fresh 4-qubit circuit, got [0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j\nE      0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j 0.25+0.j]\nE   assert False\nE    +  where False = <function allclose at 0x000001912C971430>(array([0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j,\\n       0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j,\\n       0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j]), array([1.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,\\n       0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j]), atol=0.0001, rtol=1e-05)\nE    +    where <function allclose at 0x000001912C971430> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.allclose\nE    +    and   array([0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j,\\n       0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j,\\n       0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j]) = Statevector([0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j,\\n             0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j,\\n             0.25+0.j, 0.25+0.j, 0.25+0.j, 0.25+0.j],\\n            dims=(2, 2, 2, 2)).data\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_create_quantum_circuit_initial_state_3 - Assert...\n========================= 1 failed, 2 passed in 0.54s ========================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________ test_create_quantum_circuit_returns_correct_type_1 ______________\ntest_semantic.py:21: in test_create_quantum_circuit_returns_correct_type_1\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: Expected a QuantumCircuit instance, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n_________________ test_create_quantum_circuit_various_sizes_2 _________________\ntest_semantic.py:41: in test_create_quantum_circuit_various_sizes_2\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: For n_qubits=1, expected QuantumCircuit, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n_________________ test_create_quantum_circuit_initial_state_3 _________________\ntest_semantic.py:63: in test_create_quantum_circuit_initial_state_3\n    sv = Statevector.from_instruction(qc)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\quantum_info\\states\\statevector.py:843: in from_instruction\n    init = np.zeros(2**instruction.num_qubits, dtype=complex)\n                       ^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'num_qubits'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_create_quantum_circuit_returns_correct_type_1\nFAILED test_semantic.py::test_create_quantum_circuit_various_sizes_2 - Assert...\nFAILED test_semantic.py::test_create_quantum_circuit_initial_state_3 - Attrib...\n============================== 3 failed in 0.55s =============================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 2,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "claudeopus46/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "deepseekv32/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gemini3pro/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "gpt54/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "qwen3/generated_non_rag_1",
+            "solution_correct": true,
+            "executable": true,
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 2 items\n\ntest_behavioral.py F.                                                    [100%]\n\n================================== FAILURES ===================================\n________________________ test_create_quantum_circuit_1 ________________________\ntest_behavioral.py:22: in test_create_quantum_circuit_1\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: Expected return type QuantumCircuit, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_quantum_circuit_1 - AssertionError: Ex...\n========================= 1 failed, 1 passed in 0.53s ========================="
+          }
+        ]
+      }
+    ]
+  }
+]

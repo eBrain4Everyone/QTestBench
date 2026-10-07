@@ -1,0 +1,4 @@
+from qiskit.quantum_info import random_density_matrix, entanglement_of_formation
+def entanglement_dataset(ε):
+    """ Return a dataset of density matrices whose 2-qubit entanglement of formation is greater than or equal to the given tolerance.
+    """

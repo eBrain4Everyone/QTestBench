@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.env.*
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+*.pyo
+*.pyd
+
+# Testing / coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Secrets / API keys
+.env
+*.env
+config_secret.py
+
+# Temporary files
+*.tmp
+*.swp
+
+# Ignore specific script if needed
+test_api_key.py

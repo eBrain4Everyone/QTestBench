@@ -1,0 +1,7 @@
+from qiskit import QuantumCircuit
+from qiskit.circuit.library import QFT
+
+
+def qft_no_swaps(num_qubits: int) -> QuantumCircuit:
+    """ Return an inverse quantum Fourier transform circuit without the swap gates.
+    """

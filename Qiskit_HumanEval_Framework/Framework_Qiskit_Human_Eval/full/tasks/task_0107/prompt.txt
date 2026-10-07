@@ -1,0 +1,4 @@
+from qiskit.quantum_info import ScalarOp
+def compose_scalar_ops() -> ScalarOp:
+    """ Create two ScalarOp objects with dimension 2 and coefficient 2, compose them together, and return the resulting ScalarOp.
+    """

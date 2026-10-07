@@ -1,0 +1,5 @@
+from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
+from qiskit.circuit import Instruction
+def quantum_teleportation_circuit(data: [Instruction])->QuantumCircuit:
+    """ Write a function to build a quantum teleportation circuit that takes a list of instructions as an argument to transfer the data from the sender to the receiver while taking advantage of dynamic circuits.
+    """

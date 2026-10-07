@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from numpy import pi
+def create_ch_gate()->QuantumCircuit:
+    """ Design a CH gate using CX and RY gates.
+    """

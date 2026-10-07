@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/14",
+  "entry_point": "bell_each_shot",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 14,
+  "solution_format": "prompt_plus_canonical_body"
+}

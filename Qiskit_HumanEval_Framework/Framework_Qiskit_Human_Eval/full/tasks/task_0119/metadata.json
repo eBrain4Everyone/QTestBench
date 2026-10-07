@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/119",
+  "entry_point": "create_ripple_carry_adder_circuit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 119,
+  "solution_format": "prompt_plus_canonical_body"
+}

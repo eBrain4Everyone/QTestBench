@@ -1,0 +1,13 @@
+# Fixed evaluation / generation scope (example): one task_NNNN per line.
+# Copy to Framework_Qiskit_Human_Eval/full/evaluation_scope_tasks.txt and edit.
+#
+task_0000
+task_0001
+task_0002
+task_0003
+task_0019
+task_0020
+task_0024
+task_0034
+task_0035
+task_0063

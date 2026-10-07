@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from qiskit.circuit.library import C3SXGate
+def create_c3sx_circuit() -> QuantumCircuit:
+    """ Create a QuantumCircuit with a C3SXGate applied to the first four qubits.
+    """

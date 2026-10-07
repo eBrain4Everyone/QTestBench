@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/86",
+  "entry_point": "collect_linear_blocks_with_and_without_limit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 86,
+  "solution_format": "prompt_plus_canonical_body"
+}

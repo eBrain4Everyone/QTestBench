@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/124",
+  "entry_point": "gen_noise_model",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 124,
+  "solution_format": "prompt_plus_canonical_body"
+}

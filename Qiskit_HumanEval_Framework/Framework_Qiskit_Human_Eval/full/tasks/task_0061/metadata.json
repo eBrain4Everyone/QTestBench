@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/61",
+  "entry_point": "create_quantum_circuit_with_one_qubit_and_measure",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 61,
+  "solution_format": "prompt_plus_canonical_body"
+}

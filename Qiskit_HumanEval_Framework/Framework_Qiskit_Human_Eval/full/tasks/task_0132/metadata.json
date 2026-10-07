@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/132",
+  "entry_point": "run_batched_random_circuits",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 132,
+  "solution_format": "prompt_plus_canonical_body"
+}

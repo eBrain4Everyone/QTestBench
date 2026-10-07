@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/63",
+  "entry_point": "bb84_circuit_generate_key",
+  "difficulty_scale": "difficult",
+  "variant": "full",
+  "index": 63,
+  "solution_format": "prompt_plus_canonical_body"
+}

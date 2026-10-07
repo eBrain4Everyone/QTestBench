@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/112",
+  "entry_point": "create_product_formula_circuit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 112,
+  "solution_format": "prompt_plus_canonical_body"
+}

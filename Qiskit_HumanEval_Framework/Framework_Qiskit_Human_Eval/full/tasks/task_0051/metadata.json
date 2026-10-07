@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/51",
+  "entry_point": "quantum_teleportation_circuit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 51,
+  "solution_format": "prompt_plus_canonical_body"
+}

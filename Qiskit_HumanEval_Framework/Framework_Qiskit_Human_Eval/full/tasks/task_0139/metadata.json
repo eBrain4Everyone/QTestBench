@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/139",
+  "entry_point": "schmidt_test",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 139,
+  "solution_format": "prompt_plus_canonical_body"
+}

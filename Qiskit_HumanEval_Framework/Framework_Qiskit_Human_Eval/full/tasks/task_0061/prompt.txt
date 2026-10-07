@@ -1,0 +1,4 @@
+from qiskit import QuantumRegister, QuantumCircuit, ClassicalRegister
+def create_quantum_circuit_with_one_qubit_and_measure():
+    """ Build a Quantum Circuit by first creating one Quantum Register and one Classical Register and then perform measurement on it.
+    """

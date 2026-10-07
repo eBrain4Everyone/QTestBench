@@ -1,0 +1,1112 @@
+[
+  {
+    "challenge": "task_0000",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0000.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 2,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FF.                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_create_quantum_circuit_basic ______________________\ntest_semantic.py:21: in test_create_quantum_circuit_basic\n    assert qc.num_clbits == 1, f\"Expected 1 classical bit, got {qc.num_clbits}\"\nE   AssertionError: Expected 1 classical bit, got 0\nE   assert 0 == 1\nE    +  where 0 = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x0000018EEFD1B450>.num_clbits\n__________________ test_create_quantum_circuit_multi_qubits ___________________\ntest_semantic.py:34: in test_create_quantum_circuit_multi_qubits\n    assert qc.num_clbits == 5, f\"Expected 5 classical bits, got {qc.num_clbits}\"\nE   AssertionError: Expected 5 classical bits, got 0\nE   assert 0 == 5\nE    +  where 0 = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x0000018EF388D590>.num_clbits\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_create_quantum_circuit_basic - AssertionError: ...\nFAILED test_semantic.py::test_create_quantum_circuit_multi_qubits - Assertion...\n========================= 2 failed, 1 passed in 1.30s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_create_quantum_circuit_basic ______________________\ntest_behavioral.py:19: in test_create_quantum_circuit_basic\n    assert isinstance(circuit, QuantumCircuit), \"Function should return a QuantumCircuit instance\"\n                               ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n__________________ test_create_quantum_circuit_single_qubit ___________________\ntest_behavioral.py:33: in test_create_quantum_circuit_single_qubit\n    assert isinstance(circuit, QuantumCircuit), \"Function should return a QuantumCircuit instance\"\n                               ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n_________________ test_create_quantum_circuit_larger_circuit __________________\ntest_behavioral.py:48: in test_create_quantum_circuit_larger_circuit\n    assert isinstance(circuit, QuantumCircuit), \"Function should return a QuantumCircuit instance\"\n                               ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_quantum_circuit_basic - NameError: nam...\nFAILED test_behavioral.py::test_create_quantum_circuit_single_qubit - NameErr...\nFAILED test_behavioral.py::test_create_quantum_circuit_larger_circuit - NameE...\n============================== 3 failed in 1.51s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0001",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0001.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.833,
+      "avg_cq": 0.902,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.833,
+      "avg_div": 0.902
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.5,
+        "cq": 0.707,
+        "diversity": 0.707
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.5,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 4,
+        "cq": 0.707,
+        "coverage": 0.5,
+        "diversity": 0.707,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 15,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0002",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0002.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.833,
+      "avg_cq": 0.569,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.833,
+      "avg_div": 0.902
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.5,
+        "cq": 0.707,
+        "diversity": 0.707
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.5,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.707,
+        "coverage": 0.5,
+        "diversity": 0.707,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n____________________ test_bell_statevector_is_entangled_3 _____________________\ntest_semantic.py:58: in test_bell_statevector_is_entangled_3\n    rho = state.to_density_matrix()\n          ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: 'Statevector' object has no attribute 'to_density_matrix'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_bell_statevector_is_entangled_3 - AttributeErro...\n========================= 1 failed, 2 passed in 1.21s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 3,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 4,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0003",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0003.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 0.667,
+      "avg_cs": 0.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.444,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.667,
+      "avg_cov": 0.444,
+      "avg_div": 0.526
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.333,
+        "cq": 0.0,
+        "diversity": 0.577
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 0.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py F..                                                    [100%]\n\n================================== FAILURES ===================================\n_____________________ test_module_loads_and_entry_exists ______________________\ntest_syntactic.py:25: in test_module_loads_and_entry_exists\n    assert hasattr(g, '__builtins__'), \"Module builtins missing\"\nE   AssertionError: Module builtins missing\nE   assert False\nE    +  where False = hasattr({'QuantumCircuit': <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>, '__builtins__': {'ArithmeticError': <class ...buteError'>, 'BaseException': <class 'BaseException'>, ...}, 'create_ghz': <function create_ghz at 0x0000013A3CF87420>}, '__builtins__')\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_module_loads_and_entry_exists - AssertionError...\n========================= 1 failed, 2 passed in 1.30s ========================="
+        },
+        "coverage_inputs": 0.333,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.333,
+        "diversity": 0.577,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 3,
+          "total": 4,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 4 items\n\ntest_semantic.py .FFF                                                    [100%]\n\n================================== FAILURES ===================================\n________________________ test_create_ghz_state_vector _________________________\ntest_semantic.py:57: in test_create_ghz_state_vector\n    state = Statevector.from_instruction(circuit)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\quantum_info\\states\\statevector.py:846: in from_instruction\n    return Statevector._evolve_instruction(vec, instruction)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\quantum_info\\states\\statevector.py:1034: in _evolve_instruction\n    raise QiskitError(\nE   qiskit.exceptions.QiskitError: 'Cannot apply instruction with classical bits: measure'\n__________________ test_create_ghz_measurement_distribution ___________________\ntest_semantic.py:78: in test_create_ghz_measurement_distribution\n    from qiskit import Aer, execute\nE   ImportError: cannot import name 'Aer' from 'qiskit' (C:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\__init__.py)\n______________________ test_create_ghz_drawing_parameter ______________________\ntest_semantic.py:123: in test_create_ghz_drawing_parameter\n    result_with_draw = candidate(drawing=True)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_create_ghz_state_vector - qiskit.exceptions.Qis...\nFAILED test_semantic.py::test_create_ghz_measurement_distribution - ImportErr...\nFAILED test_semantic.py::test_create_ghz_drawing_parameter - qiskit.exception...\n="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": false,
+          "passed": 0,
+          "failed": 0,
+          "total": 0,
+          "error": "SYNTAX_ERROR",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 0,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0019",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0019.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n______________ test_transpile_circuit_maxopt_has_measurements_3 _______________\ntest_syntactic.py:67: in test_transpile_circuit_maxopt_has_measurements_3\n    assert 'measure' in ops, f\"Circuit must contain 'measure' operation, found ops: {ops}\"\nE   AssertionError: Circuit must contain 'measure' operation, found ops: OrderedDict([('cx', 22), ('rz', 2), ('sx', 1), ('barrier', 1)])\nE   assert 'measure' in OrderedDict([('cx', 22), ('rz', 2), ('sx', 1), ('barrier', 1)])\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_transpile_circuit_maxopt_has_measurements_3 - ...\n========================= 1 failed, 2 passed in 3.19s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_________ test_transpile_circuit_maxopt_returns_valid_quantumcircuit __________\ntest_semantic.py:20: in test_transpile_circuit_maxopt_returns_valid_quantumcircuit\n    assert isinstance(result, QuantumCircuit), f\"Expected QuantumCircuit, got {type(result)}\"\n                              ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n____________ test_transpile_circuit_maxopt_has_correct_qubit_count ____________\ntest_semantic.py:41: in test_transpile_circuit_maxopt_has_correct_qubit_count\n    assert result.num_qubits == 11, f\"Expected 11 qubits for GHZ circuit, got {result.num_qubits}\"\nE   AssertionError: Expected 11 qubits for GHZ circuit, got 27\nE   assert 27 == 11\nE    +  where 27 = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x0000022F7950A950>.num_qubits\n________ test_transpile_circuit_maxopt_preserves_ghz_state_properties _________\ntest_semantic.py:60: in test_transpile_circuit_maxopt_preserves_ghz_state_properties\n    ref_circuit = QuantumCircuit(11)\n                  ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_transpile_circuit_maxopt_returns_valid_quantumcircuit\nFAILED test_semantic.py::test_transpile_circuit_maxopt_has_correct_qubit_count\nFAILED test_semantic.py::test_transpile_circuit_maxopt_preserves_ghz_state_properties\n============================== 3 failed in 3.34s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 4,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 2,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FF.                                                   [100%]\n\n================================== FAILURES ===================================\n_______________________ test_transpile_circuit_maxopt_1 _______________________\ntest_behavioral.py:20: in test_transpile_circuit_maxopt_1\n    assert isinstance(circ, QuantumCircuit), \"transpile_circuit_maxopt must return a QuantumCircuit\"\n                            ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n_______________________ test_transpile_circuit_maxopt_2 _______________________\ntest_behavioral.py:38: in test_transpile_circuit_maxopt_2\n    from qiskit import Aer\nE   ImportError: cannot import name 'Aer' from 'qiskit' (C:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\__init__.py)\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_transpile_circuit_maxopt_1 - NameError: name ...\nFAILED test_behavioral.py::test_transpile_circuit_maxopt_2 - ImportError: can...\n========================= 2 failed, 1 passed in 3.29s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0020",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0020.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 2,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py F.F                                                    [100%]\n\n================================== FAILURES ===================================\n_____________________ test_module_loads_and_entry_exists ______________________\ntest_syntactic.py:29: in test_module_loads_and_entry_exists\n    assert sig.return_annotation == \"QuantumCircuit\"\nE   AssertionError: assert <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'> == 'QuantumCircuit'\nE    +  where <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'> = <Signature () -> qiskit.circuit.quantumcircuit.QuantumCircuit>.return_annotation\n__________________ test_circuit_has_three_qubits_ghz_layout ___________________\ntest_syntactic.py:52: in test_circuit_has_three_qubits_ghz_layout\n    assert circ.num_qubits == 3\nE   assert 7 == 3\nE    +  where 7 = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x000001C54A8A8290>.num_qubits\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_module_loads_and_entry_exists - AssertionError...\nFAILED test_syntactic.py::test_circuit_has_three_qubits_ghz_layout - assert 7...\n========================= 2 failed, 1 passed in 3.27s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n___________ test_transpile_ghz_customlayout_returns_quantumcircuit ____________\ntest_semantic.py:20: in test_transpile_ghz_customlayout_returns_quantumcircuit\n    assert isinstance(result, QuantumCircuit), \"transpile_ghz_customlayout should return a QuantumCircuit\"\n                              ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n_________ test_transpile_ghz_customlayout_uses_correct_initial_layout _________\ntest_semantic.py:42: in test_transpile_ghz_customlayout_uses_correct_initial_layout\n    assert layout.initial_layout[0] == 2, \"Logical qubit 0 should be mapped to physical qubit 2\"\nE   AssertionError: Logical qubit 0 should be mapped to physical qubit 2\nE   assert <Qubit register=(4, \"ancilla\"), index=0> == 2\n_____________ test_transpile_ghz_customlayout_produces_ghz_state ______________\ntest_semantic.py:82: in test_transpile_ghz_customlayout_produces_ghz_state\n    circ_for_simulation.remove_final_measurements(ignore_missing=True)\nE   TypeError: QuantumCircuit.remove_final_measurements() got an unexpected keyword argument 'ignore_missing'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_transpile_ghz_customlayout_returns_quantumcircuit\nFAILED test_semantic.py::test_transpile_ghz_customlayout_uses_correct_initial_layout\nFAILED test_semantic.py::test_transpile_ghz_customlayout_produces_ghz_state\n============================== 3 failed in 3.14s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 2,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py .FF                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_transpile_ghz_customlayout_2 ______________________\ntest_behavioral.py:40: in test_transpile_ghz_customlayout_2\n    assert result.num_qubits == 3, f\"Expected 3 qubits, got {result.num_qubits}\"\nE   AssertionError: Expected 3 qubits, got 7\nE   assert 7 == 3\nE    +  where 7 = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x00000211F2C26A10>.num_qubits\n______________________ test_transpile_ghz_customlayout_3 ______________________\ntest_behavioral.py:71: in test_transpile_ghz_customlayout_3\n    reference = transpile(ghz_circuit, pass_manager=pm)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: transpile() got an unexpected keyword argument 'pass_manager'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_transpile_ghz_customlayout_2 - AssertionError...\nFAILED test_behavioral.py::test_transpile_ghz_customlayout_3 - TypeError: tra...\n========================= 2 failed, 1 passed in 3.39s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0024",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0024.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n________________________ test_dj_algorithm_structure_3 ________________________\ntest_syntactic.py:62: in test_dj_algorithm_structure_3\n    assert isinstance(result, bool), f\"Expected boolean return, got {type(result)}\"\nE   AssertionError: Expected boolean return, got <class 'numpy.bool'>\nE   assert False\nE    +  where False = isinstance(np.True_, bool)\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_dj_algorithm_structure_3 - AssertionError: Exp...\n========================= 1 failed, 2 passed in 1.24s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________ test_dj_algorithm_constant_oracle_1 _____________________\ntest_semantic.py:28: in test_dj_algorithm_constant_oracle_1\n    assert result is True, \"Constant oracle (f(x)=0) should return True\"\nE   AssertionError: Constant oracle (f(x)=0) should return True\nE   assert np.True_ is True\n_____________________ test_dj_algorithm_constant_oracle_2 _____________________\ntest_semantic.py:49: in test_dj_algorithm_constant_oracle_2\n    assert result is True, \"Constant oracle (f(x)=1) should return True\"\nE   AssertionError: Constant oracle (f(x)=1) should return True\nE   assert np.True_ is True\n______________________ test_dj_algorithm_balanced_oracle ______________________\ntest_semantic.py:71: in test_dj_algorithm_balanced_oracle\n    assert result is False, \"Balanced oracle should return False\"\nE   AssertionError: Balanced oracle should return False\nE   assert np.False_ is False\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_dj_algorithm_constant_oracle_1 - AssertionError...\nFAILED test_semantic.py::test_dj_algorithm_constant_oracle_2 - AssertionError...\nFAILED test_semantic.py::test_dj_algorithm_balanced_oracle - AssertionError: ...\n============================== 3 failed in 1.36s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 3,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________________ test_dj_algorithm_constant_oracle_1 _____________________\ntest_behavioral.py:20: in test_dj_algorithm_constant_oracle_1\n    oracle = QuantumCircuit(n + 1)\n             ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n_____________________ test_dj_algorithm_constant_oracle_2 _____________________\ntest_behavioral.py:37: in test_dj_algorithm_constant_oracle_2\n    oracle = QuantumCircuit(n + 1)\n             ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n______________________ test_dj_algorithm_balanced_oracle ______________________\ntest_behavioral.py:54: in test_dj_algorithm_balanced_oracle\n    oracle = QuantumCircuit(n + 1)\n             ^^^^^^^^^^^^^^\nE   NameError: name 'QuantumCircuit' is not defined\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_dj_algorithm_constant_oracle_1 - NameError: n...\nFAILED test_behavioral.py::test_dj_algorithm_constant_oracle_2 - NameError: n...\nFAILED test_behavioral.py::test_dj_algorithm_balanced_oracle - NameError: nam...\n============================== 3 failed in 1.31s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 3,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0034",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0034.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.458,
+      "avg_cq": 0.118,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.458,
+      "avg_div": 0.645
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.125,
+        "cq": 0.354,
+        "diversity": 0.354
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.625,
+        "cq": 0.0,
+        "diversity": 0.791
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.625,
+        "cq": 0.0,
+        "diversity": 0.791
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.125,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.354,
+        "coverage": 0.125,
+        "diversity": 0.354,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 2,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py .FF                                                     [100%]\n\n================================== FAILURES ===================================\n______________ test_run_jobs_on_batch_returns_jobs_with_batch_id ______________\ntest_semantic.py:38: in test_run_jobs_on_batch_returns_jobs_with_batch_id\n    assert isinstance(entry_val, dict), f\"Entry for {key} should be a dict\"\nE   AssertionError: Entry for phi_plus should be a dict\nE   assert False\nE    +  where False = isinstance(<qiskit_ibm_runtime.fake_provider.local_runtime_job.LocalRuntimeJob object at 0x000002297A93D390>, dict)\n_____________ test_run_jobs_on_batch_circuits_produce_bell_states _____________\ntest_semantic.py:72: in test_run_jobs_on_batch_circuits_produce_bell_states\n    job = result[bell_name]['job']\n          ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: 'LocalRuntimeJob' object is not subscriptable\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_run_jobs_on_batch_returns_jobs_with_batch_id - ...\nFAILED test_semantic.py::test_run_jobs_on_batch_circuits_produce_bell_states\n======================== 2 failed, 1 passed in 16.91s ========================="
+        },
+        "coverage_inputs": 0.625,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.625,
+        "diversity": 0.791,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n______________ test_run_jobs_on_batch_structure_and_return_type _______________\ntest_behavioral.py:27: in test_run_jobs_on_batch_structure_and_return_type\n    assert isinstance(job_with_batch, dict), f\"Value for '{key}' must be a dictionary\"\nE   AssertionError: Value for 'phi_plus' must be a dictionary\nE   assert False\nE    +  where False = isinstance(<qiskit_ibm_runtime.fake_provider.local_runtime_job.LocalRuntimeJob object at 0x000001CEB8A19050>, dict)\n______________ test_run_jobs_on_batch_uses_sampler_v2_and_batch _______________\ntest_behavioral.py:46: in test_run_jobs_on_batch_uses_sampler_v2_and_batch\n    jobs = [result[key]['job'] for key in result]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_behavioral.py:46: in <listcomp>\n    jobs = [result[key]['job'] for key in result]\n            ^^^^^^^^^^^^^^^^^^\nE   TypeError: 'LocalRuntimeJob' object is not subscriptable\n_______ test_run_jobs_on_batch_circuits_transpiled_with_correct_params ________\ntest_behavioral.py:79: in test_run_jobs_on_batch_circuits_transpiled_with_correct_params\n    job = list(result.values())[0]['job']\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: 'LocalRuntimeJob' object is not subscriptable\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_jobs_on_batch_structure_and_return_type\nFAILED test_behavioral.py::test_run_jobs_on_batch_uses_sampler_v2_and_batch\nFAILED test_behavioral.py::test_run_jobs_on_batch_circuits_transpiled_with_correct_params\n============================= 3 failed in 12.47s =============================="
+        },
+        "coverage_inputs": 0.625,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 17,
+        "cq": 0.0,
+        "coverage": 0.625,
+        "diversity": 0.791,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0035",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0035.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 0.667,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 0.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 2,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py .FF                                                     [100%]\n\n================================== FAILURES ===================================\n___________ test_run_circuit_with_dd_trex_expectation_value_is_real ___________\ntest_semantic.py:35: in test_run_circuit_with_dd_trex_expectation_value_is_real\n    exp_val = job_result['estimates'][0].expectation_value\n              ^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\primitives\\containers\\primitive_result.py:62: in __getitem__\n    return self._pub_results[index]\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: list indices must be integers or slices, not str\n____________ test_run_circuit_with_dd_trex_observable_consistency _____________\ntest_semantic.py:49: in test_run_circuit_with_dd_trex_observable_consistency\n    exp_val = job_result['estimates'][0].expectation_value\n              ^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\primitives\\containers\\primitive_result.py:62: in __getitem__\n    return self._pub_results[index]\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: list indices must be integers or slices, not str\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_run_circuit_with_dd_trex_expectation_value_is_real\nFAILED test_semantic.py::test_run_circuit_with_dd_trex_observable_consistency\n========================= 2 failed, 1 passed in 4.56s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 3,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": false,
+          "passed": 0,
+          "failed": 0,
+          "total": 0,
+          "error": "SYNTAX_ERROR",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 0,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0063",
+    "test_gen_model": "qwen3",
+    "human_solution_used": "canonical/task_0063.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n____________ test_bb84_circuit_generate_key_basic_key_generation_1 ____________\ntest_semantic.py:15: in test_bb84_circuit_generate_key_basic_key_generation_1\n    from qiskit import execute\nE   ImportError: cannot import name 'execute' from 'qiskit' (C:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\__init__.py)\n______________ test_bb84_circuit_generate_key_different_bases_2 _______________\ntest_semantic.py:42: in test_bb84_circuit_generate_key_different_bases_2\n    from qiskit import execute\nE   ImportError: cannot import name 'execute' from 'qiskit' (C:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\__init__.py)\n______ test_bb84_circuit_generate_key_consistency_with_quantum_states_3 _______\ntest_semantic.py:74: in test_bb84_circuit_generate_key_consistency_with_quantum_states_3\n    from qiskit import execute\nE   ImportError: cannot import name 'execute' from 'qiskit' (C:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\__init__.py)\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_bb84_circuit_generate_key_basic_key_generation_1\nFAILED test_semantic.py::test_bb84_circuit_generate_key_different_bases_2 - I...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_consistency_with_quantum_states_3\n============================== 3 failed in 1.82s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________ test_bb84_circuit_generate_key_basic_consistency_1 ______________\ntest_behavioral.py:38: in test_bb84_circuit_generate_key_basic_consistency_1\n    assert len(key) == 4, \"Generated key length should match number of qubits used\"\nE   AssertionError: Generated key length should match number of qubits used\nE   assert 3 == 4\nE    +  where 3 = len('011')\n___________ test_bb4_circuit_generate_key_receiver_basis_mismatch_2 ___________\ntest_behavioral.py:46: in test_bb4_circuit_generate_key_receiver_basis_mismatch_2\n    exec(sol, g)\n<string>:1: in <module>\n    ???\nE   ImportError: __import__ not found\n__________ test_bb4_circuit_generate_key_different_basis_patterns_3 ___________\ntest_behavioral.py:89: in test_bb4_circuit_generate_key_different_basis_patterns_3\n    key = candidate(sender_basis, circuit)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n<string>:13: in bb84_circuit_generate_key\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:5160: in h\n    return self._append_standard_gate(StandardGate.H, [qubit], ())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:2813: in _append_standard_gate\n    expanded_qargs = [self._qbit_argument_conversion(qarg) for qarg in qargs or []]\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:2813: in <listcomp>\n    expanded_qargs = [self._qbit_argument_conversion(qarg) for qarg in qargs or []]\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:2785: in _qbit_argument_conversion\n    return self._data._qbit_argument_conversion(qubit_representation)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   qiskit.circuit.exceptions.CircuitError: 'Index 8 out of range for size 8.'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_bb84_circuit_generate_key_basic_consistency_1\nFAILED test_behavioral.py::test_bb4_circuit_generate_key_receiver_basis_mismatch_2\nFAILED test_behavioral.py::test_bb4_circuit_generate_key_different_basis_patterns_3\n============================== 3 failed in 3.71s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  }
+]

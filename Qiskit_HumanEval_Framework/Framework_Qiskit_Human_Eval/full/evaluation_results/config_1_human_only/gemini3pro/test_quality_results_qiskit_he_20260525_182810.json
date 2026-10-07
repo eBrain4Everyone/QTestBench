@@ -1,0 +1,1112 @@
+[
+  {
+    "challenge": "task_0000",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0000.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0001",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0001.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 1.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 4,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0002",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0002.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 1.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0003",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0003.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.778,
+      "avg_cq": 0.272,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.778,
+      "avg_div": 0.878
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.667,
+        "cq": 0.817,
+        "diversity": 0.817
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.667,
+        "cq": 0.0,
+        "diversity": 0.817
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.667,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.817,
+        "coverage": 0.667,
+        "diversity": 0.817,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py .F.                                                     [100%]\n\n================================== FAILURES ===================================\n______________________________ test_create_ghz_2 ______________________________\ntest_semantic.py:57: in test_create_ghz_2\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_create_ghz_2 - qiskit.exceptions.MissingOptiona...\n========================= 1 failed, 2 passed in 2.33s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 14,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py .F.                                                   [100%]\n\n================================== FAILURES ===================================\n______________________________ test_create_ghz_2 ______________________________\ntest_behavioral.py:40: in test_create_ghz_2\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_ghz_2 - qiskit.exceptions.MissingOptio...\n========================= 1 failed, 2 passed in 4.03s ========================="
+        },
+        "coverage_inputs": 0.667,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 0.667,
+        "diversity": 0.817,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0019",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0019.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py .F.                                                   [100%]\n\n================================== FAILURES ===================================\n____________________________ test_ghz_simulation_2 ____________________________\ntest_behavioral.py:63: in test_ghz_simulation_2\n    counts = result.get_counts()\n             ^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\result\\result.py:256: in get_counts\n    exp = self._get_experiment(key)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\result\\result.py:385: in _get_experiment\n    raise QiskitError(result_status, \", \", exp_status)\nE   qiskit.exceptions.QiskitError: 'ERROR:  [Experiment 0] Circuit circuit-48 contains invalid parameters  for \"stabilizer\" method. ,  ERROR: Circuit circuit-48 contains invalid parameters  for \"stabilizer\" method.'\n------------------------------ Captured log call ------------------------------\nWARNING  qiskit_aer.backends.aerbackend:aerbackend.py:503 Simulation failed and returned the following error message:\nERROR:  [Experiment 0] Circuit circuit-48 contains invalid parameters  for \"stabilizer\" method.\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_ghz_simulation_2 - qiskit.exceptions.QiskitEr...\n========================= 1 failed, 2 passed in 3.64s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 12,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0020",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0020.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py .F.                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_transpile_ghz_customlayout_2 ______________________\ntest_semantic.py:42: in test_transpile_ghz_customlayout_2\n    reg_name = v_qubit.register.name if v_qubit.register is not None else \"\"\n                                        ^^^^^^^^^^^^^^^^\nE   AttributeError: 'qiskit.circuit.Qubit' object has no attribute 'register'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_transpile_ghz_customlayout_2 - AttributeError: ...\n========================= 1 failed, 2 passed in 3.18s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py .F.                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_transpile_ghz_customlayout_2 ______________________\ntest_behavioral.py:51: in test_transpile_ghz_customlayout_2\n    assert mapped_physical_qubits == [2, 4, 6], f\"Expected initial layout to use physical qubits [2, 4, 6], got {mapped_physical_qubits}.\"\nE   AssertionError: Expected initial layout to use physical qubits [2, 4, 6], got [0, 1, 2, 3, 4, 5, 6].\nE   assert [0, 1, 2, 3, 4, 5, ...] == [2, 4, 6]\nE     \nE     At index 0 diff: 0 != 2\nE     Left contains 4 more items, first extra item: 3\nE     Use -v to get more diff\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_transpile_ghz_customlayout_2 - AssertionError...\n========================= 1 failed, 2 passed in 3.23s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0024",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0024.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________________ test_dj_algorithm_1 _____________________________\ntest_semantic.py:24: in test_dj_algorithm_1\n    assert result is True, \"Expected True for a constant oracle f(x)=0\"\nE   AssertionError: Expected True for a constant oracle f(x)=0\nE   assert np.True_ is True\n_____________________________ test_dj_algorithm_2 _____________________________\ntest_semantic.py:42: in test_dj_algorithm_2\n    assert result is False, \"Expected False for a balanced oracle\"\nE   AssertionError: Expected False for a balanced oracle\nE   assert np.False_ is False\n_____________________________ test_dj_algorithm_3 _____________________________\ntest_semantic.py:59: in test_dj_algorithm_3\n    assert result is True, \"Expected True for a constant oracle f(x)=1\"\nE   AssertionError: Expected True for a constant oracle f(x)=1\nE   assert np.True_ is True\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_dj_algorithm_1 - AssertionError: Expected True ...\nFAILED test_semantic.py::test_dj_algorithm_2 - AssertionError: Expected False...\nFAILED test_semantic.py::test_dj_algorithm_3 - AssertionError: Expected True ...\n============================== 3 failed in 1.34s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 3,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 3,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0034",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0034.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.5,
+      "avg_cq": 0.118,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.5,
+      "avg_div": 0.67
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.125,
+        "cq": 0.354,
+        "diversity": 0.354
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.625,
+        "cq": 0.0,
+        "diversity": 0.791
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.75,
+        "cq": 0.0,
+        "diversity": 0.866
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.125,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.354,
+        "coverage": 0.125,
+        "diversity": 0.354,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py F..                                                     [100%]\n\n================================== FAILURES ===================================\n_________________________ test_dictionary_structure_1 _________________________\ntest_semantic.py:30: in test_dictionary_structure_1\n    assert isinstance(val, tuple) and len(val) == 2, \"If 'batch_id' is missing as a key, values must be tuples of (job, batch_id)\"\nE   AssertionError: If 'batch_id' is missing as a key, values must be tuples of (job, batch_id)\nE   assert (False)\nE    +  where False = isinstance(<qiskit_ibm_runtime.fake_provider.local_runtime_job.LocalRuntimeJob object at 0x00000210D885DCD0>, tuple)\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_dictionary_structure_1 - AssertionError: If 'ba...\n======================== 1 failed, 2 passed in 12.34s ========================="
+        },
+        "coverage_inputs": 0.625,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.625,
+        "diversity": 0.791,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 1,
+          "failed": 2,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FF.                                                   [100%]\n\n================================== FAILURES ===================================\n_________________________ test_dictionary_structure_1 _________________________\ntest_behavioral.py:23: in test_dictionary_structure_1\n    assert k in res, f\"Dictionary missing key: {k}\"\nE   AssertionError: Dictionary missing key: batch_id\nE   assert 'batch_id' in {'phi_minus': <qiskit_ibm_runtime.fake_provider.local_runtime_job.LocalRuntimeJob object at 0x000001506EA01750>, 'phi_...D202D0>, 'psi_plus': <qiskit_ibm_runtime.fake_provider.local_runtime_job.LocalRuntimeJob object at 0x000001506EC711D0>}\n____________________________ test_job_properties_2 ____________________________\ntest_behavioral.py:35: in test_job_properties_2\n    assert res['batch_id'] is not None, \"batch_id should not be None\"\n           ^^^^^^^^^^^^^^^\nE   KeyError: 'batch_id'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_dictionary_structure_1 - AssertionError: Dict...\nFAILED test_behavioral.py::test_job_properties_2 - KeyError: 'batch_id'\n======================== 2 failed, 1 passed in 19.36s ========================="
+        },
+        "coverage_inputs": 0.75,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.75,
+        "diversity": 0.866,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0035",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0035.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py ..F                                                   [100%]\n\n================================== FAILURES ===================================\n__________________________ test_estimator_options_3 ___________________________\ntest_behavioral.py:103: in test_estimator_options_3\n    assert backend is not None, \"Estimator must have a backend specified\"\nE   AssertionError: Estimator must have a backend specified\nE   assert None is not None\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_estimator_options_3 - AssertionError: Estimat...\n========================= 1 failed, 2 passed in 3.60s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0063",
+    "test_gen_model": "gemini3pro",
+    "human_solution_used": "canonical/task_0063.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  }
+]

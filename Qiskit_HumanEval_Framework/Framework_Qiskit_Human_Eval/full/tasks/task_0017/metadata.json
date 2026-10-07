@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/17",
+  "entry_point": "unroll_circuit",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 17,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/105",
+  "entry_point": "initialize_cnot_dihedral",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 105,
+  "solution_format": "prompt_plus_canonical_body"
+}

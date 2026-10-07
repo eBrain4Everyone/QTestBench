@@ -1,0 +1,6 @@
+from qiskit_aer.noise import NoiseModel, ReadoutError
+def noise_model_with_readouterror():
+    """ Construct a noise model with specific readout error properties for different qubits. For qubit 0, a readout of 1 has a 20% probability 
+    of being erroneously read as 0, and a readout of 0 has a 30% probability of being erroneously read as 1. For all other qubits, a readout of 1 has a 3% 
+    probability of being erroneously read as 0, and a readout of 0 has a 2% probability of being erroneously read as 1.
+    """

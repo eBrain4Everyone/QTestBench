@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/89",
+  "entry_point": "create_controlled_hgate",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 89,
+  "solution_format": "prompt_plus_canonical_body"
+}

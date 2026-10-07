@@ -1,0 +1,1529 @@
+[
+  {
+    "challenge": "task_0000",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0000.py",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 1.0,
+      "avg_tqs": 1.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n____________________ test_basic_return_type_plausibility_3 ____________________\ntest_syntactic.py:67: in test_basic_return_type_plausibility_3\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: 'create_quantum_circuit(3)' should return a QuantumCircuit instance, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_basic_return_type_plausibility_3 - AssertionEr...\n========================= 1 failed, 2 passed in 0.47s ========================="
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________ test_create_quantum_circuit_returns_correct_type_1 ______________\ntest_semantic.py:21: in test_create_quantum_circuit_returns_correct_type_1\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: Expected a QuantumCircuit instance, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n_________________ test_create_quantum_circuit_various_sizes_2 _________________\ntest_semantic.py:41: in test_create_quantum_circuit_various_sizes_2\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: For n_qubits=1, expected QuantumCircuit, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n_________________ test_create_quantum_circuit_initial_state_3 _________________\ntest_semantic.py:63: in test_create_quantum_circuit_initial_state_3\n    sv = Statevector.from_instruction(qc)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\quantum_info\\states\\statevector.py:843: in from_instruction\n    init = np.zeros(2**instruction.num_qubits, dtype=complex)\n                       ^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'num_qubits'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_create_quantum_circuit_returns_correct_type_1\nFAILED test_semantic.py::test_create_quantum_circuit_various_sizes_2 - Assert...\nFAILED test_semantic.py::test_create_quantum_circuit_initial_state_3 - Attrib...\n============================== 3 failed in 0.48s =============================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 2,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 2 items\n\ntest_behavioral.py F.                                                    [100%]\n\n================================== FAILURES ===================================\n________________________ test_create_quantum_circuit_1 ________________________\ntest_behavioral.py:22: in test_create_quantum_circuit_1\n    assert isinstance(result, QuantumCircuit), (\nE   AssertionError: Expected return type QuantumCircuit, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.circuit.quantumcircuit.QuantumCircuit'>)\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_quantum_circuit_1 - AssertionError: Ex...\n========================= 1 failed, 1 passed in 0.46s ========================="
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "task_0001",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0001.py",
+    "solution_correctness": {
+      "n_total": 2,
+      "n_correct": 0,
+      "n_wrong": 2,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "cq": 1.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\ntest_semantic.py:22: in test_run_bell_state_returns_dict_1\n    assert isinstance(result, dict), (\nE   AssertionError: Expected return type dict, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, dict)\n______________________ test_run_bell_state_counts_sum_2 _______________________\ntest_semantic.py:65: in test_run_bell_state_counts_sum_2\n    total_counts = sum(result.values())\n                       ^^^^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'values'\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_semantic.py:94: in test_run_bell_state_roughly_equal_distribution_3\n    for k, v in result.items():\n                ^^^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'items'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_run_bell_state_returns_dict_1 - AssertionError:...\nFAILED test_semantic.py::test_run_bell_state_counts_sum_2 - AttributeError: '...\nFAILED test_semantic.py::test_run_bell_state_roughly_equal_distribution_3 - A...\n============================== 3 failed in 1.44s =============================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_semantic.py:120: in test_run_bell_state_roughly_equal_distribution_3\n    assert 0.15 < ratio_00 < 0.85, (\nE   AssertionError: Expected '00' ratio ~0.5, got 0.0000 (count_00=0, total=1000)\nE   assert 0.15 < 0.0\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_run_bell_state_roughly_equal_distribution_3 - A...\n========================= 1 failed, 2 passed in 1.46s ========================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 13,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________________ test_run_bell_state_returns_dict_1 ______________________\ntest_behavioral.py:20: in test_run_bell_state_returns_dict_1\n    assert isinstance(result, dict), f\"Expected dict, got {type(result)}\"\nE   AssertionError: Expected dict, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, dict)\n_________________ test_run_bell_state_correct_total_counts_2 __________________\ntest_behavioral.py:42: in test_run_bell_state_correct_total_counts_2\n    assert isinstance(result, dict), f\"Expected dict, got {type(result)}\"\nE   AssertionError: Expected dict, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, dict)\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_behavioral.py:64: in test_run_bell_state_roughly_equal_distribution_3\n    assert isinstance(result, dict), f\"Expected dict, got {type(result)}\"\nE   AssertionError: Expected dict, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, dict)\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_bell_state_returns_dict_1 - AssertionErro...\nFAILED test_behavioral.py::test_run_bell_state_correct_total_counts_2 - Asser...\nFAILED test_behavioral.py::test_run_bell_state_roughly_equal_distribution_3\n============================== 3 failed in 1.45s =============================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py ..F                                                   [100%]\n\n================================== FAILURES ===================================\n______________ test_run_bell_state_roughly_equal_distribution_3 _______________\ntest_behavioral.py:85: in test_run_bell_state_roughly_equal_distribution_3\n    assert ratio_00 > 0.2, (\nE   AssertionError: Expected '00' to appear ~50% of time, got 0.00%\nE   assert 0.0 > 0.2\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_bell_state_roughly_equal_distribution_3\n========================= 1 failed, 2 passed in 1.43s ========================="
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "task_0002",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0002.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0003",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0003.py",
+    "solution_correctness": {
+      "n_total": 2,
+      "n_correct": 0,
+      "n_wrong": 2,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.0,
+      "avg_bds": 1.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.889,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.889,
+      "avg_div": 0.939
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.667,
+        "cq": 0.0,
+        "diversity": 0.817
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n_______________________ test_returns_quantum_circuit_3 ________________________\ntest_syntactic.py:84: in test_returns_quantum_circuit_3\n    result_with_drawing = candidate(drawing=True)\n                          ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_returns_quantum_circuit_3 - qiskit.exceptions....\n========================= 1 failed, 2 passed in 0.77s ========================="
+        },
+        "coverage_inputs": 0.667,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 12,
+        "cq": 0.0,
+        "coverage": 0.667,
+        "diversity": 0.817,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n_______________________ test_returns_quantum_circuit_3 ________________________\ntest_syntactic.py:80: in test_returns_quantum_circuit_3\n    assert result.num_clbits >= 3, \\\nE   AssertionError: Expected at least 3 classical bits for measurement, got 0\nE   assert 0 >= 3\nE    +  where 0 = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x000001A16C334D10>.num_clbits\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_returns_quantum_circuit_3 - AssertionError: Ex...\n========================= 1 failed, 2 passed in 0.47s ========================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py ..F                                                    [100%]\n\n================================== FAILURES ===================================\n_______________________ test_returns_quantum_circuit_3 ________________________\ntest_syntactic.py:84: in test_returns_quantum_circuit_3\n    result_with_drawing = candidate(drawing=True)\n                          ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_returns_quantum_circuit_3 - qiskit.exceptions....\n========================= 1 failed, 2 passed in 0.77s ========================="
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n__________________________ test_ghz_drawing_return_3 __________________________\ntest_semantic.py:77: in test_ghz_drawing_return_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_ghz_drawing_return_3 - qiskit.exceptions.Missin...\n========================= 1 failed, 2 passed in 0.79s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py F.F                                                     [100%]\n\n================================== FAILURES ===================================\n________________________ test_ghz_circuit_structure_1 _________________________\ntest_semantic.py:26: in test_ghz_circuit_structure_1\n    assert qc.num_clbits == 3, f\"Expected 3 classical bits for measurement, got {qc.num_clbits}\"\nE   AssertionError: Expected 3 classical bits for measurement, got 0\nE   assert 0 == 3\nE    +  where 0 = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x0000015C90570DD0>.num_clbits\n__________________________ test_ghz_drawing_return_3 __________________________\ntest_semantic.py:77: in test_ghz_drawing_return_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:11: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_ghz_circuit_structure_1 - AssertionError: Expec...\nFAILED test_semantic.py::test_ghz_drawing_return_3 - qiskit.exceptions.Missin...\n========================= 2 failed, 1 passed in 0.80s ========================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py .FF                                                     [100%]\n\n================================== FAILURES ===================================\n___________________________ test_ghz_statevector_2 ____________________________\ntest_semantic.py:56: in test_ghz_statevector_2\n    assert np.isclose(probs[0], 0.5, atol=1e-4), f\"Probability of |000> should be 0.5, got {probs[0]}\"\nE   AssertionError: Probability of |000> should be 0.5, got 0.0\nE   assert np.False_\nE    +  where np.False_ = <function isclose at 0x0000019E14A909B0>(np.float64(0.0), 0.5, atol=0.0001)\nE    +    where <function isclose at 0x0000019E14A909B0> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.isclose\n__________________________ test_ghz_drawing_return_3 __________________________\ntest_semantic.py:77: in test_ghz_drawing_return_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_ghz_statevector_2 - AssertionError: Probability...\nFAILED test_semantic.py::test_ghz_drawing_return_3 - qiskit.exceptions.Missin...\n========================= 2 failed, 1 passed in 0.79s ========================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py ..F                                                   [100%]\n\n================================== FAILURES ===================================\n___________________ test_create_ghz_drawing_returns_tuple_3 ___________________\ntest_behavioral.py:84: in test_create_ghz_drawing_returns_tuple_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_ghz_drawing_returns_tuple_3 - qiskit.e...\n========================= 1 failed, 2 passed in 0.79s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 14,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py F.F                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_create_ghz_returns_circuit_1 ______________________\ntest_behavioral.py:27: in test_create_ghz_returns_circuit_1\n    assert \"measure\" in op_names, \\\nE   AssertionError: Circuit should contain measurement operations\nE   assert 'measure' in ['h', 'cx', 'cx']\n___________________ test_create_ghz_drawing_returns_tuple_3 ___________________\ntest_behavioral.py:84: in test_create_ghz_drawing_returns_tuple_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:11: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_ghz_returns_circuit_1 - AssertionError...\nFAILED test_behavioral.py::test_create_ghz_drawing_returns_tuple_3 - qiskit.e...\n========================= 2 failed, 1 passed in 0.78s ========================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py .FF                                                   [100%]\n\n================================== FAILURES ===================================\n________________________ test_create_ghz_statevector_2 ________________________\ntest_behavioral.py:57: in test_create_ghz_statevector_2\n    assert \"000\" in probs, \"GHZ state should have |000> component\"\nE   AssertionError: GHZ state should have |000> component\nE   assert '000' in {np.str_('111'): np.float64(1.0)}\n___________________ test_create_ghz_drawing_returns_tuple_3 ___________________\ntest_behavioral.py:84: in test_create_ghz_drawing_returns_tuple_3\n    result = candidate(drawing=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n<string>:12: in create_ghz\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\circuit\\quantumcircuit.py:4040: in draw\n    return circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:368: in circuit_drawer\n    image = _matplotlib_circuit_drawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\visualization\\circuit\\circuit_visualization.py:776: in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\classtools.py:111: in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:42: in __call__\n    self._tester.require_now(self._feature)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\Qiskit_HumanEval_Framework\\venv\\Lib\\site-packages\\qiskit\\utils\\lazy_tester.py:222: in require_now\n    raise MissingOptionalLibraryError(\nE   qiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_create_ghz_statevector_2 - AssertionError: GH...\nFAILED test_behavioral.py::test_create_ghz_drawing_returns_tuple_3 - qiskit.e...\n========================= 2 failed, 1 passed in 0.78s ========================="
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "task_0019",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0019.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0020",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0020.py",
+    "solution_correctness": {
+      "n_total": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_transpile_ghz_customlayout_3 ______________________\ntest_semantic.py:123: in test_transpile_ghz_customlayout_3\n    assert np.allclose(dm_reduced.data, dm_ghz.data, atol=1e-4, rtol=1e-5), (\nE   AssertionError: The reduced density matrix on qubits [2,4,6] should match the 3-qubit GHZ state\nE   assert False\nE    +  where False = <function allclose at 0x00000255D5C408B0>(array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0.5+0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j]]), array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0. +0.j,\\n        0. +0.j],\\n       [0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j]]), atol=0.0001, rtol=1e-05)\nE    +    where <function allclose at 0x00000255D5C408B0> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.allclose\nE    +    and   array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0.5+0.j,\\n        0. +0.j],\\n       [0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0. +0.j]]) = DensityMatrix([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0. +0.j],\\n             ...0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0. +0.j]],\\n              dims=(2, 2, 2)).data\nE    +    and   array([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j],\\n       [0. +0.j, 0. +0.j, 0. ...j, 0. +0.j,\\n        0. +0.j],\\n       [0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n        0.5+0.j]]) = DensityMatrix([[0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0.5+0.j],\\n             ...0.5+0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j, 0. +0.j,\\n                0. +0.j, 0.5+0.j]],\\n              dims=(2, 2, 2)).data\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_transpile_ghz_customlayout_3 - AssertionError: ...\n========================= 1 failed, 2 passed in 1.27s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py ..F                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_transpile_ghz_customlayout_3 ______________________\ntest_behavioral.py:106: in test_transpile_ghz_customlayout_3\n    assert np.isclose(ghz_prob, 1.0, atol=1e-6), (\nE   AssertionError: GHZ state should have all probability in |000> and |111> states, but total GHZ probability is 0.5000000000000002\nE   assert np.False_\nE    +  where np.False_ = <function isclose at 0x0000024BB35348B0>(np.float64(0.5000000000000002), 1.0, atol=1e-06)\nE    +    where <function isclose at 0x0000024BB35348B0> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.isclose\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_transpile_ghz_customlayout_3 - AssertionError...\n========================= 1 failed, 2 passed in 1.24s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": []
+      }
+    ]
+  },
+  {
+    "challenge": "task_0024",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0024.py",
+    "solution_correctness": {
+      "n_total": 2,
+      "n_correct": 0,
+      "n_wrong": 2,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_________________________ test_constant_zero_oracle_1 _________________________\ntest_semantic.py:29: in test_constant_zero_oracle_1\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-0 oracle, got None\nE   assert (None is True or None == True)\n_________________________ test_constant_one_oracle_2 __________________________\ntest_semantic.py:51: in test_constant_one_oracle_2\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-1 oracle, got None\nE   assert (None is True or None == True)\n___________________________ test_balanced_oracle_3 ____________________________\ntest_semantic.py:73: in test_balanced_oracle_3\n    assert result_2q is False or result_2q == False, (\nE   AssertionError: Expected False (balanced) for CNOT balanced oracle (2 qubits), got None\nE   assert (None is False or None == False)\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_constant_zero_oracle_1 - AssertionError: Expect...\nFAILED test_semantic.py::test_constant_one_oracle_2 - AssertionError: Expecte...\nFAILED test_semantic.py::test_balanced_oracle_3 - AssertionError: Expected Fa...\n============================== 3 failed in 0.49s =============================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FF.                                                     [100%]\n\n================================== FAILURES ===================================\n_________________________ test_constant_zero_oracle_1 _________________________\ntest_semantic.py:29: in test_constant_zero_oracle_1\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-0 oracle, got False\nE   assert (np.False_ is True or np.False_ == True)\n_________________________ test_constant_one_oracle_2 __________________________\ntest_semantic.py:51: in test_constant_one_oracle_2\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-1 oracle, got False\nE   assert (np.False_ is True or np.False_ == True)\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_constant_zero_oracle_1 - AssertionError: Expect...\nFAILED test_semantic.py::test_constant_one_oracle_2 - AssertionError: Expecte...\n========================= 2 failed, 1 passed in 0.50s ========================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 6,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_________________________ test_constant_zero_oracle_1 _________________________\ntest_behavioral.py:27: in test_constant_zero_oracle_1\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-0 oracle, got None\nE   assert (None is True or None == True)\n_________________________ test_constant_one_oracle_2 __________________________\ntest_behavioral.py:50: in test_constant_one_oracle_2\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-1 oracle, got None\nE   assert (None is True or None == True)\n___________________________ test_balanced_oracle_3 ____________________________\ntest_behavioral.py:72: in test_balanced_oracle_3\n    assert result1 is False or result1 == False, (\nE   AssertionError: Expected False (balanced) for CNOT-based balanced oracle on qubit 0, got None\nE   assert (None is False or None == False)\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_constant_zero_oracle_1 - AssertionError: Expe...\nFAILED test_behavioral.py::test_constant_one_oracle_2 - AssertionError: Expec...\nFAILED test_behavioral.py::test_balanced_oracle_3 - AssertionError: Expected ...\n============================== 3 failed in 0.49s =============================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FF.                                                   [100%]\n\n================================== FAILURES ===================================\n_________________________ test_constant_zero_oracle_1 _________________________\ntest_behavioral.py:27: in test_constant_zero_oracle_1\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-0 oracle, got False\nE   assert (np.False_ is True or np.False_ == True)\n_________________________ test_constant_one_oracle_2 __________________________\ntest_behavioral.py:50: in test_constant_one_oracle_2\n    assert result is True or result == True, (\nE   AssertionError: Expected True (constant) for constant-1 oracle, got False\nE   assert (np.False_ is True or np.False_ == True)\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_constant_zero_oracle_1 - AssertionError: Expe...\nFAILED test_behavioral.py::test_constant_one_oracle_2 - AssertionError: Expec...\n========================= 2 failed, 1 passed in 0.49s ========================="
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "task_0034",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0034.py",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.0,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 0.75,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.75,
+      "avg_div": 0.833
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.25,
+        "cq": 0.0,
+        "diversity": 0.5
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "cq": 0.0,
+        "diversity": 1.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.25,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "coverage": 0.25,
+        "diversity": 0.5,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_05",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_05",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 8,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_05",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "task_0035",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0035.py",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 4,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py ..F                                                     [100%]\n\n================================== FAILURES ===================================\n__________________________ test_result_consistency_3 __________________________\ntest_semantic.py:78: in test_result_consistency_3\n    assert np.allclose(evs1, evs2, atol=1e-4, rtol=1e-5), (\nE   AssertionError: Results not consistent across runs: 0.283203125 vs 0.33056640625. Expected deterministic behavior with fixed transpiler seed.\nE   assert False\nE    +  where False = <function allclose at 0x000001E6A0120C70>(0.283203125, 0.33056640625, atol=0.0001, rtol=1e-05)\nE    +    where <function allclose at 0x000001E6A0120C70> = <module 'numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\Qiskit_HumanEval_Framework\\\\venv\\\\Lib\\\\site-packages\\\\numpy\\\\__init__.py'>.allclose\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_result_consistency_3 - AssertionError: Results ...\n========================= 1 failed, 2 passed in 3.58s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n_____________________________ test_return_type_1 ______________________________\ntest_semantic.py:24: in test_return_type_1\n    assert isinstance(result, PrimitiveJob), (\nE   AssertionError: Expected return type PrimitiveJob, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.primitives.primitive_job.PrimitiveJob'>)\n_________________________ test_job_result_structure_2 _________________________\ntest_semantic.py:40: in test_job_result_structure_2\n    result = job.result()\n             ^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'result'\n__________________________ test_result_consistency_3 __________________________\ntest_semantic.py:70: in test_result_consistency_3\n    result1 = job1.result()\n              ^^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'result'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_return_type_1 - AssertionError: Expected return...\nFAILED test_semantic.py::test_job_result_structure_2 - AttributeError: 'NoneT...\nFAILED test_semantic.py::test_result_consistency_3 - AttributeError: 'NoneTyp...\n============================== 3 failed in 2.16s =============================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 5,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_____________________________ test_return_type_1 ______________________________\ntest_behavioral.py:23: in test_return_type_1\n    assert isinstance(result, PrimitiveJob), (\nE   AssertionError: Expected return type PrimitiveJob, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, <class 'qiskit.primitives.primitive_job.PrimitiveJob'>)\n___________________________ test_result_structure_2 ___________________________\ntest_behavioral.py:39: in test_result_structure_2\n    result = job.result()\n             ^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'result'\n_________________________ test_deterministic_result_3 _________________________\ntest_behavioral.py:72: in test_deterministic_result_3\n    result1 = job1.result()\n              ^^^^^^^^^^^\nE   AttributeError: 'NoneType' object has no attribute 'result'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_return_type_1 - AssertionError: Expected retu...\nFAILED test_behavioral.py::test_result_structure_2 - AttributeError: 'NoneTyp...\nFAILED test_behavioral.py::test_deterministic_result_3 - AttributeError: 'Non...\n============================== 3 failed in 2.17s =============================="
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "task_0063",
+    "test_gen_model": "claudeopus46",
+    "human_solution_used": "canonical/task_0063.py",
+    "solution_correctness": {
+      "n_total": 3,
+      "n_correct": 0,
+      "n_wrong": 3,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.667,
+      "avg_bds": 0.556,
+      "avg_tqs": 0.222,
+      "avg_coverage_inputs": 0.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 0.0,
+      "avg_cov": 0.0,
+      "avg_div": 0.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.667,
+        "tqs": 0.667,
+        "coverage_inputs": 0.0,
+        "cq": 0.0,
+        "diversity": 0.0
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_bb84_circuit_generate_key_1 _______________________\ntest_semantic.py:39: in test_bb84_circuit_generate_key_1\n    assert len(result) == n, f\"Expected key length {n}, got {len(result)}\"\nE   AssertionError: Expected key length 4, got 3\nE   assert 3 == 4\nE    +  where 3 = len('010')\n______________________ test_bb84_circuit_generate_key_2 _______________________\ntest_semantic.py:74: in test_bb84_circuit_generate_key_2\n    assert len(results) == 1, f\"Expected deterministic result for Z-basis encoding/measurement, got {results}\"\nE   AssertionError: Expected deterministic result for Z-basis encoding/measurement, got {'011', '01', '0', '1011'}\nE   assert 4 == 1\nE    +  where 4 = len({'0', '01', '011', '1011'})\n______________________ test_bb84_circuit_generate_key_3 _______________________\ntest_semantic.py:114: in test_bb84_circuit_generate_key_3\n    assert len(results) == 1, f\"Expected deterministic result when measuring in matching X-basis, got {results}\"\nE   AssertionError: Expected deterministic result when measuring in matching X-basis, got {'00', '0', '01'}\nE   assert 3 == 1\nE    +  where 3 = len({'0', '00', '01'})\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_bb84_circuit_generate_key_1 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_2 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_3 - AssertionError: E...\n============================== 3 failed in 1.20s =============================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 7,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_bb84_circuit_generate_key_1 _______________________\ntest_semantic.py:38: in test_bb84_circuit_generate_key_1\n    assert isinstance(result, str), f\"Expected return type str, got {type(result)}\"\nE   AssertionError: Expected return type str, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, str)\n______________________ test_bb84_circuit_generate_key_2 _______________________\ntest_semantic.py:80: in test_bb84_circuit_generate_key_2\n    assert key == expected_key or key == expected_key_reversed, \\\nE   AssertionError: Expected key '1011' or '1101', got 'None'\nE   assert (None == '1011' or None == '1101')\n______________________ test_bb84_circuit_generate_key_3 _______________________\ntest_semantic.py:119: in test_bb84_circuit_generate_key_3\n    assert key == expected_key or key == expected_key_reversed, \\\nE   AssertionError: Expected key '010' or '010', got 'None'\nE   assert (None == '010' or None == '010')\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_bb84_circuit_generate_key_1 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_2 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_3 - AssertionError: E...\n============================== 3 failed in 1.20s =============================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_bb84_circuit_generate_key_1 _______________________\ntest_semantic.py:39: in test_bb84_circuit_generate_key_1\n    assert len(result) == n, f\"Expected key length {n}, got {len(result)}\"\nE   AssertionError: Expected key length 4, got 2\nE   assert 2 == 4\nE    +  where 2 = len('00')\n______________________ test_bb84_circuit_generate_key_2 _______________________\ntest_semantic.py:74: in test_bb84_circuit_generate_key_2\n    assert len(results) == 1, f\"Expected deterministic result for Z-basis encoding/measurement, got {results}\"\nE   AssertionError: Expected deterministic result for Z-basis encoding/measurement, got {'010', '101', '011'}\nE   assert 3 == 1\nE    +  where 3 = len({'010', '011', '101'})\n______________________ test_bb84_circuit_generate_key_3 _______________________\ntest_semantic.py:114: in test_bb84_circuit_generate_key_3\n    assert len(results) == 1, f\"Expected deterministic result when measuring in matching X-basis, got {results}\"\nE   AssertionError: Expected deterministic result when measuring in matching X-basis, got {'', '11', '011'}\nE   assert 3 == 1\nE    +  where 3 = len({'', '011', '11'})\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_bb84_circuit_generate_key_1 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_2 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_3 - AssertionError: E...\n============================== 3 failed in 1.19s =============================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n______________________ test_bb84_circuit_generate_key_1 _______________________\ntest_semantic.py:39: in test_bb84_circuit_generate_key_1\n    assert len(result) == n, f\"Expected key length {n}, got {len(result)}\"\nE   AssertionError: Expected key length 4, got 1\nE   assert 1 == 4\nE    +  where 1 = len('1')\n______________________ test_bb84_circuit_generate_key_2 _______________________\ntest_semantic.py:74: in test_bb84_circuit_generate_key_2\n    assert len(results) == 1, f\"Expected deterministic result for Z-basis encoding/measurement, got {results}\"\nE   AssertionError: Expected deterministic result for Z-basis encoding/measurement, got {'11', '01', '1011', '1'}\nE   assert 4 == 1\nE    +  where 4 = len({'01', '1', '1011', '11'})\n______________________ test_bb84_circuit_generate_key_3 _______________________\ntest_semantic.py:114: in test_bb84_circuit_generate_key_3\n    assert len(results) == 1, f\"Expected deterministic result when measuring in matching X-basis, got {results}\"\nE   AssertionError: Expected deterministic result when measuring in matching X-basis, got {'', '11', '1', '00', '01'}\nE   assert 5 == 1\nE    +  where 5 = len({'', '00', '01', '1', '11'})\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_bb84_circuit_generate_key_1 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_2 - AssertionError: E...\nFAILED test_semantic.py::test_bb84_circuit_generate_key_3 - AssertionError: E...\n============================== 3 failed in 1.20s =============================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 0.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 9,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_bb84_circuit_generate_key_1 _______________________\ntest_behavioral.py:36: in test_bb84_circuit_generate_key_1\n    assert isinstance(result, str), f\"Expected string return type, got {type(result)}\"\nE   AssertionError: Expected string return type, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, str)\n______________________ test_bb84_circuit_generate_key_2 _______________________\ntest_behavioral.py:69: in test_bb84_circuit_generate_key_2\n    assert isinstance(result, str), f\"Expected string return type, got {type(result)}\"\nE   AssertionError: Expected string return type, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, str)\n______________________ test_bb84_circuit_generate_key_3 _______________________\ntest_behavioral.py:106: in test_bb84_circuit_generate_key_3\n    assert isinstance(result, str), f\"Expected string return type, got {type(result)}\"\nE   AssertionError: Expected string return type, got <class 'NoneType'>\nE   assert False\nE    +  where False = isinstance(None, str)\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_bb84_circuit_generate_key_1 - AssertionError:...\nFAILED test_behavioral.py::test_bb84_circuit_generate_key_2 - AssertionError:...\nFAILED test_behavioral.py::test_bb84_circuit_generate_key_3 - AssertionError:...\n============================== 3 failed in 1.17s =============================="
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_02",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          },
+          {
+            "solution_id": "synthetic_wrong/mutant_04",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py F..                                                   [100%]\n\n================================== FAILURES ===================================\n______________________ test_bb84_circuit_generate_key_1 _______________________\ntest_behavioral.py:39: in test_bb84_circuit_generate_key_1\n    assert len(result) > 0, \"Key should not be empty when bases match\"\nE   AssertionError: Key should not be empty when bases match\nE   assert 0 > 0\nE    +  where 0 = len('')\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_bb84_circuit_generate_key_1 - AssertionError:...\n========================= 1 failed, 2 passed in 1.22s ========================="
+          }
+        ]
+      }
+    ]
+  }
+]

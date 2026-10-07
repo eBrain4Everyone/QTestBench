@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from qiskit.quantum_info import StabilizerState
+def calculate_stabilizer_state_info():
+    """ Construct a Phi plus Bell state quantum circuit, compute its stabilizer state, and return both the stabilizer state and a dictionary of the stabilizer state measurement probabilities.
+    """

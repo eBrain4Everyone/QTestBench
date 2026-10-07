@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/107",
+  "entry_point": "compose_scalar_ops",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 107,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,7 @@
+import numpy as np
+from typing import Union
+from qiskit_ibm_runtime.fake_provider.fake_backend import FakeBackendV2
+from qiskit_ibm_runtime import IBMBackend
+def qubit_with_least_readout_error(backend: Union[IBMBackend, FakeBackendV2])-> float:
+    """ Return the minimum readout error of any input backend of type FakeBackendV2, IBMBackend.
+    """

@@ -1,0 +1,5 @@
+from qiskit.quantum_info import shannon_entropy
+import numpy as np
+def shannon_entropy_data(ε):
+    """ Return a list of ten probability vectors each of length 16 whose shannon entropy is greater than a given value.
+    """

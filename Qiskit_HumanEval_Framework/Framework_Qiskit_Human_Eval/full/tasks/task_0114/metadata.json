@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/114",
+  "entry_point": "create_and_modify_coupling_map",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 114,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,4 @@
+from qiskit import QuantumCircuit
+def create_swap_gate()->QuantumCircuit:
+    """ Design a SWAP gate using only CX gates.
+    """

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/37",
+  "entry_point": "bv_algorithm",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 37,
+  "solution_format": "prompt_plus_canonical_body"
+}

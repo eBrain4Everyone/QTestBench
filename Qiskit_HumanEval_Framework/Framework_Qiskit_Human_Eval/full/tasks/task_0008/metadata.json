@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/8",
+  "entry_point": "rx_gate",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 8,
+  "solution_format": "prompt_plus_canonical_body"
+}

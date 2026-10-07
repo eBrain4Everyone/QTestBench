@@ -1,0 +1,4 @@
+from qiskit import QuantumCircuit
+def quantum_circuit_with_delay():
+    """ Create a one-qubit quantum circuit, apply hadamard gate, then add a delay of 100 and then again apply hadamard gate and return the circuit.
+    """

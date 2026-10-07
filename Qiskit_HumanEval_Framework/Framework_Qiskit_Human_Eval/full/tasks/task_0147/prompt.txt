@@ -1,0 +1,5 @@
+from qiskit import QuantumCircuit
+from qiskit.circuit.library import YGate
+def mcy(qc: QuantumCircuit) -> QuantumCircuit:
+    """ Add a multi-controlled-Y operation to qubit 4, controlled by qubits 0-3.
+    """

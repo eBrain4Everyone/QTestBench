@@ -1,0 +1,7 @@
+from qiskit import QuantumCircuit
+from qiskit.transpiler import CouplingMap
+from qiskit.transpiler.passes import LookaheadSwap
+from qiskit.transpiler.passmanager import PassManager
+def passmanager_Lookahead(coupling) -> QuantumCircuit:
+    """ Transpile a 7-qubit GHZ circuit using LookaheadSwap pass and the input custom coupling map.
+    """

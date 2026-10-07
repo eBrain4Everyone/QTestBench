@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/44",
+  "entry_point": "tensor_circuits",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 44,
+  "solution_format": "prompt_plus_canonical_body"
+}

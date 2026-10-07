@@ -1,0 +1,9 @@
+from qiskit import QuantumCircuit
+from qiskit.transpiler.passes import CollectLinearFunctions
+from qiskit.transpiler import PassManager
+def collect_linear_blocks_with_and_without_limit():
+    """ Create a 5-qubit quantum circuit with a chain of CX gates and apply Qiskit's CollectLinearFunctions transpiler pass. Return two circuits:
+    1. One with no block width restriction.
+    2. One with a max_block_width of 3.
+    Use PassManager to apply the pass and return both circuits.
+    """

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/137",
+  "entry_point": "entanglement_dataset",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 137,
+  "solution_format": "prompt_plus_canonical_body"
+}

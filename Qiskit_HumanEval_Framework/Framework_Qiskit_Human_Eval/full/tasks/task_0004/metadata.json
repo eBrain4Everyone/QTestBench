@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/4",
+  "entry_point": "create_unitary_from_matrix",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 4,
+  "solution_format": "prompt_plus_canonical_body"
+}

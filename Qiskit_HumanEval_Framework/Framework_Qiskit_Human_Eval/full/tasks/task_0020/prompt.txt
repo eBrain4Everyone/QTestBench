@@ -1,0 +1,6 @@
+from qiskit import QuantumCircuit
+from qiskit_ibm_runtime.fake_provider import FakePerth
+from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
+def transpile_ghz_customlayout() -> QuantumCircuit:
+    """ Using a pass manager with optimization level as 1, transpile and map a three-qubit GHZ circuit for the Fake Perth backend using custom initial layout: [2,4,6].
+    """

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/62",
+  "entry_point": "bb84_senders_circuit",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 62,
+  "solution_format": "prompt_plus_canonical_body"
+}

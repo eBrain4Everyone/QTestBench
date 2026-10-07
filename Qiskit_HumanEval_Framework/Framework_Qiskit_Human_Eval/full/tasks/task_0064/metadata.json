@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/64",
+  "entry_point": "simons_algorithm",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 64,
+  "solution_format": "prompt_plus_canonical_body"
+}

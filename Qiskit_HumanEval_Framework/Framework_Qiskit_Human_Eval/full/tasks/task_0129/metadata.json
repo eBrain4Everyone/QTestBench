@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/129",
+  "entry_point": "find_highest_rz_error_rate",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 129,
+  "solution_format": "prompt_plus_canonical_body"
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/97",
+  "entry_point": "two_qubit_conections",
+  "difficulty_scale": "intermediate",
+  "variant": "full",
+  "index": 97,
+  "solution_format": "prompt_plus_canonical_body"
+}

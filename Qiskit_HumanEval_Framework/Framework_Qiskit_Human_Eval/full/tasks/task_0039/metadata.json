@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/39",
+  "entry_point": "create_uniform_superposition",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 39,
+  "solution_format": "prompt_plus_canonical_body"
+}

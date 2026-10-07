@@ -1,0 +1,10 @@
+from qiskit.transpiler.passes import SolovayKitaev
+from qiskit.transpiler import PassManager
+from qiskit.circuit import QuantumCircuit
+def sol_kit_decomp(circuit: QuantumCircuit) -> QuantumCircuit:
+    """ Create a pass manager to decompose the single qubit gates into gates of the dense subset ['t', 'tdg', 'h'] in the given circuit.
+    """
+
+    pm = PassManager([SolovayKitaev()])
+    circ_dec = pm.run(circuit)
+    return circ_dec

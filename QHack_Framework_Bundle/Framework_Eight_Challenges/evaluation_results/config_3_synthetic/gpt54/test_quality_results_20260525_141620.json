@@ -1,0 +1,1394 @@
+[
+  {
+    "challenge": "chalet_random_gate",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/The_chalet_of_the_random_gate.ipynb",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 18,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 19,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 18,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nn either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0.125, 0.25, 0.2]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:55: in test_output_shape_and_type_2\n    out = run(inp)\n          ^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.25, 0.25, 0.25]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0.125, 0.25, 0.2]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n________________________ test_probability_properties_3 ________________________\ntest_semantic.py:93: in test_probability_properties_3\n    out = run(inp)\n          ^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate"
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 19,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nof measurements.\nRunning test case 1 with input '[0.125, 0.25, 0.2]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n_____________________ test_run_and_check_official_cases_2 _____________________\ntest_behavioral.py:65: in test_run_and_check_official_cases_2\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.25, 0.25, 0.25]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0.125, 0.25, 0.2]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n_____________________ test_run_and_check_official_cases_3 _____________________\ntest_behavioral.py:112: in test_run_and_check_official_cases_3\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "coffee_conundrum",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Critical_coffee_conundrum.ipynb",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.0,
+      "avg_coverage_inputs": 1.0,
+      "avg_cq": 0.0,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 1.0,
+      "avg_div": 1.0
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 23,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 23,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n___________________________ test_official_values_1 ____________________________\ntest_semantic.py:35: in test_official_values_1\n    assert np.allclose(out_val, exp_val, atol=1e-4), (\nE   AssertionError: run('5') returned '0.6725000000000004', which does not match expected output '0.6735'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x00000249304C96C0>(tensor(0.6725, requires_grad=True), tensor(0.6735, requires_grad=True), atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x00000249304C96C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n__________________________ test_output_shape_type_2 ___________________________\ntest_semantic.py:73: in test_output_shape_type_2\n    assert np.allclose(out_arr, exp_arr, atol=1e-4), (\nE   AssertionError: Parsed numeric output for input '5' does not match expected value '0.6735'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x00000249304C96C0>(tensor(0.6725, requires_grad=True), tensor(0.6735, requires_grad=True), atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x00000249304C96C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n__________________________ test_output_properties_3 ___________________________\ntest_semantic.py:103: in test_output_properties_3\n    assert np.allclose(val, exp_val, atol=1e-4), (\nE   AssertionError: Output for input '5' does not numerically match expected output '0.6735'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x00000249304C96C0>(tensor(0.6725, requires_grad=True), tensor(0.6735, requires_grad=True), atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x00000249304C96C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_official_values_1 - AssertionError: run('5') re...\nFAILED test_semantic.py::test_output_shape_type_2 - AssertionError: Parsed nu...\nFAILED test_semantic.py::test_output_properties_3 - AssertionError: Output fo...\n============================= 3 failed in 12.94s =============================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py FFF                                                     [100%]\n\n================================== FAILURES ===================================\n___________________________ test_official_values_1 ____________________________\ntest_semantic.py:32: in test_official_values_1\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:129: in run\n    ???\nE   TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\nRunning test case 1 with input '2'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\n__________________________ test_output_shape_type_2 ___________________________\ntest_semantic.py:61: in test_output_shape_type_2\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:129: in run\n    ???\nE   TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\nRunning test case 1 with input '2'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\n__________________________ test_output_properties_3 ___________________________\ntest_semantic.py:99: in test_output_properties_3\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:129: in run\n    ???\nE   TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\nRunning test case 1 with input '2'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_official_values_1 - TypeError: unsupported oper...\nFAILED test_semantic.py::test_output_shape_type_2 - TypeError: unsupported op...\nFAILED test_semantic.py::test_output_properties_3 - TypeError: unsupported op...\n============================== 3 failed in 3.79s =============================="
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_______________________ test_run_check_official_cases_1 _______________________\ntest_behavioral.py:33: in test_run_check_official_cases_1\n    assert np.allclose(float(output), float(exp), atol=1e-4), f\"run() output {output!r} does not numerically match expected {exp!r} for input {inp!r} within tolerance.\"\nE   AssertionError: run() output '0.6725000000000004' does not numerically match expected '0.6735' for input '5' within tolerance.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001724B4096C0>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001724B4096C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\nE    +    and   0.6725000000000004 = float('0.6725000000000004')\nE    +    and   0.6735 = float('0.6735')\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n_______________________ test_run_check_official_cases_2 _______________________\ntest_behavioral.py:57: in test_run_check_official_cases_2\n    assert np.allclose(float(output_first), float(exp), atol=1e-4), f\"First run output {output_first!r} does not numerically match expected {exp!r} for input {inp!r}.\"\nE   AssertionError: First run output '0.6725000000000004' does not numerically match expected '0.6735' for input '5'.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001724B4096C0>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001724B4096C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\nE    +    and   0.6725000000000004 = float('0.6725000000000004')\nE    +    and   0.6735 = float('0.6735')\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n_______________________ test_run_check_official_cases_3 _______________________\ntest_behavioral.py:89: in test_run_check_official_cases_3\n    assert np.allclose(numeric_output, numeric_expected, atol=1e-4), f\"Parsed numeric output {numeric_output} does not match expected {numeric_expected} for input {inp!r} within tolerance.\"\nE   AssertionError: Parsed numeric output 0.6725000000000004 does not match expected 0.6735 for input '5' within tolerance.\nE   assert False\nE    +  where False = <function primitive.<locals>.f_wrapped at 0x000001724B4096C0>(0.6725000000000004, 0.6735, atol=0.0001)\nE    +    where <function primitive.<locals>.f_wrapped at 0x000001724B4096C0> = <module 'pennylane.numpy' from 'C:\\\\Users\\\\meriemterki\\\\Documents\\\\WIML_mentorship\\\\qantum_evaluation_llms\\\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\\\QHack_Framework_Bundle\\\\venv\\\\Lib\\\\site-packages\\\\pennylane\\\\numpy\\\\__init__.py'>.allclose\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nCorrect!\nRunning test case 1 with input '2'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_check_official_cases_1 - AssertionError: ...\nFAILED test_behavioral.py::test_run_check_official_cases_2 - AssertionError: ...\nFAILED test_behavioral.py::test_ru"
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 10,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_behavioral.py FFF                                                   [100%]\n\n================================== FAILURES ===================================\n_______________________ test_run_check_official_cases_1 _______________________\ntest_behavioral.py:27: in test_run_check_official_cases_1\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:129: in run\n    ???\nE   TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\nRunning test case 1 with input '2'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\n_______________________ test_run_check_official_cases_2 _______________________\ntest_behavioral.py:49: in test_run_check_official_cases_2\n    output_first = ns[\"run\"](inp)\n                   ^^^^^^^^^^^^^^\n<string>:129: in run\n    ???\nE   TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\nRunning test case 1 with input '2'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\n_______________________ test_run_check_official_cases_3 _______________________\ntest_behavioral.py:78: in test_run_check_official_cases_3\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:129: in run\n    ???\nE   TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '5'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\nRunning test case 1 with input '2'...\nRuntime Error. unsupported operand type(s) for /: 'NoneType' and 'int'\n=========================== short test summary info ===========================\nFAILED test_behavioral.py::test_run_check_official_cases_1 - TypeError: unsup...\nFAILED test_behavioral.py::test_run_check_official_cases_2 - TypeError: unsup...\nFAILED test_behavioral.py::test_run_check_official_cases_3 - TypeError: unsup...\n============================== 3 failed in 2.73s =============================="
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "contextuality_dunes",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Dunes_out_of_context.ipynb",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 21,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 23,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 21,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 23,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\n___________ test_output_shape_type_2 ___________________________\ntest_semantic.py:63: in test_output_shape_type_2\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:67: in run\n    ???\n<string>:59: in evaluate_sum\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.838283, [0.6283189, 1.884956, 3.141593, 4.398230, 5.654867]]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0.4, [1.047198, 2.094395, 3.141593, 4.18879, 5.235988]]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n__________________________ test_output_properties_3 ___________________________\ntest_semantic.py:102: in test_output_properties_3\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:67: in run\n    ???\n<string>:59: in evaluate_sum\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunct"
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nd_2 _________________________\ntest_behavioral.py:57: in test_behavioral_end_to_end_2\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:67: in run\n    ???\n<string>:59: in evaluate_sum\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.838283, [0.6283189, 1.884956, 3.141593, 4.398230, 5.654867]]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0.4, [1.047198, 2.094395, 3.141593, 4.18879, 5.235988]]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n________________________ test_behavioral_end_to_end_3 _________________________\ntest_behavioral.py:83: in test_behavioral_end_to_end_3\n    first_output = ns[\"run\"](inp)\n                   ^^^^^^^^^^^^^^\n<string>:67: in run\n    ???\n<string>:59: in evaluate_sum\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunct"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "mach_zender_cabin",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/The_Mach_Zender_cabin.ipynb",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 17,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 17,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nlane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:835: in construct\n    self._qfunc_output = self.func(*args, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n<string>:38: in mz_interferometer\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:31: in new_f\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:98: in __call__\n    return type.__call__(cls, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\ops\\qubit\\matrix_ops.py:155: in __init__\n    raise ValueError(\nE   ValueError: Input unitary must be of shape (2, 2) or (batch_size, 2, 2) to act on 1 wires. Got shape () instead.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '0.5'...\nRuntime Error. Input unitary must be of shape (2, 2) or (batch_size, 2, 2) to act on 1 wires. Got shape () instead.\nRunning test case 1 with input '0.577350269'...\nRuntime Error. Input unitary must be of shape (2, 2) or (batch_size, 2, 2) to act on 1 wires. Got shape () instead.\n________________________ test_probability_properties_3 ________________________\ntest_semantic.py:103: in test_probability_properties_3\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:50: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:835: in construct\n    self._qfunc_output = self.func(*args, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n<string>:38: in mz_interferometer\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:31: in new_f\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:98: in __call__\n    return type.__call__(cls, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\"
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\ning\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:835: in construct\n    self._qfunc_output = self.func(*args, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n<string>:38: in mz_interferometer\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:31: in new_f\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:98: in __call__\n    return type.__call__(cls, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\ops\\qubit\\matrix_ops.py:155: in __init__\n    raise ValueError(\nE   ValueError: Input unitary must be of shape (2, 2) or (batch_size, 2, 2) to act on 1 wires. Got shape () instead.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '0.5'...\nRuntime Error. Input unitary must be of shape (2, 2) or (batch_size, 2, 2) to act on 1 wires. Got shape () instead.\nRunning test case 1 with input '0.577350269'...\nRuntime Error. Input unitary must be of shape (2, 2) or (batch_size, 2, 2) to act on 1 wires. Got shape () instead.\n_______________________ test_run_check_official_cases_3 _______________________\ntest_behavioral.py:99: in test_run_check_official_cases_3\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:50: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:835: in construct\n    self._qfunc_output = self.func(*args, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n<string>:38: in mz_interferometer\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:31: in new_f\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\capture\\capture_meta.py:98: in __call__\n    return type.__call__(cls, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "QSP_swamp",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Stay_out_of_this_swamp!.ipynb",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 15,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 15,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 21,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\n        ^^^^^^^^^^^^^^\n<string>:64: in run\n    ???\n<string>:40: in coefficients\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\wrapper.py:120: in _wrapped\n    res = obj(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\autograd\\tracer.py:54: in f_wrapped\n    return f_raw(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\tensor.py:157: in __array_ufunc__\n    res = super().__array_ufunc__(ufunc, method, *args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: unsupported operand type(s) for *: 'complex' and 'NoneType'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:54: in test_output_shape_and_type_2\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:64: in run\n    ???\n<string>:40: in coefficients\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\wrapper.py:120: in _wrapped\n    res = obj(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\autograd\\tracer.py:54: in f_wrapped\n    return f_raw(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\tensor.py:157: in __array_ufunc__\n    res = super().__array_ufunc__(ufunc, method, *args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: unsupported operand type(s) for *: 'complex' and 'NoneType'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\n_____________________ test_output_numerical_properties_3 ______________________\ntest_semantic.py:95: in test_output_numerical_properties_3\n    out = ns[\"run\"](inp)\n          ^^^^^^^^^^^^^^\n<string>:64: in run\n    ???\n<string>:40: in coefficients\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\wrapper.py:120: in _wrapped\n    res = obj(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\autograd\\tracer.py:54: in f_wrapped\n    return f_raw(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy"
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nin run\n    ???\n<string>:40: in coefficients\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\wrapper.py:120: in _wrapped\n    res = obj(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\autograd\\tracer.py:54: in f_wrapped\n    return f_raw(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\tensor.py:157: in __array_ufunc__\n    res = super().__array_ufunc__(ufunc, method, *args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: unsupported operand type(s) for *: 'complex' and 'NoneType'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\n_____________________ test_run_and_check_official_cases_2 _____________________\ntest_behavioral.py:54: in test_run_and_check_official_cases_2\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:64: in run\n    ???\n<string>:40: in coefficients\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\wrapper.py:120: in _wrapped\n    res = obj(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\autograd\\tracer.py:54: in f_wrapped\n    return f_raw(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\tensor.py:157: in __array_ufunc__\n    res = super().__array_ufunc__(ufunc, method, *args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: unsupported operand type(s) for *: 'complex' and 'NoneType'\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[0.5,0.8,1.0,1.0]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\nRunning test case 1 with input '[-0.20409113, -0.91173829, 0.91173829, 0.20409113]'...\nRuntime Error. unsupported operand type(s) for *: 'complex' and 'NoneType'\n_____________________ test_run_and_check_official_cases_3 _____________________\ntest_behavioral.py:84: in test_run_and_check_official_cases_3\n    output_first = ns[\"run\"](inp)\n                   ^^^^^^^^^^^^^^\n<string>:64: in run\n    ???\n<string>:40: in coefficients\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy\\wrapper.py:120: in _wrapped\n    res = obj(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\autograd\\tracer.py:54: in f_wrapped\n    return f_raw(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\numpy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "rainy_days_retreat",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution1/Rainy_days_at_the_forest_retreat.ipynb",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 0.333,
+      "avg_bds": 1.0,
+      "avg_tqs": 0.333,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.333,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 0.0,
+        "bds": 1.0,
+        "tqs": 0.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 0,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 13,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py .F.                                                    [100%]\n\n================================== FAILURES ===================================\n___________ test_function_signatures_have_correct_parameter_names_2 ___________\ntest_syntactic.py:66: in test_function_signatures_have_correct_parameter_names_2\n    assert check_params == [\"solution_output\", \"expected_output\"], \"The 'check' function must have exactly two parameters named 'solution_output' and 'expected_output'.\"\nE   AssertionError: The 'check' function must have exactly two parameters named 'solution_output' and 'expected_output'.\nE   assert ['have', 'want'] == ['solution_ou...ected_output']\nE     \nE     At index 0 diff: 'have' != 'solution_output'\nE     Use -v to get more diff\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_function_signatures_have_correct_parameter_names_2\n========================= 1 failed, 2 passed in 2.39s ========================="
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_syntactic.py .F.                                                    [100%]\n\n================================== FAILURES ===================================\n___________ test_function_signatures_have_correct_parameter_names_2 ___________\ntest_syntactic.py:66: in test_function_signatures_have_correct_parameter_names_2\n    assert check_params == [\"solution_output\", \"expected_output\"], \"The 'check' function must have exactly two parameters named 'solution_output' and 'expected_output'.\"\nE   AssertionError: The 'check' function must have exactly two parameters named 'solution_output' and 'expected_output'.\nE   assert ['have', 'want'] == ['solution_ou...ected_output']\nE     \nE     At index 0 diff: 'have' != 'solution_output'\nE     Use -v to get more diff\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n=========================== short test summary info ===========================\nFAILED test_syntactic.py::test_function_signatures_have_correct_parameter_names_2\n========================= 1 failed, 2 passed in 3.21s ========================="
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "error": "",
+          "pytest_output": "============================= test session starts =============================\ncollected 3 items\n\ntest_semantic.py .F.                                                     [100%]\n\n================================== FAILURES ===================================\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:66: in test_output_shape_and_type_2\n    assert isinstance(parsed_out, type(parsed_exp)), (\nE   AssertionError: Parsed output type for input [1,0,1,1,0,1,1,1] was <class 'float'>, expected <class 'int'>.\nE   assert False\nE    +  where False = isinstance(1.0, <class 'int'>)\nE    +    where <class 'int'> = type(1)\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nCorrect!\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nCorrect!\n=========================== short test summary info ===========================\nFAILED test_semantic.py::test_output_shape_and_type_2 - AssertionError: Parse...\n========================= 1 failed, 2 passed in 2.09s ========================="
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 11,
+        "cq": 0.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nust return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:59: in test_output_shape_and_type_2\n    out = run(inp)\n          ^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n__________________________ test_output_properties_3 ___________________________\ntest_semantic.py:100: in test_output_properties_3\n    out = run(inp)\n          ^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _valida"
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 13,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nr a nonempty sequence of measurements.\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n_________________________ test_run_check_end_to_end_2 _________________________\ntest_behavioral.py:58: in test_run_check_end_to_end_2\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1,0,1,1,0,1,1,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[0,0,0,0,0,1,0,1]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n_________________________ test_run_check_end_to_end_3 _________________________\ntest_behavioral.py:84: in test_run_check_end_to_end_3\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:36: in run\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _valida"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "travelling_eigentracks",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution3/Tensor Tundra Travelling on the eigentracks.py",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 14,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 6,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 14,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nst return either a single measurement, or a nonempty sequence of measurements.\n________________________ test_output_shape_and_type_2 _________________________\ntest_semantic.py:57: in test_output_shape_and_type_2\n    out = run(inp)\n          ^^^^^^^^\n<string>:92: in run\n    ???\n<string>:80: in compute_statistics\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1.35889209, -0.6219561, -1.31577162]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[4.40084815, -0.77288063,  0.6425846]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n________________________ test_probability_properties_3 ________________________\ntest_semantic.py:98: in test_probability_properties_3\n    out = run(inp)\n          ^^^^^^^^\n<string>:92: in run\n    ???\n<string>:80: in compute_statistics\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctio"
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 6,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\nrement, or a nonempty sequence of measurements.\n__________________________ test_run_check_outputs_2 ___________________________\ntest_behavioral.py:53: in test_run_check_outputs_2\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:92: in run\n    ???\n<string>:80: in compute_statistics\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctionError(\nE   pennylane.exceptions.QuantumFunctionError: A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n---------------------------- Captured stdout call -----------------------------\nRunning test case 0 with input '[1.35889209, -0.6219561, -1.31577162]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nRunning test case 1 with input '[4.40084815, -0.77288063,  0.6425846]'...\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\n__________________________ test_run_check_outputs_3 ___________________________\ntest_behavioral.py:84: in test_run_check_outputs_3\n    output = ns[\"run\"](inp)\n             ^^^^^^^^^^^^^^\n<string>:92: in run\n    ???\n<string>:80: in compute_statistics\n    ???\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:880: in __call__\n    return self._impl_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:848: in _impl_call\n    tape = self.construct(args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\logging\\decorators.py:61: in wrapper_entry\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:842: in construct\n    _validate_qfunc_output(self._qfunc_output, tape.measurements)\nC:\\Users\\meriemterki\\Documents\\WIML_mentorship\\qantum_evaluation_llms\\NYUAD-Research-Quantum-Code-Evaluation_clean_main\\QHack_Framework_Bundle\\venv\\Lib\\site-packages\\pennylane\\workflow\\qnode.py:154: in _validate_qfunc_output\n    raise QuantumFunctio"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "challenge": "triple_H_hotel",
+    "test_gen_model": "gpt54",
+    "human_solution_used": "Solution3/Tensor Tundra The triple H hotel.py",
+    "solution_correctness": {
+      "n_total": 1,
+      "n_correct": 0,
+      "n_wrong": 1,
+      "n_unknown": 0
+    },
+    "scores": {
+      "avg_es": 1.0,
+      "avg_cs": 1.0,
+      "avg_bds": 0.667,
+      "avg_tqs": 0.667,
+      "avg_coverage_inputs": 0.667,
+      "avg_cq": 0.667,
+      "avg_cov_literal": 1.0,
+      "avg_cov": 0.667,
+      "avg_div": 0.667
+    },
+    "human_evaluations_all": [],
+    "scores_by_type": {
+      "syntactic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 0.0,
+        "tqs": 0.0,
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "diversity": 0.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 0,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "semantic": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      },
+      "behavioral": {
+        "es": 1.0,
+        "cs": 1.0,
+        "bds": 1.0,
+        "tqs": 1.0,
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "diversity": 1.0,
+        "n_correct_total": 1,
+        "n_correct_pass": 1,
+        "n_wrong_total": 1,
+        "n_wrong_fail": 1,
+        "n_unknown": 0,
+        "error_label": ""
+      }
+    },
+    "llm_runs_detail": [
+      {
+        "test_type": "syntactic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 0.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": false,
+        "n_assertions": 20,
+        "cq": 0.0,
+        "coverage": 0.0,
+        "diversity": 0.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": ""
+          }
+        ]
+      },
+      {
+        "test_type": "semantic",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 16,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\n312884914 * (X(0) @ Z(1) @ Z(2) @ Y(3) @ Y(4) @ X(5)) + -0.3386512472193326 * Z(5) + 0.17592197984771626 * (Z(0) @ Z(5)) + -0.0014281793128891052 * (Y(0) @ Z(1) @ Y(2) @ Z(5)) + -0.0014281793128891052 * (X(0) @ Z(1) @ X(2) @ Z(5)) + -0.014946219998761542 * (Y(0) @ Z(1) @ Z(2) @ Z(3) @ Y(4) @ Z(5)) + -0.014946219998761542 * (X(0) @ Z(1) @ Z(2) @ Z(3) @ X(4) @ Z(5)) + 0.13864416477314986 * (Z(1) @ Z(5)) + 0.014946219998618018 * (Y(1) @ Z(3) @ Z(4) @ Y(5)) + 0.014946219998618018 * (X(1) @ Z(3) @ Z(4) @ X(5)) + -0.001428179312884914 * (Y(1) @ X(2) @ X(4) @ Y(5)) + -0.001428179312884914 * (Y(1) @ Y(2) @ Y(4) @ Y(5)) + -0.001428179312884914 * (X(1) @ X(2) @ X(4) @ X(5)) + -0.001428179312884914 * (X(1) @ Y(2) @ Y(4) @ X(5)) + -0.014946219998761542 * (Y(1) @ Z(2) @ Z(3) @ Y(5)) + -0.014946219998761542 * (X(1) @ Z(2) @ Z(3) @ X(5)) + 0.013376666941166349 * (Y(2) @ X(3) @ X(4) @ Y(5)) + -0.013376666941166349 * (Y(2) @ Y(3) @ X(4) @ X(5)) + -0.013376666941166349 * (X(2) @ X(3) @ Y(4) @ Y(5)) + 0.013376666941166349 * (X(2) @ Y(3) @ Y(4) @ X(5)) + 0.163414229901083 * (Z(2) @ Z(5)) + 0.15003756295991688 * (Z(3) @ Z(5)) + 0.19016756378379676 * (Z(4) @ Z(5))\n[1 1 0 0 0 0]\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nNumber of qubits =  6\nThe Hamiltonian is  0.04341327334746892 * I([0, 1, 2, 3, 4, 5]) + 0.26112752442244447 * Z(0) + 0.2611275244224447 * Z(1) + 0.15827974906655973 * (Z(0) @ Z(1)) + -0.16641269556585658 * Z(2) + 0.11734648033792335 * (Z(0) @ Z(2)) + 0.15336389758381092 * (Z(1) @ Z(2)) + 0.03601741724588755 * (Y(0) @ X(1) @ X(2) @ Y(3)) + -0.03601741724588755 * (Y(0) @ Y(1) @ X(2) @ X(3)) + -0.03601741724588755 * (X(0) @ X(1) @ Y(2) @ Y(3)) + 0.03601741724588755 * (X(0) @ Y(1) @ Y(2) @ X(3)) + -0.16641269556585664 * Z(3) + 0.15336389758381092 * (Z(0) @ Z(3)) + -0.0019363482458515796 * (Y(0) @ Z(1) @ Y(2) @ Z(3)) + -0.0019363482458515796 * (X(0) @ Z(1) @ X(2) @ Z(3)) + 0.11734648033792335 * (Z(1) @ Z(3)) + -0.0019363482458515796 * (Y(1) @ Y(3)) + -0.0019363482458515796 * (X(1) @ X(3)) + 0.17197563425899193 * (Z(2) @ Z(3)) + -0.1664126955659361 * Z(4) + 0.11734648033801227 * (Z(0) @ Z(4)) + 0.021467036969113854 * (Y(0) @ Z(1) @ Z(2) @ Y(4)) + 0.021467036969113854 * (X(0) @ Z(1) @ Z(2) @ X(4)) + -0.02146703696914004 * (Y(1) @ X(2) @ X(3) @ Y(4)) + 0.02146703696914004 * (Y(1) @ Y(2) @ X(3) @ X(4)) + 0.02146703696914004 * (X(1) @ X(2) @ Y(3) @ Y(4)) + -0.02146703696914004 * (X(1) @ Y(2) @ Y(3) @ X(4)) + 0.15336389758395164 * (Z(1) @ Z(4)) + 0.0019363482458589105 * (Y(1) @ Z(2) @ Y(3) @ Z(4)) + 0.0019363482458589105 * (X(1) @ Z(2) @ X(3) @ Z(4)) + 0.12007785238788381 * (Z(2) @ Z(4)) + 0.13737711301163275 * (Z(3) @ Z(4)) + 0.03601741724593935 * (Y(0) @ X(1) @ X(4) @ Y(5)) + -0.03601741724593935 * (Y(0) @ Y(1) @ X(4) @ X(5)) + -0.03601741724593935 * (X(0) @ X(1) @ Y(4) @ Y(5)) + 0.03601741724593935 * (X(0) @ Y(1) @ Y(4) @ X(5)) + -0.02146703696914004 * (Y(0) @ Y(3) @ Z(4) @ Y(5) @ Z(1) @ Y(2)) + -0.02146703696914004 * (Y(0) @ X(3) @ Z(4) @ X(5) @ Z(1) @ Y(2)) + -0.02146703696914004 * (X(0) @ Y(3) @ Z(4) @ Y(5) @ Z(1) @ X(2)) + -0.02146703696914004 * (X(0) @ X(3) @ Z(4) @ X(5) @ Z(1) @ X(2)) + -0.0019363482458564568 * (Y(0) @ Z(1) @ Z(2) @ X(3) @ X(4) @ Y(5)) + 0.0019363482458564568 * (Y(0) @ Z(1) @ Z(2) @ Y(3) @ X(4) @ X(5)) + 0.0019363482458564568 * (X(0) @ Z(1) @ Z(2) @ X(3) @ Y(4) @ Y(5)) + -0.0019363482458564568 * (X(0) @ Z(1) @ Z(2) @ Y(3) @ Y(4) @ X(5)) + -0.16641269556593608 * Z(5) + 0.15336389758395164 * (Z(0) @ Z(5)) + 0.0019363482458589105 * (Y(0) @ Z(1) @ Y(2) @ Z(5)) + 0.0019363482458589105 * (X(0) @ Z(1) @ X(2) @ Z(5)) + -0.02146703696919277 * (Y(0) @ Z(1) @ Z(2) @ Z(3) @ Y(4) @ Z(5)) + -0.02146703696919277 * (X(0) @ Z(1) @ Z(2) @ Z(3) @ X(4) @ Z(5)) + 0.11734648033801227 * (Z(1) @ Z(5)) + 0.021467036969113854 * (Y(1) @ Z(3) @ Z(4) @ Y(5)) + 0.021467036969113854 * (X(1) @ Z(3) @ Z(4) @ X(5)) + 0.0019363482458564568 * (Y(1) @ X(2) @ X(4) @ Y(5"
+          }
+        ]
+      },
+      {
+        "test_type": "behavioral",
+        "human_run": {
+          "executable": true,
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "error": "",
+          "pytest_output": ""
+        },
+        "coverage_inputs": 1.0,
+        "coverage_literal": 1.0,
+        "uses_test_cases_loop": true,
+        "n_assertions": 17,
+        "cq": 1.0,
+        "coverage": 1.0,
+        "diversity": 1.0,
+        "llm_runs": [
+          {
+            "solution_id": "synthetic_wrong/mutant_01",
+            "solution_correct": false,
+            "executable": true,
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "error_label": "",
+            "error_detail": "",
+            "pytest_output": "...[truncated]\n312884914 * (X(0) @ Z(1) @ Z(2) @ Y(3) @ Y(4) @ X(5)) + -0.3386512472193326 * Z(5) + 0.17592197984771626 * (Z(0) @ Z(5)) + -0.0014281793128891052 * (Y(0) @ Z(1) @ Y(2) @ Z(5)) + -0.0014281793128891052 * (X(0) @ Z(1) @ X(2) @ Z(5)) + -0.014946219998761542 * (Y(0) @ Z(1) @ Z(2) @ Z(3) @ Y(4) @ Z(5)) + -0.014946219998761542 * (X(0) @ Z(1) @ Z(2) @ Z(3) @ X(4) @ Z(5)) + 0.13864416477314986 * (Z(1) @ Z(5)) + 0.014946219998618018 * (Y(1) @ Z(3) @ Z(4) @ Y(5)) + 0.014946219998618018 * (X(1) @ Z(3) @ Z(4) @ X(5)) + -0.001428179312884914 * (Y(1) @ X(2) @ X(4) @ Y(5)) + -0.001428179312884914 * (Y(1) @ Y(2) @ Y(4) @ Y(5)) + -0.001428179312884914 * (X(1) @ X(2) @ X(4) @ X(5)) + -0.001428179312884914 * (X(1) @ Y(2) @ Y(4) @ X(5)) + -0.014946219998761542 * (Y(1) @ Z(2) @ Z(3) @ Y(5)) + -0.014946219998761542 * (X(1) @ Z(2) @ Z(3) @ X(5)) + 0.013376666941166349 * (Y(2) @ X(3) @ X(4) @ Y(5)) + -0.013376666941166349 * (Y(2) @ Y(3) @ X(4) @ X(5)) + -0.013376666941166349 * (X(2) @ X(3) @ Y(4) @ Y(5)) + 0.013376666941166349 * (X(2) @ Y(3) @ Y(4) @ X(5)) + 0.163414229901083 * (Z(2) @ Z(5)) + 0.15003756295991688 * (Z(3) @ Z(5)) + 0.19016756378379676 * (Z(4) @ Z(5))\n[1 1 0 0 0 0]\nRuntime Error. A quantum function must return either a single measurement, or a nonempty sequence of measurements.\nNumber of qubits =  6\nThe Hamiltonian is  0.04341327334746892 * I([0, 1, 2, 3, 4, 5]) + 0.26112752442244447 * Z(0) + 0.2611275244224447 * Z(1) + 0.15827974906655973 * (Z(0) @ Z(1)) + -0.16641269556585658 * Z(2) + 0.11734648033792335 * (Z(0) @ Z(2)) + 0.15336389758381092 * (Z(1) @ Z(2)) + 0.03601741724588755 * (Y(0) @ X(1) @ X(2) @ Y(3)) + -0.03601741724588755 * (Y(0) @ Y(1) @ X(2) @ X(3)) + -0.03601741724588755 * (X(0) @ X(1) @ Y(2) @ Y(3)) + 0.03601741724588755 * (X(0) @ Y(1) @ Y(2) @ X(3)) + -0.16641269556585664 * Z(3) + 0.15336389758381092 * (Z(0) @ Z(3)) + -0.0019363482458515796 * (Y(0) @ Z(1) @ Y(2) @ Z(3)) + -0.0019363482458515796 * (X(0) @ Z(1) @ X(2) @ Z(3)) + 0.11734648033792335 * (Z(1) @ Z(3)) + -0.0019363482458515796 * (Y(1) @ Y(3)) + -0.0019363482458515796 * (X(1) @ X(3)) + 0.17197563425899193 * (Z(2) @ Z(3)) + -0.1664126955659361 * Z(4) + 0.11734648033801227 * (Z(0) @ Z(4)) + 0.021467036969113854 * (Y(0) @ Z(1) @ Z(2) @ Y(4)) + 0.021467036969113854 * (X(0) @ Z(1) @ Z(2) @ X(4)) + -0.02146703696914004 * (Y(1) @ X(2) @ X(3) @ Y(4)) + 0.02146703696914004 * (Y(1) @ Y(2) @ X(3) @ X(4)) + 0.02146703696914004 * (X(1) @ X(2) @ Y(3) @ Y(4)) + -0.02146703696914004 * (X(1) @ Y(2) @ Y(3) @ X(4)) + 0.15336389758395164 * (Z(1) @ Z(4)) + 0.0019363482458589105 * (Y(1) @ Z(2) @ Y(3) @ Z(4)) + 0.0019363482458589105 * (X(1) @ Z(2) @ X(3) @ Z(4)) + 0.12007785238788381 * (Z(2) @ Z(4)) + 0.13737711301163275 * (Z(3) @ Z(4)) + 0.03601741724593935 * (Y(0) @ X(1) @ X(4) @ Y(5)) + -0.03601741724593935 * (Y(0) @ Y(1) @ X(4) @ X(5)) + -0.03601741724593935 * (X(0) @ X(1) @ Y(4) @ Y(5)) + 0.03601741724593935 * (X(0) @ Y(1) @ Y(4) @ X(5)) + -0.02146703696914004 * (Y(0) @ Y(3) @ Z(4) @ Y(5) @ Z(1) @ Y(2)) + -0.02146703696914004 * (Y(0) @ X(3) @ Z(4) @ X(5) @ Z(1) @ Y(2)) + -0.02146703696914004 * (X(0) @ Y(3) @ Z(4) @ Y(5) @ Z(1) @ X(2)) + -0.02146703696914004 * (X(0) @ X(3) @ Z(4) @ X(5) @ Z(1) @ X(2)) + -0.0019363482458564568 * (Y(0) @ Z(1) @ Z(2) @ X(3) @ X(4) @ Y(5)) + 0.0019363482458564568 * (Y(0) @ Z(1) @ Z(2) @ Y(3) @ X(4) @ X(5)) + 0.0019363482458564568 * (X(0) @ Z(1) @ Z(2) @ X(3) @ Y(4) @ Y(5)) + -0.0019363482458564568 * (X(0) @ Z(1) @ Z(2) @ Y(3) @ Y(4) @ X(5)) + -0.16641269556593608 * Z(5) + 0.15336389758395164 * (Z(0) @ Z(5)) + 0.0019363482458589105 * (Y(0) @ Z(1) @ Y(2) @ Z(5)) + 0.0019363482458589105 * (X(0) @ Z(1) @ X(2) @ Z(5)) + -0.02146703696919277 * (Y(0) @ Z(1) @ Z(2) @ Z(3) @ Y(4) @ Z(5)) + -0.02146703696919277 * (X(0) @ Z(1) @ Z(2) @ Z(3) @ X(4) @ Z(5)) + 0.11734648033801227 * (Z(1) @ Z(5)) + 0.021467036969113854 * (Y(1) @ Z(3) @ Z(4) @ Y(5)) + 0.021467036969113854 * (X(1) @ Z(3) @ Z(4) @ X(5)) + 0.0019363482458564568 * (Y(1) @ X(2) @ X(4) @ Y(5"
+          }
+        ]
+      }
+    ]
+  }
+]

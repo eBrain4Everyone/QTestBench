@@ -1,0 +1,4 @@
+from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
+def conditional_two_qubit_circuit():
+    """ Create a quantum circuit with one qubit and two classical bits. The qubit's operation depends on its measurement outcome: if it measures to 1 (|1> state), it flips the qubit's state back to |0> using an X gate. The qubit's initial state is randomized using a Hadamard gate. When building the quantum circuit make sure the classical registers is named 'c'.
+    """

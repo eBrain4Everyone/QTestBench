@@ -1,0 +1,8 @@
+{
+  "task_id": "qiskitHumanEval/126",
+  "entry_point": "calculate_phase_difference_fidelity",
+  "difficulty_scale": "basic",
+  "variant": "full",
+  "index": 126,
+  "solution_format": "prompt_plus_canonical_body"
+}
