@@ -1,119 +1,142 @@
-# QHack 8-Challenge — LLM Test Evaluation Framework v3
+# QHack Framework Bundle (PennyLane)
 
-**Research summary (approach, metrics, results):** see [`RESEARCH_BRIEF_FOR_SUPERVISORS.md`](RESEARCH_BRIEF_FOR_SUPERVISORS.md).
+This directory implements the **QHack / PennyLane** half of QTestBench: LLM generation of quantum unit tests and oracle-grounded evaluation on eight QHack challenges.
 
-## What was fixed
+For the full project overview, metrics, and citation, see the [repository root README](../README.md).
 
-The previous version (v2) had CS = 0.00 for all semantic and behavioral tests,
-meaning those tests rejected every correct solution. The root cause was that
-the LLM was generating hardcoded numerical expected values inside the tests
-that did not match what actual solutions produce.
+---
 
-### Three fixes in v3
+## What this bundle does
 
-**Fix 1 — Injected TEST_CASES (eliminates CS = 0)**
-Every generated test file now starts with an auto-injected Python literal:
-```python
-TEST_CASES = [('[0.25, 0.25, 0.25]', '[0.5, 0.5]'), ('[0.125, 0.25, 0.2]', '[0.625, 0.375]')]
+1. **Generate tests** (`generate_tests.py`)  
+   For each challenge, an LLM produces three pytest modules:
+   - **syntactic** — structure / entry points (no circuit execution)
+   - **semantic** — execution on official inputs with numerical tolerance
+   - **behavioral** — end-to-end `run()` then candidate-local `check()`
+
+2. **Evaluate tests** (`evaluate_solutions.py`)  
+   Injects candidate solutions at runtime, labels probes with the official challenge checker, and reports ES, CS, BDS, TQS, C_in, and CQ.
+
+**Behavioral note.** On QHack, behavioral suites call the candidate’s template-local `check()`. That helper is **not** the Stage-2 official oracle used for labeling.
+
+---
+
+## Directory layout
+
+```text
+QHack_Framework_Bundle/
+├── config.py
+├── generate_tests.py
+├── evaluate_solutions.py
+├── challenge_mapper.py
+├── notebook_utils.py
+├── requirements.txt
+├── .env.example
+└── Framework_Eight_Challenges/
+    ├── Challenges/                 # challenge materials
+    ├── Human_solutions/            # trusted human references
+    ├── LLM_generated_solutions/    # optional LLM solution probes
+    ├── generated_tests/            # LLM-written pytest suites
+    └── evaluation_results/         # JSON + Markdown score reports
 ```
-The LLM is told to reference this variable directly — it never has to
-reproduce numerical values from memory. This is the key fix.
 
-**Fix 2 — Property-based tests (new 4th test type)**
-`test_property.py` checks mathematical invariants that any correct quantum
-solution must satisfy: JSON-parseable output, finite values, probabilities
-summing to 1, correct output length, non-constant function. These tests
-never use expected values at all, so CS is guaranteed high.
-
-**Fix 3 — Semantic test_3 changed**
-The third semantic test no longer checks exact equality. Instead it verifies
-that the solution produces different outputs for different inputs (non-constant
-function check). This ensures at least one semantic sub-test always passes.
+---
 
 ## Setup
 
-1. Create a `.env` file next to these scripts:
-   ```
-   OPENROUTER_API_KEY=sk-or-v1-your-key-here
-   ```
+```bash
+cd QHack_Framework_Bundle
+python -m venv venv
+venv\Scripts\activate          # Linux/macOS: source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env           # set OPENROUTER_API_KEY=...
+```
 
-2. Install dependencies:
-   ```
-   pip install requests pennylane pytest pytest-timeout
-   ```
+Confirm `FRAMEWORK_ROOT` in `config.py` points to `Framework_Eight_Challenges`.
 
-3. Make sure `FRAMEWORK_ROOT` in `config.py` points to your
-   `Framework_Eight_Challenges` folder.
+---
 
 ## Usage
 
-### Step 1 — Generate tests (NEW: 4 test types per challenge)
-```powershell
-# All 5 models, all 8 challenges
-python generate_tests.py --models geminipro claude deepseekv3 gpt41 llama4
+### Generate tests
 
-# Single model test run first
-python generate_tests.py --model claude --only chalet_random_gate
+```bash
+# One model, one challenge (smoke test)
+python generate_tests.py --model claudeopus46 --only chalet_random_gate
 
-# Check progress
-python generate_tests.py --status
+# One model, all eight challenges
+python generate_tests.py --model claudeopus46
 
-# Reset and re-run a model
-python generate_tests.py --reset --model claude
-python generate_tests.py --model claude
+# Several models
+python generate_tests.py --models claudeopus46 deepseekv32 gemini3pro gpt54 qwen3
 ```
 
-### Step 2 — Evaluate test quality
-```powershell
-foreach ($model in @("geminipro","claude","deepseekv3","gpt41","llama4")) {
-    python evaluate_solutions.py --test-gen-model $model `
-        --output-dir "Framework_Eight_Challenges\evaluation_results\$model"
-}
+Useful flags:
+
+| Flag | Purpose |
+|------|---------|
+| `--status` | Show generation progress |
+| `--reset` | Clear checkpoint for a model before regenerating |
+| `--only <name>` | Restrict to one challenge folder name |
+
+### Evaluate test quality
+
+```bash
+python evaluate_solutions.py --test-gen-model claudeopus46
 ```
 
-## Output structure
+Evaluation writes timestamped JSON and Markdown reports under  
+`Framework_Eight_Challenges/evaluation_results/`.
 
-```
-Framework_Eight_Challenges/
-  generated_tests/
-    chalet_random_gate/
-      claude/
-        test_syntactic.py    # structure checks
-        test_semantic.py     # numerical correctness via TEST_CASES
-        test_behavioral.py   # run()+check() harness
-        test_property.py     # mathematical invariants (NEW)
-      geminipro/
-        ...
-  evaluation_results/
-    claude/
-      test_quality_results_<ts>.json
-      test_quality_report_<ts>.md
+---
+
+## Generated test layout
+
+```text
+Framework_Eight_Challenges/generated_tests/
+  <challenge>/
+    <model>/
+      test_syntactic.py
+      test_semantic.py
+      test_behavioral.py
 ```
 
-## Scores
+Official `TEST_CASES` are injected into generated files so semantic/behavioral assertions stay grounded in benchmark inputs/outputs. The reference solution is **not** shown in generation prompts.
 
-Each test file receives:
+---
 
-| Score | Formula | Meaning |
-|-------|---------|---------|
-| ES | 1 or 0 | Does the test run without crashing? |
-| CS | correct_pass / correct_total | Does it accept correct solutions? |
-| BDS | wrong_fail / wrong_total | Does it catch wrong solutions? |
-| TQS | ES × CS × BDS | Overall quality (0 if any component fails) |
+## Metrics (summary)
 
-## Expected improvement over v2
+| Score | Meaning |
+|-------|---------|
+| ES | Suite executes on the trusted baseline without infrastructure failure |
+| CS | Fraction of oracle-correct probes accepted |
+| BDS | Fraction of oracle-wrong probes rejected (`n/a` if none) |
+| TQS | `ES × CS` (Config A) or `ES × CS × BDS` (Configs B/C when defined) |
 
-| Test type | v2 CS | v3 CS (expected) | Why |
-|-----------|--------|------------------|-----|
-| syntactic | 0.75–1.00 | 0.75–1.00 | No change |
-| semantic | 0.00 | 0.50–1.00 | TEST_CASES injected |
-| behavioral | 0.00–0.25 | 0.50–1.00 | TEST_CASES injected |
-| property | N/A | 0.75–1.00 | New — invariants only |
+Full definitions and Configurations A/B/C are documented in the [root README](../README.md).
 
-## Files
+---
 
-- `config.py` — API key, model list, paths
-- `notebook_utils.py` — code extraction from .ipynb, fence stripping, harness injection
-- `challenge_mapper.py` — discovers challenges and solutions
-- `generate_tests.py` — Phase 1: generates test files (v3 with injection)
-- `evaluate_solutions.py` — Phase 2: evaluates test quality (ES/CS/BDS/TQS)
+## Default timeouts
+
+| Setting | Value |
+|---------|-------|
+| Pytest (whole file) | 180 s |
+| Pytest (per test) | 60 s |
+| Oracle labeling (per candidate) | 90 s |
+
+---
+
+## Models
+
+Paper generators use OpenRouter keys configured in `config.py`  
+(examples: `claudeopus46`, `deepseekv32`, `gemini3pro`, `gpt54`, `qwen3`).
+
+---
+
+## Tips
+
+- Start with `--only <challenge>` and one model before a full run.
+- Keep API keys in `.env` only; never commit them.
+- Prefer the reports under `evaluation_results/` when comparing to the paper tables.
