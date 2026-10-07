@@ -1,44 +1,18 @@
 # QHack Framework Bundle (PennyLane)
 
-This directory implements the **QHack / PennyLane** half of QTestBench: LLM generation of quantum unit tests and oracle-grounded evaluation on eight QHack challenges.
+How to **generate** and **run** QTestBench unit tests on eight PennyLane QHack challenges.
 
-For the full project overview, metrics, and citation, see the [repository root README](../README.md).
-
----
-
-## What this bundle does
-
-1. **Generate tests** (`generate_tests.py`)  
-   For each challenge, an LLM produces three pytest modules:
-   - **syntactic** — structure / entry points (no circuit execution)
-   - **semantic** — execution on official inputs with numerical tolerance
-   - **behavioral** — end-to-end `run()` then candidate-local `check()`
-
-2. **Evaluate tests** (`evaluate_solutions.py`)  
-   Injects candidate solutions at runtime, labels probes with the official challenge checker, and reports ES, CS, BDS, TQS, C_in, and CQ.
-
-**Behavioral note.** On QHack, behavioral suites call the candidate’s template-local `check()`. That helper is **not** the Stage-2 official oracle used for labeling.
+Parent overview: [root README](../README.md).
 
 ---
 
-## Directory layout
+## Goals of this folder
 
-```text
-QHack_Framework_Bundle/
-├── config.py
-├── generate_tests.py
-├── evaluate_solutions.py
-├── challenge_mapper.py
-├── notebook_utils.py
-├── requirements.txt
-├── .env.example
-└── Framework_Eight_Challenges/
-    ├── Challenges/                 # challenge materials
-    ├── Human_solutions/            # trusted human references
-    ├── LLM_generated_solutions/    # optional LLM solution probes
-    ├── generated_tests/            # LLM-written pytest suites
-    └── evaluation_results/         # JSON + Markdown score reports
-```
+1. Ask an LLM to write pytest suites (`syntactic`, `semantic`, `behavioral`).
+2. **Run those tests** against candidate solutions with pytest.
+3. Compare test verdicts to the **official challenge checker** (oracle) and compute ES/CS/BDS/TQS.
+
+Behavioral tests call the candidate local `run()` / `check()` helpers. That is **not** the Stage-2 oracle.
 
 ---
 
@@ -49,72 +23,90 @@ cd QHack_Framework_Bundle
 python -m venv venv
 venv\Scripts\activate          # Linux/macOS: source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env           # set OPENROUTER_API_KEY=...
+cp .env.example .env
 ```
 
-Confirm `FRAMEWORK_ROOT` in `config.py` points to `Framework_Eight_Challenges`.
-
----
-
-## Usage
-
-### Generate tests
-
-```bash
-# One model, one challenge (smoke test)
-python generate_tests.py --model claudeopus46 --only chalet_random_gate
-
-# One model, all eight challenges
-python generate_tests.py --model claudeopus46
-
-# Several models
-python generate_tests.py --models claudeopus46 deepseekv32 gemini3pro gpt54 qwen3
-```
-
-Useful flags:
-
-| Flag | Purpose |
-|------|---------|
-| `--status` | Show generation progress |
-| `--reset` | Clear checkpoint for a model before regenerating |
-| `--only <name>` | Restrict to one challenge folder name |
-
-### Evaluate test quality
-
-```bash
-python evaluate_solutions.py --test-gen-model claudeopus46
-```
-
-Evaluation writes timestamped JSON and Markdown reports under  
-`Framework_Eight_Challenges/evaluation_results/`.
-
----
-
-## Generated test layout
+Edit `.env`:
 
 ```text
-Framework_Eight_Challenges/generated_tests/
-  <challenge>/
-    <model>/
-      test_syntactic.py
-      test_semantic.py
-      test_behavioral.py
+OPENROUTER_API_KEY=sk-or-v1-your-key-here
 ```
 
-Official `TEST_CASES` are injected into generated files so semantic/behavioral assertions stay grounded in benchmark inputs/outputs. The reference solution is **not** shown in generation prompts.
+Never commit `.env`.
 
 ---
 
-## Metrics (summary)
+## How to run the tests (end-to-end)
 
-| Score | Meaning |
-|-------|---------|
-| ES | Suite executes on the trusted baseline without infrastructure failure |
-| CS | Fraction of oracle-correct probes accepted |
-| BDS | Fraction of oracle-wrong probes rejected (`n/a` if none) |
-| TQS | `ES × CS` (Config A) or `ES × CS × BDS` (Configs B/C when defined) |
+### Step 1 - Generate pytest modules
 
-Full definitions and Configurations A/B/C are documented in the [root README](../README.md).
+```bash
+# Recommended first run (one challenge)
+python generate_tests.py --model claudeopus46 --only chalet_random_gate
+```
+
+Useful variants:
+
+```bash
+# All 8 challenges, one model
+python generate_tests.py --model claudeopus46
+
+# Multiple models
+python generate_tests.py --models claudeopus46 deepseekv32 gemini3pro gpt54 qwen3
+
+# Progress / resume helpers
+python generate_tests.py --status
+python generate_tests.py --reset --model claudeopus46
+```
+
+Generated files:
+
+```text
+Framework_Eight_Challenges/generated_tests/<challenge>/<model>/
+  test_syntactic.py
+  test_semantic.py
+  test_behavioral.py
+```
+
+### Step 2 - Run and score the generated tests
+
+This is the main command to **run the tests** for QHack:
+
+```bash
+# Evaluate the suites for one test-generator model
+python evaluate_solutions.py --test-gen-model claudeopus46
+
+# Restrict to one challenge
+python evaluate_solutions.py --test-gen-model claudeopus46 --only chalet_random_gate
+```
+
+What this does:
+
+1. Loads generated pytest files.
+2. Injects each candidate solution at runtime.
+3. Runs pytest on the suite.
+4. Labels probes with the official checker.
+5. Writes ES/CS/BDS/TQS reports.
+
+Outputs:
+
+```text
+Framework_Eight_Challenges/evaluation_results/
+  .../
+    test_quality_results_<timestamp>.json
+    test_quality_report_<timestamp>.md
+```
+
+### Step 3 - Interpret results
+
+Open the Markdown report for a readable table, or the JSON for exact numbers.
+Metric definitions: [root README](../README.md#what-qtestbench-does).
+
+See also:
+
+```bash
+python evaluate_solutions.py --help
+```
 
 ---
 
@@ -122,21 +114,27 @@ Full definitions and Configurations A/B/C are documented in the [root README](..
 
 | Setting | Value |
 |---------|-------|
-| Pytest (whole file) | 180 s |
-| Pytest (per test) | 60 s |
-| Oracle labeling (per candidate) | 90 s |
+| Pytest whole file | 180 s |
+| Pytest per test | 60 s |
+| Oracle labeling | 90 s |
 
 ---
 
-## Models
+## Troubleshooting
 
-Paper generators use OpenRouter keys configured in `config.py`  
-(examples: `claudeopus46`, `deepseekv32`, `gemini3pro`, `gpt54`, `qwen3`).
+| Issue | What to try |
+|-------|-------------|
+| Missing API key | Ensure `.env` exists and `OPENROUTER_API_KEY` is set |
+| Import / PennyLane errors | Reinstall with `pip install -r requirements.txt` inside the venv |
+| Empty generated tests | Re-run generation with `--reset` for that model |
+| Slow runs | Start with `--only <challenge>` |
 
 ---
 
-## Tips
+## Key scripts
 
-- Start with `--only <challenge>` and one model before a full run.
-- Keep API keys in `.env` only; never commit them.
-- Prefer the reports under `evaluation_results/` when comparing to the paper tables.
+| Script | Role |
+|--------|------|
+| `generate_tests.py` | Stage 1: LLM writes pytest suites |
+| `evaluate_solutions.py` | Stage 2: **run tests** and score vs oracle |
+| `config.py` | Models, paths, defaults |
