@@ -1,20 +1,14 @@
 # Qiskit HumanEval Framework
 
-How to **prepare tasks**, **generate tests**, and **run** QTestBench evaluation on Qiskit HumanEval.
+Code for generating and evaluating LLM-written pytest suites on Qiskit HumanEval tasks. See the [root README](../README.md) for the overall QTestBench protocol.
 
-Parent overview: [root README](../README.md).
+## Pipeline
 
----
+1. `prepare_qiskit_human_eval.py` materializes dataset records into runnable task folders.
+2. `generate_tests_qiskit_he.py` asks an LLM for syntactic, semantic, and behavioral pytest modules.
+3. `evaluate_qiskit_he.py` runs those tests against candidate solutions and scores them with the official `check(candidate)` oracle.
 
-## Goals of this folder
-
-1. Materialize HumanEval tasks into runnable folders.
-2. Ask an LLM to write pytest suites (`syntactic`, `semantic`, `behavioral`).
-3. **Run those tests** against candidate solutions and score them with the official `check(candidate)` oracle.
-
-Generation prompts use the task prompt/stub only (canonical solution is withheld).
-
----
+Generation prompts include the task prompt/stub only; the canonical solution is withheld.
 
 ## Setup
 
@@ -23,73 +17,30 @@ cd Qiskit_HumanEval_Framework
 python -m venv venv
 venv\Scripts\activate          # Linux/macOS: source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env
+cp .env.example .env           # OPENROUTER_API_KEY=...
 ```
 
-Edit `.env`:
+## Paper protocol (10-task scope)
 
-```text
-OPENROUTER_API_KEY=sk-or-v1-your-key-here
-```
-
-Never commit `.env`.
-
----
-
-## How to run the tests (paper protocol)
-
-Reported paper results use a **fixed 10-task scope**:
+Use the fixed list in:
 
 ```text
 Framework_Qiskit_Human_Eval/full/evaluation_scope_tasks.txt
 ```
 
-Always prefer `--scoped` for paper-comparable runs.
-
-### Step 1 - Materialize tasks (once)
+and pass `--scoped` for paper-comparable runs.
 
 ```bash
+# 1) Materialize tasks once
 python prepare_qiskit_human_eval.py --only-variant full
-```
 
-Optional oracle smoke test:
-
-```bash
-python oracle_qiskit_he.py --root ./Framework_Qiskit_Human_Eval/full --limit 3
-```
-
-### Step 2 - Generate pytest modules
-
-```bash
+# 2) Generate tests
 python generate_tests_qiskit_he.py \
   --root ./Framework_Qiskit_Human_Eval/full \
   --scoped \
   --models claudeopus46
-```
 
-Multi-model paper set:
-
-```bash
-python generate_tests_qiskit_he.py \
-  --root ./Framework_Qiskit_Human_Eval/full \
-  --scoped \
-  --models claudeopus46 deepseekv32 gemini3pro gpt54 qwen3
-```
-
-Generated files:
-
-```text
-Framework_Qiskit_Human_Eval/full/generated_tests/<task>/<model>/
-  test_syntactic.py
-  test_semantic.py
-  test_behavioral.py
-```
-
-### Step 3 - Run and score the generated tests
-
-This is the main command to **run the tests** for Qiskit:
-
-```bash
+# 3) Run tests and score
 python evaluate_qiskit_he.py \
   --root ./Framework_Qiskit_Human_Eval/full \
   --scoped \
@@ -99,17 +50,7 @@ python evaluate_qiskit_he.py \
   --test-gen-model claudeopus46
 ```
 
-What this does:
-
-1. Loads generated pytest suites for the scoped tasks.
-2. Injects the trusted baseline (and optional probes).
-3. Runs pytest.
-4. Labels probes with the official checker.
-5. Writes ES/CS/BDS/TQS reports under `evaluation_results/`.
-
-Repeat with `--test-gen-model <name>` for each generator.
-
-### Step 4 (optional) - Add LLM solution probes
+Optional LLM solution probes for a richer Config B-style cohort:
 
 ```bash
 python generate_llm_solutions_qiskit_he.py \
@@ -119,50 +60,16 @@ python generate_llm_solutions_qiskit_he.py \
   --label-oracle
 ```
 
-Then evaluate **without** `--human-only` so oracle-labeled LLM solutions enter the cohort.
+Then evaluate without `--human-only`.
 
----
+Reports are written under `Framework_Qiskit_Human_Eval/full/evaluation_results/`. When a task has no oracle-wrong probes (`|S_w| = 0`), BDS/TQS/CQ are `n/a`.
 
-## Outputs
-
-```text
-Framework_Qiskit_Human_Eval/full/evaluation_results/
-  .../test_quality_results_<timestamp>.json
-  .../test_quality_report_<timestamp>.md
-```
-
-If `|S_w| = 0` for a task, BDS/TQS/CQ are **n/a**.
-Metric definitions: [root README](../README.md#what-qtestbench-does).
-
----
-
-## Default timeouts
+## Defaults
 
 | Setting | Value |
 |---------|-------|
-| Pytest whole file | 240 s |
-| Pytest per test | 120 s |
-| Oracle labeling | 120 s |
+| Pytest file timeout | 240 s |
+| Pytest per-test timeout | 120 s |
+| Oracle timeout | 120 s |
 
----
-
-## Troubleshooting
-
-| Issue | What to try |
-|-------|-------------|
-| Missing scope file | Ensure `evaluation_scope_tasks.txt` exists under `full/` |
-| Averaging looks wrong | Use `--scoped`; do not evaluate the full corpus unless all tasks have tests |
-| API failures | Check `.env` and OpenRouter key / quotas |
-| Long runtimes | Start with one model and `--scoped` |
-
----
-
-## Key scripts
-
-| Script | Role |
-|--------|------|
-| `prepare_qiskit_human_eval.py` | Build task folders from the dataset JSON |
-| `generate_tests_qiskit_he.py` | Stage 1: LLM writes pytest suites |
-| `evaluate_qiskit_he.py` | Stage 2: **run tests** and score vs oracle |
-| `oracle_qiskit_he.py` | Official checker labeling helper |
-| `config.py` | Models, paths, defaults |
+Model routing keys are defined in `config.py`.

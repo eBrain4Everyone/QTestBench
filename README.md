@@ -1,129 +1,104 @@
-# QTestBench
-
-**A test framework for evaluating LLM-generated quantum code**
+# QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Venue](https://img.shields.io/badge/IEEE%20QAI-2026-b31b1b.svg)](#citation)
 
-Official code for:
+This repository contains the code for the paper **"QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code,"** accepted at the **IEEE International Conference on Quantum Artificial Intelligence (QAI 2026)**.
 
-> **QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code**  
-> IEEE International Conference on Quantum Artificial Intelligence (QAI), 2026
+QTestBench evaluates LLM-generated quantum unit-test suites against independent benchmark checkers. The generated tests are never used as ground truth. The same protocol and metrics are applied to:
 
-QTestBench evaluates whether LLMs can write **trustworthy quantum unit tests**.
-Generated pytest suites are scored against **independent benchmark oracles**, never against the tests themselves.
+| Benchmark | SDK | Directory |
+|-----------|-----|-----------|
+| QHack (8 challenges) | PennyLane | [`QHack_Framework_Bundle/`](QHack_Framework_Bundle/) |
+| Qiskit HumanEval (10-task paper scope) | Qiskit | [`Qiskit_HumanEval_Framework/`](Qiskit_HumanEval_Framework/) |
 
-This repository is intended to be **open source** and to accompany the paper. The sections below explain how to install the framework and **how to run the tests / evaluation pipeline**.
-
----
-
-## Contents
-
-| Path | What it contains |
-|------|------------------|
-| [`QHack_Framework_Bundle/`](QHack_Framework_Bundle/) | PennyLane QHack pipeline (8 challenges) and how to run it |
-| [`Qiskit_HumanEval_Framework/`](Qiskit_HumanEval_Framework/) | Qiskit HumanEval pipeline (10-task paper scope) and how to run it |
-| [`LICENSE`](LICENSE) | MIT License |
+Each subdirectory README explains how to install dependencies and how to run generation and evaluation for that benchmark.
 
 ---
 
-## What QTestBench does
+## Overview
 
-```text
-Stage 1: Test generation                 Stage 2: Validation and scoring
--------------------------                 --------------------------------
-LLM writes 3 pytest modules               Inject candidate solutions
-  - syntactic                             Label probes with official oracle
-  - semantic                              Run generated tests (pytest)
-  - behavioral                            Score ES / CS / BDS / TQS / C_in / CQ
-(single pass, temperature 0.8)            under Configurations A / B / C
-```
+QTestBench has two stages.
 
-| Metric | Meaning |
-|--------|---------|
-| **ES** | Suite runs without infrastructure failure on the trusted baseline |
-| **CS** | Fraction of oracle-correct probes accepted |
-| **BDS** | Fraction of oracle-wrong probes rejected (`n/a` if none) |
-| **TQS** | `ES x CS` (Config A) or `ES x CS x BDS` (Configs B/C when defined) |
-| **C_in** | Coverage of official checker inputs in the generated test body |
-| **CQ** | `sqrt(TQS x C_in)` when TQS is defined |
+**Stage 1 — Test generation.** For each task, an LLM produces three pytest modules (syntactic, semantic, and behavioral) in a single pass (temperature 0.8, no repair loop).
 
-| Config | Probe set | Purpose |
-|--------|-----------|---------|
-| **A** | Trusted correct reference only | Executability and acceptance |
-| **B** | + oracle-labeled LLM solutions | Natural bug discrimination |
-| **C** | + oracle-verified synthetic mutants | Calibrated bug detection |
+**Stage 2 — Validation and scoring.** Candidate solutions are injected at runtime. An official benchmark checker labels each probe correct, wrong, or unknown. Suites are scored with ES, CS, BDS, TQS, C_in, and CQ under Configurations A, B, and C.
 
-**Notes (paper):**
+| Metric | Definition |
+|--------|------------|
+| ES | 1 if the suite runs on the trusted baseline without infrastructure failure |
+| CS | Fraction of oracle-correct probes accepted by the suite |
+| BDS | Fraction of oracle-wrong probes rejected (`n/a` when no wrong probes exist) |
+| TQS | `ES × CS` in Config A; `ES × CS × BDS` in Configs B/C when BDS is defined |
+| C_in | Fraction of official checker input literals present in the generated test body |
+| CQ | `√(TQS × C_in)` when TQS is defined |
 
-- Generated tests are never ground truth; only the official checker labels probes.
-- On QHack, behavioral tests call the candidate local `run()` / `check()` helpers (not the Stage-2 oracle).
-- Edge cases / fixed seeds in prompts are soft guidance, not hard scoring rules.
-- If `|S_w| = 0`, BDS/TQS/CQ are **n/a** (not 0).
+| Config | Cohort | Role |
+|--------|--------|------|
+| A | Trusted reference only | Executability and acceptance |
+| B | Reference + oracle-labeled LLM solutions | Discrimination on natural faults |
+| C | Reference + oracle-verified synthetic mutants | Bug detection when natural wrong probes are scarce |
+
+On QHack, behavioral tests call the candidate's local `run()` / `check()` helpers; those helpers are not the Stage-2 oracle. Mentions of edge cases or fixed seeds in prompts are guidance only and are not enforced by scoring. When `|S_w| = 0`, BDS, TQS, and CQ are reported as `n/a`.
 
 ---
 
-## Prerequisites
-
-- Python 3.10+ recommended
-- An [OpenRouter](https://openrouter.ai) API key (needed to **generate** new tests)
-- Internet access for model calls during generation
-
-You do **not** need an API key only to inspect already-generated tests and reports shipped in the repository.
-
----
-
-## How to run the tests (quick path)
-
-### 0) Clone
+## Setup
 
 ```bash
 git clone https://github.com/eBrain4Everyone/QTestBench.git
 cd QTestBench
 ```
 
-### 1) QHack / PennyLane
+Use a separate virtual environment for each bundle.
+
+**QHack / PennyLane**
 
 ```bash
 cd QHack_Framework_Bundle
 python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Linux/macOS:
-# source venv/bin/activate
+venv\Scripts\activate          # Linux/macOS: source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env
-# edit .env and set: OPENROUTER_API_KEY=sk-or-v1-...
+cp .env.example .env           # set OPENROUTER_API_KEY
 ```
 
-Generate tests (Stage 1):
-
-```bash
-python generate_tests.py --model claudeopus46 --only chalet_random_gate
-```
-
-**Run / evaluate those tests** (Stage 2):
-
-```bash
-python evaluate_solutions.py --test-gen-model claudeopus46 --only chalet_random_gate
-```
-
-Reports appear under `Framework_Eight_Challenges/evaluation_results/`.
-
-Full guide: [`QHack_Framework_Bundle/README.md`](QHack_Framework_Bundle/README.md).
-
-### 2) Qiskit HumanEval (paper 10-task scope)
+**Qiskit HumanEval**
 
 ```bash
 cd Qiskit_HumanEval_Framework
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env
-# edit .env and set OPENROUTER_API_KEY
+cp .env.example .env           # set OPENROUTER_API_KEY
 ```
 
+An OpenRouter key is required only to generate new tests. Existing generated suites and evaluation reports in the repository can be inspected without a key.
+
+---
+
+## Running the evaluation
+
+### QHack (PennyLane)
+
 ```bash
+cd QHack_Framework_Bundle
+
+# Stage 1: generate tests (smoke example)
+python generate_tests.py --model claudeopus46 --only chalet_random_gate
+
+# Stage 2: run the generated tests and score them
+python evaluate_solutions.py --test-gen-model claudeopus46 --only chalet_random_gate
+```
+
+Reports are written under `Framework_Eight_Challenges/evaluation_results/`.  
+Full options: [`QHack_Framework_Bundle/README.md`](QHack_Framework_Bundle/README.md).
+
+### Qiskit HumanEval (fixed 10-task scope)
+
+Paper results use `Framework_Qiskit_Human_Eval/full/evaluation_scope_tasks.txt`. Prefer `--scoped`.
+
+```bash
+cd Qiskit_HumanEval_Framework
+
 python prepare_qiskit_human_eval.py --only-variant full
 
 python generate_tests_qiskit_he.py \
@@ -140,35 +115,24 @@ python evaluate_qiskit_he.py \
   --test-gen-model claudeopus46
 ```
 
-Full guide: [`Qiskit_HumanEval_Framework/README.md`](Qiskit_HumanEval_Framework/README.md).
+Full options: [`Qiskit_HumanEval_Framework/README.md`](Qiskit_HumanEval_Framework/README.md).
 
 ---
 
-## Where outputs are written
+## Outputs and timeouts
 
 | Artifact | QHack | Qiskit |
 |----------|-------|--------|
-| Generated pytest suites | `Framework_Eight_Challenges/generated_tests/` | `Framework_Qiskit_Human_Eval/full/generated_tests/` |
-| Score reports (JSON/MD) | `Framework_Eight_Challenges/evaluation_results/` | `Framework_Qiskit_Human_Eval/full/evaluation_results/` |
-
-Each evaluation run produces machine-readable JSON and a human-readable Markdown report.
-
----
-
-## Default timeouts
+| Generated tests | `Framework_Eight_Challenges/generated_tests/` | `Framework_Qiskit_Human_Eval/full/generated_tests/` |
+| Evaluation reports | `Framework_Eight_Challenges/evaluation_results/` | `Framework_Qiskit_Human_Eval/full/evaluation_results/` |
 
 | Setting | QHack | Qiskit |
 |---------|-------|--------|
-| Pytest (whole file) | 180 s | 240 s |
+| Pytest (file) | 180 s | 240 s |
 | Pytest (per test) | 60 s | 120 s |
 | Oracle labeling | 90 s | 120 s |
 
----
-
-## Models used in the paper
-
-Claude Opus 4.6, DeepSeek V3.2, Gemini 3 Pro, GPT-5.4, Qwen3-Coder (via OpenRouter).
-Model keys are defined in each bundle `config.py` (examples: `claudeopus46`, `deepseekv32`, `gemini3pro`, `gpt54`, `qwen3`).
+Paper generators (OpenRouter): Claude Opus 4.6, DeepSeek V3.2, Gemini 3 Pro, GPT-5.4, Qwen3-Coder. Model keys are listed in each bundle's `config.py`.
 
 ---
 
@@ -193,6 +157,6 @@ MIT License. See [LICENSE](LICENSE).
 
 ## Acknowledgements
 
-This work was conducted at the **eBrain Lab**, New York University Abu Dhabi (NYUAD), affiliated with the Center for Cyber Security (CCS) and the Center for Quantum and Topological Systems (CQTS).
+This work was conducted at the eBrain Lab, New York University Abu Dhabi (NYUAD), affiliated with the Center for Cyber Security (CCS) and the Center for Quantum and Topological Systems (CQTS).
 
-We thank the maintainers of the PennyLane QHack challenge materials and the Qiskit HumanEval benchmark for releasing the task resources used in this evaluation.
+The evaluation uses QHack challenge materials from Xanadu and tasks from the Qiskit HumanEval benchmark.
