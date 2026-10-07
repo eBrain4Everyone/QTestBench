@@ -46,8 +46,6 @@ One LLM call per test type (temperature 0.8, no repair loop).
 **Stage 2 — Validation and scoring**  
 Candidate solutions are injected at runtime. The official checker labels each probe as correct, wrong, or unknown. Metrics are aggregated by configuration.
 
-No diagram image is required to use this repository; the ASCII overview above is enough for orientation. A detailed figure appears in the paper.
-
 ---
 
 ## Metrics
